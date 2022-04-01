@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/obs.html/static/main.css" />
                 <script src="/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/__src/custom.css"/>
+                <link rel="stylesheet" href="/src/custom.css"/>
 <link rel="stylesheet" href="/obs.html/static/graph.css" />
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="/obs.html/static/dirtree.js" /></script>
@@ -54,7 +54,13 @@
 </div>
 <div class="container-wrapper single_tab_page-left-aligned single_tab_page">
         <div class="container">
-        <ul class="dir-list">
+        <button id="folder-1" class="dir-button" onclick="toggle_dir(this.id)">src</button>
+<div id="folder-container-1" class="dir-container">
+	<ul class="dir-list">
+		<li><a href="/src/custom.css"  class="external-link">custom</a></li>
+	</ul>
+</div>
+<ul class="dir-list">
 	<li><a href="/Critical Care Medicine.html"  >Critical Care Medicine</a></li>
 	<li><a href="/Pulmonary Medicine.html"  >Pulmonary Medicine</a></li>
 </ul>

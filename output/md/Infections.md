@@ -1,0 +1,5 @@
+---
+alias:
+- Infectious Disease
+---
+   

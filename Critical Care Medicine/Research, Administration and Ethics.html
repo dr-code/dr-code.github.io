@@ -24,19 +24,26 @@
 
                 <!-- Onload tweaks -->
                 <script>
-                        // add prefix to hash to avoid scrolling
-                        if (1 == 0){
-                                if (window.location.hash != '' && window.location.hash.substr(1)[0] != '!'){
-                                        window.location.hash = '!' + window.location.hash.substr(1);
-                                }
-                        }
+                        const CURRENT_NODE = 'Research, Administration and Ethics';
                 </script>
         </head>
 
 <body onload="LoadPage();">
         <div class="flex_col">
                 <div id="header" class="header">
-                        <a href="/index.html" id="homelink" title="Clear screen and go to homepage">Pulmonary Critical Care Notes</a>
+                        <div id="header_flex" class="flex_row">
+                                <a href="/index.html" id="homelink" title="Clear screen and go to homepage">Pulmonary Critical Care Notes</a>
+                                <div class="navbar-button" onclick="toggle('navbar', 'flex')">
+                                        Menu
+                                </div>
+                                <div id="navbar" class="navbar">
+                                <div class="navbar-link"><a href="/index.html" title="Home">Home</a></div>
+<div class="navbar-link"><a href="/Pulmonary Medicine/Pulmonary Medicine Home.html" title="Pulmonary">Pulmonary</a></div>
+<div class="navbar-link"><a href="/Critical Care Medicine/Critical Care Medicine Home.html" title="Critical Care">Critical Care</a></div>
+                                </div>
+                        </div>
+                        
+                        
 
                         <div style="width:6rem; height:1.6rem; position:fixed; left:calc(100vw - 6rem);top: 0.9rem; ">
 
@@ -53,11 +60,12 @@
                         </div>
 
                 </div>
+
                 <div class="flex_row">
                         <div id="left_pane"></div>
-                        <div class="container-wrapper single_tab_page">
+                        
                                 <div class="container">
-                                <div class="toc">
+                                                <div class="toc">
 <ul></ul>
 </div><h2>Backlinks</h2>
 <ul>
@@ -69,9 +77,10 @@
 </div>
 <script src="/obs.html/static/graph.js" type="text/javascript"></script>
 
+
                                 <!-- end content -->
                                 </div>
-                        </div>
+                   
                         <div id="right_pane"></div>
                 </div>
         </div>

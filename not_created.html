@@ -24,19 +24,24 @@
 
                 <!-- Onload tweaks -->
                 <script>
-                        // add prefix to hash to avoid scrolling
-                        if (1 == 0){
-                                if (window.location.hash != '' && window.location.hash.substr(1)[0] != '!'){
-                                        window.location.hash = '!' + window.location.hash.substr(1);
-                                }
-                        }
+                        const CURRENT_NODE = '{pinnedNode}';
                 </script>
         </head>
 
 <body onload="LoadPage();">
         <div class="flex_col">
                 <div id="header" class="header">
-                        <a href="/index.html" id="homelink" title="Clear screen and go to homepage">Pulmonary Critical Care Notes</a>
+                        <div id="header_flex" class="flex_row">
+                                <a href="/index.html" id="homelink" title="Clear screen and go to homepage">Pulmonary Critical Care Notes</a>
+                                <div class="navbar-button" onclick="toggle('navbar', 'flex')">
+                                        Menu
+                                </div>
+                                <div id="navbar" class="navbar">
+                                {{navbar_links}}
+                                </div>
+                        </div>
+                        
+                        
 
                         <div style="width:6rem; height:1.6rem; position:fixed; left:calc(100vw - 6rem);top: 0.9rem; ">
 
@@ -53,17 +58,19 @@
                         </div>
 
                 </div>
+
                 <div class="flex_row">
                         <div id="left_pane"></div>
-                        <div class="container-wrapper single_tab_page">
+                        
                                 <div class="container">
-                                <p>This note was linked, but never created (or removed)</p>
+                                                <p>This note was linked, but never created (or removed)</p>
 <a href="javascript:history.back()">Go Back</a> or <a href="/" id="homelink">Go to Home</a>.
+
 
 
                                 <!-- end content -->
                                 </div>
-                        </div>
+                   
                         <div id="right_pane"></div>
                 </div>
         </div>

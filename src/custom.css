@@ -3,3 +3,7 @@ body .single_tab_page {
     width: 100vw;
     margin: 0rem;
 }
+
+.navbar {
+    background-color: lightblue;
+}

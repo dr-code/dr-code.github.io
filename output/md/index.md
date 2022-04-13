@@ -1,5 +1,6 @@
 ---
-{}
+obs.html:
+  disable_dir_nav: true
 ---
    
 # Pulmonary & Critical Care Notes   

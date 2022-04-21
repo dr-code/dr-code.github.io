@@ -69,7 +69,7 @@ h4 + table {
     overflow-y: scroll;
     scrollbar-color: #414cfd12 #ffffff;
     scroll-margin-top: 2rem;
-    max-width: 200rem;
+    max-width: 52rem;
 }
 .container img {
     max-width: 100%;

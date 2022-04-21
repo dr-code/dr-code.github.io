@@ -69,7 +69,7 @@ h4 + table {
     overflow-y: scroll;
     scrollbar-color: #414cfd12 #ffffff;
     scroll-margin-top: 2rem;
-    max-width: 52rem;
+    max-width: 200rem;
 }
 .container img {
     max-width: 100%;
@@ -129,6 +129,7 @@ h4 + table {
     overflow-y: scroll;
     height: calc(90vh - 4rem);
     scrollbar-color: #414cfd12 #ffffff;
+    font-family: 'Roboto-Regular';
 }
 #left_pane{
     padding-left: 1.7rem;
@@ -139,7 +140,6 @@ h4 + table {
 #right_pane{
     padding-right: 3rem;
     padding-left:0rem;
-    font-family: 'Roboto-Regular';
     min-width: max-content;
     max-width: max-content;
 }
@@ -163,6 +163,7 @@ h4 + table {
     max-width: 60vw;
 }
 
+#left_pane ul,
 #right_pane ul {
     list-style: none;
     padding-left: 1.5rem;
@@ -170,12 +171,15 @@ h4 + table {
     
     font-size: 11pt;    
 }
+#left_pane li,
 #right_pane li {
     padding-top: 0.3rem;
 }
+#left_pane ul a,
 #right_pane ul a {
     color: #373c42;
 }
+#left_pane ul a:hover,
 #right_pane ul a:hover {
     color: #2d68b1;
     text-decoration: none;
@@ -431,12 +435,6 @@ span.tag {
     font-weight: 600;
     color: rgb(57, 88, 136);
     text-transform: capitalize;
-}
-
-
-.graph_svg {
-    width: 100%;
-    height: 400px;
 }
 
 .dir-container {

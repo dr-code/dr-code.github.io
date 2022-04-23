@@ -11,7 +11,7 @@ obs.html:
 | [Renal, Endocrine, and Metabolic Disorders](../Critical%20Care%20Medicine/Renal%2C%20Endocrine%2C%20and%20Metabolic%20Disorders.md) |   
 | [Cardiovascular Disorders](../Critical%20Care%20Medicine/Cardiovascular%20Disorders.md)                  |   
 | [Pulmonary Disease](/not_created.md)                         |   
-| [Infectious Disease](../Pulmonary%20Medicine/Infections.md)                        |   
+| [Infectious Disease](../Pulmonary%20Medicine/Infections/Infections.md)                        |   
 | [Gastrointestinal Disorders](../Critical%20Care%20Medicine/Gastrointestinal%20Disorders.md)                |   
 | [Neurologic Disorders](../Critical%20Care%20Medicine/Neurologic%20Disorders.md)                      |   
 | [Hematologic and Oncologic Disorders](../Critical%20Care%20Medicine/Hematologic%20and%20Oncologic%20Disorders.md)       |   

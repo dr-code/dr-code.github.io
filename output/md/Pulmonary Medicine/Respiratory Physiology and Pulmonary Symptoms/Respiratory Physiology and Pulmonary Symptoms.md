@@ -2,4 +2,4 @@
 {}
 ---
    
-# [Respiratory Physiology](../../Pulmonary%20Medicine/Respiratory%20Physiology%20and%20Pulmonary%20Symptoms/Respiratory%20Physiology.md)
+# [Respiratory Physiology](../../Pulmonary%20Medicine/Respiratory%20Physiology%20and%20Pulmonary%20Symptoms/Respiratory%20Physiology/Respiratory%20Physiology.md)

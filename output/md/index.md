@@ -1,6 +1,6 @@
 ---
 obs.html:
-  disable_dir_nav: true
+  disable_dir_nav: false
 ---
    
 # [Pulmonary Medicine Home](./Pulmonary%20Medicine/Pulmonary%20Medicine%20Home.md)   

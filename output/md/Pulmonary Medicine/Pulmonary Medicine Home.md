@@ -14,7 +14,7 @@ obs.html:
 [Occupational and Environmental Diseases](../Pulmonary%20Medicine/Occupational%20and%20Environmental%20Diseases.md)   
 [Pleural Disease](../Pulmonary%20Medicine/Pleural%20Disease.md)   
 [Quality, Safety, and Complications](../Pulmonary%20Medicine/Quality%2C%20Safety%2C%20and%20Complications.md)   
-[Respiratory Physiology and Pulmonary Symptoms](../Pulmonary%20Medicine/Respiratory%20Physiology%20and%20Pulmonary%20Symptoms.md)   
+[Respiratory Physiology and Pulmonary Symptoms](../Pulmonary%20Medicine/Respiratory%20Physiology%20and%20Pulmonary%20Symptoms/Respiratory%20Physiology%20and%20Pulmonary%20Symptoms.md)   
 [Sleep Medicine, Neuromuscular, and Skeletal](../Pulmonary%20Medicine/Sleep%20Medicine%2C%20Neuromuscular%2C%20and%20Skeletal.md)   
 [Transplantations](../Pulmonary%20Medicine/Transplantations.md)   
 [Vascular Diseases](../Pulmonary%20Medicine/Vascular%20Diseases.md)

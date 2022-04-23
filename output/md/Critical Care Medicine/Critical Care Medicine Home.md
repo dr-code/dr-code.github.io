@@ -2,7 +2,7 @@
 alias:
 - Critical Care Medicine
 obs.html:
-  disable_dir_nav: true
+  disable_dir_nav: false
 ---
    
 # Critical Care Medicine   

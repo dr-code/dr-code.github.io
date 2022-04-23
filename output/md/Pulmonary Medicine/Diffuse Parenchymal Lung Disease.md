@@ -1,0 +1,6 @@
+---
+alias:
+- DPLD
+---
+   
+# Major Topic

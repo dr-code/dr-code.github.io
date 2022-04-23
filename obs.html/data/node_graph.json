@@ -1,1 +1,1 @@
-[{"id": 1, "title": "index", "linkTo": [2], "referencedBy": []}, {"id": 2, "title": "Pulmonary Medicine", "linkTo": [], "referencedBy": [1]}]
+[{"id": 1, "title": "index", "linkTo": [2], "referencedBy": []}, {"id": 2, "title": "Pulmonary Medicine", "linkTo": [3, 4], "referencedBy": [1]}, {"id": 3, "title": "Transplantations", "linkTo": [], "referencedBy": [2]}, {"id": 4, "title": "Respiratory Physiology and Pulmonary Symptoms", "linkTo": [5], "referencedBy": [2]}, {"id": 5, "title": "Respiratory Physiology", "linkTo": [], "referencedBy": [4]}]

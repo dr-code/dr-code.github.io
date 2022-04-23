@@ -1,4 +1,6 @@
 ---
+alias:
+- Critical Care Medicine
 obs.html:
   disable_dir_nav: true
 ---

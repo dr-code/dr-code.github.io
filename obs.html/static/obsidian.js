@@ -16,17 +16,24 @@ function LoadPage() {
         if (documentation_mode){
                 httpGetAsync(html_url_prefix+'/obs.html/data/graph.json', load_dirtree_as_left_pane, 0, 'callbackpath');
         }
-        if (toc_pane && no_tab_mode){
-                let collection = document.getElementsByClassName("toc");
-                if (collection.length > 0){
-                        let toc = collection[0];
-                        toc.style.display = 'none';
-                        let tpd = document.getElementById(toc_pane_div);
-                        tpd.display = 'block';
-                        tpd.innerHTML = '<span class="toc-header">Table of contents</span>' + collection[0].innerHTML;
+        
+        let collection = document.getElementsByClassName("toc");
+        if (collection.length > 0){
+                let toc = collection[0];
+                if (toc.getElementsByTagName('li').length > 1){
+
+                        if (toc_pane && no_tab_mode){
+                                let tpd = document.getElementById(toc_pane_div);
+                                tpd.display = 'block';
+                                tpd.innerHTML = '<span class="toc-header">Table of contents</span>' + collection[0].innerHTML;
+                        }
+                        else{
+                                toc.style.display = 'block';
+                                toc.innerHTML = '<h3>Table of Contents</h1>\n'+toc.innerHTML
+                        }
                 }
         }
-
+        
         if (tab_mode){
                 SetLinks(0);
         }
@@ -131,6 +138,7 @@ function load_dirtree_as_left_pane(xmlHttp, level, theUrl, callbackpath){
         let cpd = document.getElementById(content_pane_div)
         let filename = ''
         let folder = ''
+
         // get current node
         for (let i=0; i < jsonData.nodes.length; i++){
                 let node = jsonData.nodes[i];
@@ -172,6 +180,9 @@ function load_dirtree_as_left_pane(xmlHttp, level, theUrl, callbackpath){
                 if (folder != ''){
                         url = url.replace(folder+'/', '')
                 }
+                if (url[0] == '/'){
+                        url = url.substring(1);
+                }
                 if (url.includes('/')){
                         continue
                 }
@@ -201,10 +212,7 @@ function load_dirtree_as_left_pane(xmlHttp, level, theUrl, callbackpath){
         links.sort(compare_lname);
 
         let html = ''
-        let header = links[0]['url'].split('/')[0]
-        if (header == 'index.html'){
-                header = 'Contents'
-        }
+        header = 'Directory Contents'
         html += '<span class="toc-header">'+header+'</span><ul>'
         for (let i=0; i < links.length; i++){
                 if (links[i].id == CURRENT_NODE){
@@ -322,8 +330,11 @@ function SetLinks(level) {
                         }
                         if (tab_mode && l.classList.contains('anchor-link')) {
                                 l.onclick = function () {
-                                        console.log('anch')
                                         levelcont = this.closest('div')
+                                        if (levelcont.classList.contains('container') == false){
+                                                levelcont = levelcont.parentElement;
+                                        }
+                                        
                                         var el = levelcont.querySelectorAll(this.getAttribute("href"))[0];
                                         if (el) {
                                                 el.parentElement.scrollTop = el.offsetTop - rem(1);
@@ -564,5 +575,14 @@ function toggle(id, display_value){
         }        
         else {
                 el.style.display = display_value;
+        }
+}
+
+function fold_callout(el){
+        let div = el.parentElement
+        if (div.classList.contains("callout-folded-active")){
+                div.classList.remove("callout-folded-active")
+        } else {
+                div.classList.add("callout-folded-active")
         }
 }

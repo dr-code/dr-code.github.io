@@ -17,6 +17,7 @@
                 <link rel="stylesheet" href="/obs.html/static/main.css" />
                 <script src="/obs.html/static/mermaid.min.js"></script> 
                 
+<link rel="stylesheet" href="/obs.html/static/callouts.css" />
 <link rel="stylesheet" href="/obs.html/static/graph.css" />
 <script src="/obs.html/static/dirtree.js" /></script>
 
@@ -79,42 +80,52 @@
 
 <div class="graph">
     <div id="A263228681687033614386613945247660984320{level}" class="graph_div"></div>
-    <button class="graph_button" id="B263228681687033614386613945247660984320{level}" level="{level}" onclick="run('263228681687033614386613945247660984320'+this.level, '11.13. Clinical Assessment of Acid-Base & Oxygenation Status', '49');">Show Graph</button>
+    <button class="graph_button" id="B263228681687033614386613945247660984320{level}" level="{level}" onclick="run('263228681687033614386613945247660984320'+this.level, '11.13. Clinical Assessment of Acid-Base & Oxygenation Status');">Show Graph</button>
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/d3@6.2.0/dist/d3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/force-graph@1.40.3/dist/force-graph.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/note-graph@latest/dist/note-graph.umd.js"></script>
-
-
+<script src="//unpkg.com/3d-force-graph"></script>
 <script>
-    var graphView;
-    var graphModel;
-
-    async function grapher(args) {
-        let current_node = args.current_node_id;
-
-        const notes = await (
-            await fetch(args.node_graph_data)
-        ).json()
-        graphModel = new NOTE_GRAPH.NoteGraphModel(notes)
-
-        graphView = new NOTE_GRAPH.NoteGraphView({
-            container: args.graph_container,
-            graphModel,
-            enableNodeDrag: true,
-            width: args.width,
-            height: args.height
-        })
-
-        console.log(args.current_node_graph_id);
-
-        if (args.current_node_graph_id){
-            graphView.actions.selectNode(graphView.model, parseInt(args.current_node_graph_id), false)
-            graphView.updateViewModeInteractiveState()
-        }
-
+    function grapher(args) {
+        window.Graph = ForceGraph3D()
+            (args.graph_container)
+            .jsonUrl(args.data)
+            .width(args.width)
+            .height(args.height)
+            .nodeLabel('id')
+            .linkDirectionalParticles("value")
+            .linkDirectionalParticleSpeed(0.010)
+            .linkDirectionalParticleWidth(2.0)
+            .nodeColor(node => {
+                if (node.id == current_node_id){
+                    return '#ff0000'
+                }
+                let isConnected = false;
+                node.links.forEach(link => {
+                    if (link == current_node_id){
+                        isConnected = true;
+                    }
+                })
+                if (isConnected){
+                    return '#f7be49';
+                }
+                return '#ffffff'
+            })
+            .linkColor(link => {
+                if (link.source == current_node_id || link.target == current_node_id){
+                    return '#ff0000'
+                }
+                return '#dadada'
+            })
+            .linkOpacity(0.3)
+            .onNodeClick(node => {
+                args.node = node;
+                graph_left_click(args)()
+            })
+            .onNodeRightClick(node => {
+                args.node = node;
+                graph_right_click(args)()
+            });
     }
 </script>
 

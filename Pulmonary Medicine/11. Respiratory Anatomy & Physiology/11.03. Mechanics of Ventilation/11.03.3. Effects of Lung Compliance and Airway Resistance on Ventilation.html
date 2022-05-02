@@ -17,6 +17,7 @@
                 <link rel="stylesheet" href="/obs.html/static/main.css" />
                 <script src="/obs.html/static/mermaid.min.js"></script> 
                 
+<link rel="stylesheet" href="/obs.html/static/callouts.css" />
 <link rel="stylesheet" href="/obs.html/static/graph.css" />
 <script src="/obs.html/static/dirtree.js" /></script>
 
@@ -62,7 +63,8 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <div class="toc">
+                                        <h1 id="distribution-of-inspired-air">Distribution of Inspired Air</h1>
+<div class="toc">
 <ul>
 <li><a href="#distribution-of-inspired-air" class="anchor-link">Distribution of Inspired Air</a><ul>
 <li><a href="#air-trapping-and-auto-peep" class="anchor-link">Air Trapping and Auto-PEEP</a></li>
@@ -79,7 +81,6 @@
 <li><a href="#energy-costs-of-breathing" class="anchor-link">Energy Costs of Breathing</a></li>
 </ul>
 </div>
-<h1 id="distribution-of-inspired-air">Distribution of Inspired Air</h1>
 <h2 id="air-trapping-and-auto-peep">Air Trapping and Auto-PEEP</h2>
 <h2 id="regional-pleural-pressure-gradients-and-gas-distribution">Regional Pleural Pressure Gradients and Gas Distribution</h2>
 <h1 id="effect-of-compliance-and-resistance-on-pressure-gradients-in-positive-pressure-ventilation">Effect of Compliance and Resistance on Pressure Gradients in Positive Pressure Ventilation</h1>
@@ -92,8 +93,8 @@
 	<li><a class="backlink" href="/Pulmonary Medicine/11. Respiratory Anatomy & Physiology/11.03. Mechanics of Ventilation/11.03. Mechanics of Ventilation.html">11.03. Mechanics of Ventilation</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A685232846279799710453694876084906102{level}"></svg>
-    <button class="graph_button" id="B685232846279799710453694876084906102{level}" level="{level}" onclick="run('685232846279799710453694876084906102'+this.level, '11.03.3. Effects of Lung Compliance and Airway Resistance on Ventilation');">Show Graph</button>
+    <svg class="graph_svg" id="A38443392301614235922034196860910641222{level}"></svg>
+    <button class="graph_button" id="B38443392301614235922034196860910641222{level}" level="{level}" onclick="run('38443392301614235922034196860910641222'+this.level, '11.03.3. Effects of Lung Compliance and Airway Resistance on Ventilation');">Show Graph</button>
 </div>
 <script src="/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -101,43 +102,53 @@
  <script src="/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A685232846279799710453694876084906102{level}" class="graph_div"></div>
-    <button class="graph_button" id="B685232846279799710453694876084906102{level}" level="{level}" onclick="run('685232846279799710453694876084906102'+this.level, '11.03.3. Effects of Lung Compliance and Airway Resistance on Ventilation', '34');">Show Graph</button>
+    <div id="A38443392301614235922034196860910641222{level}" class="graph_div"></div>
+    <button class="graph_button" id="B38443392301614235922034196860910641222{level}" level="{level}" onclick="run('38443392301614235922034196860910641222'+this.level, '11.03.3. Effects of Lung Compliance and Airway Resistance on Ventilation');">Show Graph</button>
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/d3@6.2.0/dist/d3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/force-graph@1.40.3/dist/force-graph.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/note-graph@latest/dist/note-graph.umd.js"></script>
-
-
+<script src="//unpkg.com/3d-force-graph"></script>
 <script>
-    var graphView;
-    var graphModel;
-
-    async function grapher(args) {
-        let current_node = args.current_node_id;
-
-        const notes = await (
-            await fetch(args.node_graph_data)
-        ).json()
-        graphModel = new NOTE_GRAPH.NoteGraphModel(notes)
-
-        graphView = new NOTE_GRAPH.NoteGraphView({
-            container: args.graph_container,
-            graphModel,
-            enableNodeDrag: true,
-            width: args.width,
-            height: args.height
-        })
-
-        console.log(args.current_node_graph_id);
-
-        if (args.current_node_graph_id){
-            graphView.actions.selectNode(graphView.model, parseInt(args.current_node_graph_id), false)
-            graphView.updateViewModeInteractiveState()
-        }
-
+    function grapher(args) {
+        window.Graph = ForceGraph3D()
+            (args.graph_container)
+            .jsonUrl(args.data)
+            .width(args.width)
+            .height(args.height)
+            .nodeLabel('id')
+            .linkDirectionalParticles("value")
+            .linkDirectionalParticleSpeed(0.010)
+            .linkDirectionalParticleWidth(2.0)
+            .nodeColor(node => {
+                if (node.id == current_node_id){
+                    return '#ff0000'
+                }
+                let isConnected = false;
+                node.links.forEach(link => {
+                    if (link == current_node_id){
+                        isConnected = true;
+                    }
+                })
+                if (isConnected){
+                    return '#f7be49';
+                }
+                return '#ffffff'
+            })
+            .linkColor(link => {
+                if (link.source == current_node_id || link.target == current_node_id){
+                    return '#ff0000'
+                }
+                return '#dadada'
+            })
+            .linkOpacity(0.3)
+            .onNodeClick(node => {
+                args.node = node;
+                graph_left_click(args)()
+            })
+            .onNodeRightClick(node => {
+                args.node = node;
+                graph_right_click(args)()
+            });
     }
 </script>
 

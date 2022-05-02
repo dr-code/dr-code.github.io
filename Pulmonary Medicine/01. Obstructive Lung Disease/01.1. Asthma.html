@@ -17,6 +17,7 @@
                 <link rel="stylesheet" href="/obs.html/static/main.css" />
                 <script src="/obs.html/static/mermaid.min.js"></script> 
                 
+<link rel="stylesheet" href="/obs.html/static/callouts.css" />
 <link rel="stylesheet" href="/obs.html/static/graph.css" />
 <script src="/obs.html/static/dirtree.js" /></script>
 
@@ -62,7 +63,8 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <div class="toc">
+                                        <h1 id="general-information">General Information</h1>
+<div class="toc">
 <ul>
 <li><a href="#general-information" class="anchor-link">General Information</a></li>
 <li><a href="#associated-anatomy-physiology" class="anchor-link">Associated Anatomy &amp; Physiology</a></li>
@@ -134,7 +136,6 @@
 </li>
 </ul>
 </div>
-<h1 id="general-information">General Information</h1>
 <ul>
 <li>Definition: heterogenous &amp; chronic inflammatory disorder of airways characterized by <strong>hyperreactivity (hyperresponsiveness) of the airways</strong> causing airway narrowing due to exaggerated response of airway smooth muscle contraction (due to a wide variety of stimuli) leading to <strong>reversible episodes of bronchoconstriction</strong> and therefore <strong>variable expiratory airflow limitation</strong>   <ul>
 <li>hyperresponsiveness of airways due to exaggerated smooth muscle contraction —&gt; bronchoconstriction that is reversible —&gt; variable expiratory airflow limitation   </li>
@@ -147,7 +148,27 @@
 <h1 id="epidemiology">Epidemiology</h1>
 <ul>
 <li>Highest prevalence and severity in children (9.3%), low socioeconomic level (12.4%), and specific minorities (Puerto Ricans [18.8%] &amp; black, non-Hispanic Americans [11.9%])   </li>
-<li>Most prevalent chronic respiratory disease worldwide   </li>
+<li>Most prevalent chronic respiratory disease worldwide   <ul>
+<li>Estimated global prevalence of 358 million (2015)   </li>
+<li>25 million Americans have current Asthma   <ul>
+<li>US Prevalence 7.8% (2019)   <ul>
+<li>Increased over time -- 7.3% in 2001   </li>
+</ul>
+</li>
+<li>Prevalence by Sex   <ul>
+<li>Overall F &gt; M except in childhood where M &gt; F   </li>
+</ul>
+</li>
+<li>Prevalence by race/ethnicity   <ul>
+<li>Overall: PR &gt; Black &gt; White &gt; Hispanic &gt; Mexican   </li>
+<li>Adults: PR &gt; Black &gt; White &gt; Hispanic &gt; Mexican   </li>
+<li>Children: <em>Black</em> &gt; <em>PR</em> &gt; White &amp; Hispanic &gt; Mexican   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>250K asthma-related deaths each year worldwide   <ul>
 <li>In US, 14.4 per 1 mil (1980) → 21.9 per 1 mil (1995) → 17.2 per 1 mil (1999) → 15 per 1 mil (2009)   </li>
 <li>Disproportionately affects blacks (38.7 per 1 mil) and those of PR heritage (40.1 per 1 mil)   </li>
@@ -187,7 +208,7 @@
 <li>inc risk of developing allergic rhinitis   </li>
 <li>inc risk of developing asthma   </li>
 <li><strong>Serum IgE correlates strongly with bronchial hyperresponsiveness</strong>   </li>
-<li>Association with gene variants at Ch 17q21 locus — a/w childhood asthma not adult-onset; genes GSDMB &amp; ORMDL3   </li>
+<li>Association with gene variants at Ch 17q21 locus — a/w childhood asthma not adult-onset; genes GSDMB &amp; ORMDL3 -- specific to childhood onset disease   </li>
 </ul>
 </li>
 <li>Other risk factors   <ul>
@@ -444,8 +465,8 @@
 	<li><a class="backlink" href="/Pulmonary Medicine/01. Obstructive Lung Disease/01. Obstructive Lung Disease.html">01. Obstructive Lung Disease</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A234979145833216792420909174472509963876{level}"></svg>
-    <button class="graph_button" id="B234979145833216792420909174472509963876{level}" level="{level}" onclick="run('234979145833216792420909174472509963876'+this.level, '01.1. Asthma');">Show Graph</button>
+    <svg class="graph_svg" id="A318932613252831484141174635045919503365{level}"></svg>
+    <button class="graph_button" id="B318932613252831484141174635045919503365{level}" level="{level}" onclick="run('318932613252831484141174635045919503365'+this.level, '01.1. Asthma');">Show Graph</button>
 </div>
 <script src="/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -453,43 +474,53 @@
  <script src="/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A234979145833216792420909174472509963876{level}" class="graph_div"></div>
-    <button class="graph_button" id="B234979145833216792420909174472509963876{level}" level="{level}" onclick="run('234979145833216792420909174472509963876'+this.level, '01.1. Asthma', '4');">Show Graph</button>
+    <div id="A318932613252831484141174635045919503365{level}" class="graph_div"></div>
+    <button class="graph_button" id="B318932613252831484141174635045919503365{level}" level="{level}" onclick="run('318932613252831484141174635045919503365'+this.level, '01.1. Asthma');">Show Graph</button>
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/d3@6.2.0/dist/d3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/force-graph@1.40.3/dist/force-graph.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/note-graph@latest/dist/note-graph.umd.js"></script>
-
-
+<script src="//unpkg.com/3d-force-graph"></script>
 <script>
-    var graphView;
-    var graphModel;
-
-    async function grapher(args) {
-        let current_node = args.current_node_id;
-
-        const notes = await (
-            await fetch(args.node_graph_data)
-        ).json()
-        graphModel = new NOTE_GRAPH.NoteGraphModel(notes)
-
-        graphView = new NOTE_GRAPH.NoteGraphView({
-            container: args.graph_container,
-            graphModel,
-            enableNodeDrag: true,
-            width: args.width,
-            height: args.height
-        })
-
-        console.log(args.current_node_graph_id);
-
-        if (args.current_node_graph_id){
-            graphView.actions.selectNode(graphView.model, parseInt(args.current_node_graph_id), false)
-            graphView.updateViewModeInteractiveState()
-        }
-
+    function grapher(args) {
+        window.Graph = ForceGraph3D()
+            (args.graph_container)
+            .jsonUrl(args.data)
+            .width(args.width)
+            .height(args.height)
+            .nodeLabel('id')
+            .linkDirectionalParticles("value")
+            .linkDirectionalParticleSpeed(0.010)
+            .linkDirectionalParticleWidth(2.0)
+            .nodeColor(node => {
+                if (node.id == current_node_id){
+                    return '#ff0000'
+                }
+                let isConnected = false;
+                node.links.forEach(link => {
+                    if (link == current_node_id){
+                        isConnected = true;
+                    }
+                })
+                if (isConnected){
+                    return '#f7be49';
+                }
+                return '#ffffff'
+            })
+            .linkColor(link => {
+                if (link.source == current_node_id || link.target == current_node_id){
+                    return '#ff0000'
+                }
+                return '#dadada'
+            })
+            .linkOpacity(0.3)
+            .onNodeClick(node => {
+                args.node = node;
+                graph_left_click(args)()
+            })
+            .onNodeRightClick(node => {
+                args.node = node;
+                graph_right_click(args)()
+            });
     }
 </script>
 

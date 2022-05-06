@@ -17,8 +17,8 @@
                 <link rel="stylesheet" href="/obs.html/static/main.css" />
                 <script src="/obs.html/static/mermaid.min.js"></script> 
                 
-<link rel="stylesheet" href="/obs.html/static/callouts.css" />
 <link rel="stylesheet" href="/obs.html/static/graph.css" />
+<script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="/obs.html/static/dirtree.js" /></script>
 
 
@@ -37,8 +37,8 @@
                                         ≡
                                 </div>
                                 <div id="navbar" class="navbar">
-                                <a class="navbar-link" href="/Pulmonary Medicine/Pulmonary Medicine.html" title="Pulmonary">Pulmonary</a>
-<a class="navbar-link" href="/Critical Care Medicine/Critical Care Medicine.html" title="Critical Care">Critical Care</a>
+                                <a class="navbar-link"href="/Pulmonary Medicine/Pulmonary Medicine.html" title="Pulmonary">Pulmonary</a>
+<a class="navbar-link"href="/Critical Care Medicine/Critical Care Medicine.html" title="Critical Care">Critical Care</a>
                                         <div class="icon-tray">
                                                 
                                                 <div style="width:1.6rem; height:1.6rem; float:right; margin-right:0.2rem">
@@ -51,88 +51,28 @@
                     <img src = "/obs.html/static/dirtree.svg" style="width: 14px; padding: 3px;" alt="Directory tree link"/>
             </a>
         </div>
-                                                        <div class="graph_header_div">
-            <a id="graph_link" class="system-link" href="/obs.html/graph/index.html?node=01. Obstructive Lung Disease" title="Open fullpage Graph">
-                    <img class="graph_header_div_svg" src = "/obs.html/static/graph.svg" alt="Open fullpage Graph"/>
-            </a>
-        </div>
-                                        </div>
+                                        </div>                                
                                 </div>
                         </div>
                 </div>
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <h1 id="011-asthma"><a href="/Pulmonary Medicine/01. Obstructive Lung Disease/01.1. Asthma.html">01.1. Asthma</a></h1>
-<div class="toc">
+                                        <div class="toc">
 <ul>
 <li><a href="#011-asthma" class="anchor-link">01.1. Asthma</a></li>
 <li><a href="#012-chronic-obstructive-pulmonary-disease" class="anchor-link">01.2. Chronic Obstructive Pulmonary Disease</a></li>
 <li><a href="#013-obstructive-other-than-asthma-copd" class="anchor-link">01.3. Obstructive, Other Than Asthma &amp; COPD</a></li>
 </ul>
 </div>
+<h1 id="011-asthma"><a href="/Pulmonary Medicine/01. Obstructive Lung Disease/01.1. Asthma.html">01.1. Asthma</a></h1>
 <h1 id="012-chronic-obstructive-pulmonary-disease"><a href="/Pulmonary Medicine/01. Obstructive Lung Disease/01.2. Chronic Obstructive Pulmonary Disease.html">01.2. Chronic Obstructive Pulmonary Disease</a></h1>
 <h1 id="013-obstructive-other-than-asthma-copd"><a href="/Pulmonary Medicine/01. Obstructive Lung Disease/01.3. Obstructive, Other Than Asthma &amp; COPD.html">01.3. Obstructive, Other Than Asthma &amp; COPD</a></h1>{_obsidian_html_backlinks_pattern_:01. Obstructive Lung Disease}
-<!-- <div class="graph">
-    <svg class="graph_svg" id="A29596296277756913867076834711424074223{level}"></svg>
-    <button class="graph_button" id="B29596296277756913867076834711424074223{level}" level="{level}" onclick="run('29596296277756913867076834711424074223'+this.level, '01. Obstructive Lung Disease');">Show Graph</button>
+<div class="graph">
+    <svg class="graph_svg" id="A102717188843846258742712367338526714663{level}"></svg>
+    <button class="graph_button" id="B102717188843846258742712367338526714663{level}" level="{level}" onclick="run('102717188843846258742712367338526714663'+this.level, '01. Obstructive Lung Disease');">Show Graph</button>
 </div>
 <script src="/obs.html/static/graph.js" type="text/javascript"></script>
-
- -->
- <script src="/obs.html/static/graph.js" type="text/javascript"></script>
-
-<div class="graph">
-    <div id="A29596296277756913867076834711424074223{level}" class="graph_div"></div>
-    <button class="graph_button" id="B29596296277756913867076834711424074223{level}" level="{level}" onclick="run('29596296277756913867076834711424074223'+this.level, '01. Obstructive Lung Disease');">Show Graph</button>
-</div>
-
-
-<script src="//unpkg.com/3d-force-graph"></script>
-<script>
-    function grapher(args) {
-        window.Graph = ForceGraph3D()
-            (args.graph_container)
-            .jsonUrl(args.data)
-            .width(args.width)
-            .height(args.height)
-            .nodeLabel('id')
-            .linkDirectionalParticles("value")
-            .linkDirectionalParticleSpeed(0.010)
-            .linkDirectionalParticleWidth(2.0)
-            .nodeColor(node => {
-                if (node.id == current_node_id){
-                    return '#ff0000'
-                }
-                let isConnected = false;
-                node.links.forEach(link => {
-                    if (link == current_node_id){
-                        isConnected = true;
-                    }
-                })
-                if (isConnected){
-                    return '#f7be49';
-                }
-                return '#ffffff'
-            })
-            .linkColor(link => {
-                if (link.source == current_node_id || link.target == current_node_id){
-                    return '#ff0000'
-                }
-                return '#dadada'
-            })
-            .linkOpacity(0.3)
-            .onNodeClick(node => {
-                args.node = node;
-                graph_left_click(args)()
-            })
-            .onNodeRightClick(node => {
-                args.node = node;
-                graph_right_click(args)()
-            });
-    }
-</script>
-
 
                         <!-- end content -->
                         </div>

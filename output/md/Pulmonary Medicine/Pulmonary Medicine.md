@@ -6,7 +6,7 @@ obs.html:
 # Topics   
 |                                                     |               |   
 | --------------------------------------------------- | ------------- |   
-| [01. Obstructive Lung Disease](../Pulmonary%20Medicine/01.%20Obstructive%20Lung%20Disease/01.%20Obstructive%20Lung%20Disease.md)                    | 17.5% of Exam |   
+| [0.1 Obstructive Lung Disease](../Pulmonary%20Medicine/0.1%20Obstructive%20Lung%20Disease/0.1%20Obstructive%20Lung%20Disease.md)                    | 17.5% of Exam |   
 | [02. Diffuse Parenchymal Lung Disease](/not_created.md)            | 10% of Exam   |   
 | [03. Sleep Medicine, Neuromuscular, and Skeletal](/not_created.md) | 10% of Exam   |   
 | [04. Epidemiology](/not_created.md)                                | 2% of Exam    |   

@@ -112,4 +112,11 @@
 		- Not recommended for S aureus   
 		- Established gram negatives   
 			- inhaled tobramycin or aztreonam strongly recommended for those with moderate to severe reduction in lung function   
-	- Insufficient evidence to recommend other inhaled antibiotics (gentamicin, colistin, fluoroquinolones, cephalosporins)
+	- Insufficient evidence to recommend other inhaled antibiotics (gentamicin, colistin, fluoroquinolones, cephalosporins)   
+- Non-pharmacologic Therapy   
+	- Clearance of airway secretions recommended for all patients with cystic fibrosis for clearance of sputum, maintenance of lung function, and improved quality of life   
+	- Chest physiotherapy   
+		- forced expiratory techniques   
+		- mechanical vests   
+		- flutter valves   
+	- None proven superior to others

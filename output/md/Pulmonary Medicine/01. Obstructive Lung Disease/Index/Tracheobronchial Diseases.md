@@ -4,6 +4,9 @@
    
 ![](../../../Pulmonary%20Medicine/01.%20Obstructive%20Lung%20Disease/Index/attachments/Pasted%20image%2020220504160723.png)   
 # Central Airway Obstruction   
+   
+^da8da2   
+   
 ## General   
    
 - Most often arises as a complication of thoracic malignancies but a number of benign processes may also produce CAO including prolonged intubation   

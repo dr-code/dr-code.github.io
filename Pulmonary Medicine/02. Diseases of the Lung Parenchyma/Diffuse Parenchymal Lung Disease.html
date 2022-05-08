@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+        <head>
+                <!-- Page information -->
+                <meta charset="UTF-8" />
+                <meta name="node_id" content="Diffuse Parenchymal Lung Disease">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+
+                <!-- Set title -->
+                <title>Pulmonary Critical Care Notes</title>
+
+                <!-- Includes -->
+                <link rel="stylesheet" href="/obs.html/static/global_main.css" />
+                <link rel="stylesheet" href="/obs.html/static/mermaid.css" />
+                <link rel="stylesheet" href="/obs.html/static/main.css" />
+                <script src="/obs.html/static/mermaid.min.js"></script> 
+                
+<link rel="stylesheet" href="/obs.html/static/callouts.css" />
+<link rel="stylesheet" href="/obs.html/static/graph.css" />
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script src="/obs.html/static/load_mathjax.js" /></script>
+<link rel="stylesheet" href="/obs.html/static/search.css" />
+<script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.2/dist/flexsearch.bundle.js"></script>
+<script src="/obs.html/static/search.js" /></script>
+<script src="/obs.html/static/dirtree.js" /></script>
+
+
+                <!-- Onload tweaks -->
+                <script>
+                        const CURRENT_NODE = 'Diffuse Parenchymal Lung Disease';
+                </script>
+        </head>
+
+<body onload="LoadPage();">
+
+        <div id="search">
+    <div id="search-slab" king_ramses="return the slaaab">
+            <div id="search-controls">
+                    <input id="search_string" placeholder="Type to search notes" type="text" />
+                    <div class="tooltip" style="display: none;">
+                        <input type="checkbox" id="hard_search" name="hard" />
+                        <span class="tooltiptext">Hard search (require exact match)</span>
+                    </div>
+                    <div id="search-results-box">
+                        <div id="search-results"></div>
+                    </div>
+                    <div id="search-instructions">
+                        <div class="prompt-instruction">
+                                <b>esc</b> to dismiss
+                        </div>
+                    </div>
+            </div>
+    </div>
+</div>
+<script>
+    document.getElementById("search").addEventListener('click', e => {
+            if(e.target !== e.currentTarget){
+                    return
+            }
+            toggle('search', 'block');
+    })
+    document.getElementById("search_string").addEventListener("input", function(event) {
+            console.log(event);
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    }); 
+    document.getElementById("hard_search").addEventListener("click", function(event) {
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    });
+
+    window.addEventListener('keydown', e => {
+        if((e.key=='Escape'||e.key=='Esc'||e.keyCode==27)){
+            document.getElementById('search').style.display = 'none';
+            return false;
+        }
+    }, true);
+
+    function click_inner_link(element){
+        element.getElementsByTagName('a')[0].click()
+    }
+</script>
+
+
+        <div class="flex_col">
+                <div id="header" class="header">
+                        <div id="header_flex" class="flex_row">
+                                <a href="/index.html" id="homelink" title="Clear screen and go to homepage">Pulmonary Critical Care Notes</a>
+                                <div class="navbar-button" onclick="toggle('navbar', 'flex')">
+                                        ≡
+                                </div>
+                                <div id="navbar" class="navbar">
+                                <a class="navbar-link" href="/Pulmonary Medicine/Pulmonary Medicine.html" title="Pulmonary">Pulmonary</a>
+<a class="navbar-link" href="/Critical Care Medicine/Critical Care Medicine.html" title="Critical Care">Critical Care</a>
+                                        <div class="icon-tray">
+                                                
+                                                <div style="width:1.6rem; height:1.6rem; float:right; margin-right:0.2rem">
+                                                        <a href="/obs.html/tags/index.html" title="Open tag view">
+                                                                <img src = "/obs.html/static/hashtag.svg" alt="RSS Feed link"/>
+                                                        </a>
+                                                </div>
+                                                        <div style="width: calc(1.6rem - 6px); height: calc(1.6rem - 6px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right;">
+            <a id="dirtree_link" class="system-link" href="/obs.html/dir_index.html" title="View directory tree">
+                    <img src = "/obs.html/static/dirtree.svg" style="width: 14px; padding: 3px;" alt="Directory tree link"/>
+            </a>
+        </div>
+                                                        <div class="graph_header_div">
+            <a id="graph_link" class="system-link" href="/obs.html/graph/index.html?node=Diffuse Parenchymal Lung Disease" title="Open fullpage Graph">
+                    <img class="graph_header_div_svg" src = "/obs.html/static/graph.svg" alt="Open fullpage Graph"/>
+            </a>
+        </div>
+                                                        <div onclick="openSearch()" style="width: calc(1.6rem - 12px); height: calc(1.6rem - 12px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right; padding: 3px; padding-bottom: 6px; padding-top: 0px;cursor: pointer;">
+                <img src = "/obs.html/static/search.svg" alt="Search notes"/>
+        </div>
+        <script>
+                function openSearch(){
+                        if (toggle('search', 'block')){
+                                document.getElementById('search_string').focus()
+                                document.getElementById('search_string').select()
+                        }
+                }
+        </script>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="flex_row">
+                        <div id="left_pane"></div>
+                        <div class="container">
+                                        <p>[TOC]
+- # General <br />
+    - Essentially a large group of disorders that affect the alveolar wall that potentially leads to diffuse scarring and fibrosis <br />
+    1. Traditionally termed Interstitial Lung Disease however its a misnomer <br />
+    2. The interstitium formally refers only to the region of the alveolar wall exclusive of and separating the alveolar epithelial cells and capillary endothelial cells <br />
+    3. But interstitial lung diseases affect all components of the alveolar wall: epithelial cell, endothelial cell, and cellular and noncellular components of the interstitium <br />
+        1. usually extends into the alveolar spaces so now its called diffuse parenchymal lung disease <br />
+    4. Idiopathic Interstitial Pneumonia <br />
+        1. a group of pathologic entities that represent a subcategory of DPLD   </p>
+<ul>
+<li>
+<h1 id="pathology">Pathology</h1>
+<ul>
+<li>Two major pathologic components that occur simultaneously   <ul>
+<li>inflammatory process in the alveolar wall and alveolar spaces (sometimes called alveolitis)    </li>
+<li>scarring or fibrotic process   </li>
+</ul>
+</li>
+<li>Active inflammation is the primary process and fibrosis that follows is a secondary feature   <ul>
+<li>Exception: <a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Chronic Fibrosing Interstitial Pneumonias/Idiopathic Pulmonary Fibrosis.html">Idiopathic Pulmonary Fibrosis</a> in which the primary process is epithelial cell injury and fibrosis representing an abnormal repair of injury rather than alveolar inflammation   </li>
+</ul>
+</li>
+<li>Active alveolitis   <ul>
+<li>Presence of a variety of inflammatory cells (macrophages, lymphocytes, neutrophils, eosinophils, and plasma cells) that infiltrate the alveolar wall   </li>
+<li>Types of DPLD may be a/w a prominence of a specific inflammatory cell type (e.g. eosinophils in Chronic Eosinophilic Pneumonia)   </li>
+<li>In addition to the presence of these inflammatory cells, other pathologic characteristics are useful in the diagnosis of a specific pathologic entity   <ul>
+<li>For example: Granuloma   <ul>
+<li>Granuloma typically also has multinucleated giant cells which result from the fusion of several phagocytic cells into a single large cell with abundant cytoplasm and many nuclei   </li>
+<li>Usually reflects an underlying immune process or reaction to a specific agent   </li>
+<li>DPLD with Granulomas = <a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Granulomatous Interstitial Lung Disease/Sarcoidosis.html">Sarcoidosis</a> &amp; <a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Granulomatous Interstitial Lung Disease/Hypersensitivity Pneumonitis.html">Hypersensitivity Pneumonitis</a>   <ul>
+<li>Both have noncaseating granulomas   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="pathology-of-idiopathic-interstitial-pneumonias">Pathology of <a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias.html">Idiopathic Interstitial Pneumonias</a></h2>
+<ul>
+<li>The term idiopathic indicates that a specific etiologic agent has not been identified for these disorders but we now know that smoking plays a contributory role or adds to the risk of developing several of the idiopathic interstitial pneumonia   </li>
+<li>The terms used to describe the pathology and the associated clinical disorder may be different   </li>
+<li><img alt="" src="/Pulmonary%20Medicine/02.%20Diseases%20of%20the%20Lung%20Parenchyma/attachments/Pasted%20image%2020220310111255.png" />   </li>
+<li>Some of the pathologic patterns can be seen in lung disease a/w <a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease/Connective Tissue Disease-Associated ILD.html">Connective Tissue Disease-Associated ILD</a>   <ul>
+<li>For example: <a href="/not_created.html" class="nonexistent-link">NSIP</a> (the pathologic pattern) when not idiopathic, can be a particularly common pathologic expression of pulmonary involvement in diseases such as <a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease/Connective Tissue Disease-Associated ILD/Systemic Lupus Erythematosus.html">Systemic Lupus Erythematosus</a>, <a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease/Connective Tissue Disease-Associated ILD/Rheumatoid Arthritis.html">Rheumatoid Arthritis</a>, and <a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease/Connective Tissue Disease-Associated ILD/Systemic Sclerosis.html">Systemic Sclerosis</a>   </li>
+</ul>
+</li>
+<li>
+<h3 id="pathology-of-acute-lung-injury"><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Acute Lung Injury.html">Pathology of Acute Lung Injury</a></h3>
+<ul>
+<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Acute Lung Injury/Diffuse Alveolar Damage.html">Diffuse Alveolar Damage</a>   </li>
+<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Acute Lung Injury/Organizing Pneumonia.html">Organizing Pneumonia</a>   </li>
+</ul>
+</li>
+<li>
+<h3 id="pathology-of-chronic-fibrosing-interstitial-pneumonias"><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Chronic Fibrosing Interstitial Pneumonias.html">Pathology of Chronic Fibrosing Interstitial Pneumonias</a></h3>
+<ul>
+<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Chronic Fibrosing Interstitial Pneumonias/Usual Interstitial Pneumonia.html">Usual Interstitial Pneumonia</a>   </li>
+<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Chronic Fibrosing Interstitial Pneumonias/Nonspecific Interstitial Pneumonia.html">Nonspecific Interstitial Pneumonia</a>   </li>
+<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Chronic Fibrosing Interstitial Pneumonias/Fibrotic Hypersensitivity Pneumonitis.html">Fibrotic Hypersensitivity Pneumonitis</a>   </li>
+</ul>
+</li>
+<li>
+<h3 id="pathology-of-smoking-related-interstitial-pneumonias"><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Smoking Related Interstitial Pneumonias.html">Pathology of Smoking Related Interstitial Pneumonias</a></h3>
+<ul>
+<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Smoking Related Interstitial Pneumonias/Respiratory Bronchiolitis.html">Respiratory Bronchiolitis</a>   <ul>
+<li>
+<ul>
+<li>clinical features of interstitial lung disease = <a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Smoking Related Interstitial Pneumonia/Respiratory Bronchiolitis-Associated ILD.html">Respiratory Bronchiolitis-Associated ILD</a>   </li>
+</ul>
+</li>
+<li>
+<ul>
+<li>clinical features + fibrosis = <a href="/not_created.html" class="nonexistent-link">Respiratory Bronchiolitis with Fibrosis</a>   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Smoking Related Interstitial Pneumonia/Desquamative Interstitial Pneumonia.html">Desquamative Interstitial Pneumonia</a>   <ul>
+<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Smoking Related Interstitial Pneumonias/Respiratory Bronchiolitis.html">Respiratory Bronchiolitis</a> + clinical features of ILD + diffuse intrapulmonary spread   </li>
+</ul>
+</li>
+<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Smoking Related Interstitial Pneumonias/Langerhans Cell Histiocytosis.html">Langerhans Cell Histiocytosis</a>   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="pathology-of-granulomatous-interstitial-lung-disease"><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Granulomatous Interstitial Lung Disease.html">Pathology of Granulomatous Interstitial Lung Disease</a></h2>
+<ul>
+<li>
+<h3 id="pathology-of-nonfibrotic-hypersensitivity-pneumonitis"><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Granulomatous Interstitial Lung Disease/Pathology of Nonfibrotic Hypersensitivity Pneumonitis.html">Pathology of Nonfibrotic Hypersensitivity Pneumonitis</a></h3>
+</li>
+<li>
+<h3 id="pathology-of-sarcoidosis"><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Granulomatous Interstitial Lung Disease/Pathology of Sarcoidosis.html">Pathology of Sarcoidosis</a></h3>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="pathogenesis">Pathogenesis</h1>
+</li>
+<li>
+<h1 id="pathophysiology">Pathophysiology</h1>
+</li>
+<li>
+<h1 id="clinical-features">Clinical Features</h1>
+</li>
+<li>
+<h1 id="diagnostic-approach">Diagnostic Approach</h1>
+</li>
+<li>
+<h1 id="classification">Classification</h1>
+<ul>
+<li>
+<h2 id="interstitial-lung-disease-associated-with-systemic-inflammatory-disease"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease.html">Interstitial Lung Disease Associated with Systemic Inflammatory Disease</a></h2>
+<ul>
+<li>
+<h2 id="igg4-related-disease">IgG4-Related Disease</h2>
+</li>
+<li>
+<h2 id="goodpasture-syndrome">Goodpasture Syndrome</h2>
+</li>
+<li>
+<h2 id="granulomatosis-with-polyangiitis">Granulomatosis with Polyangiitis</h2>
+</li>
+<li>
+<h2 id="inflammatory-bowel-disease-associated-ild">Inflammatory Bowel Disease-associated ILD</h2>
+</li>
+<li>
+<h2 id="connective-tissue-disease-associated-ild"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease/Connective Tissue Disease-Associated ILD.html">Connective Tissue Disease-Associated ILD</a></h2>
+<ul>
+<li>
+<h4 id="rheumatoid-arthritis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease/Connective Tissue Disease-Associated ILD/Rheumatoid Arthritis.html">Rheumatoid Arthritis</a></h4>
+</li>
+<li>
+<h4 id="systemic-sclerosis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease/Connective Tissue Disease-Associated ILD/Systemic Sclerosis.html">Systemic Sclerosis</a></h4>
+</li>
+<li>
+<h4 id="polymyositis-dermatomyositis-and-anti-synthetase-syndromes"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease/Connective Tissue Disease-Associated ILD/Polymyositis, Dermatomyositis, and Anti-Synthetase Syndromes.html">Polymyositis, Dermatomyositis, and Anti-Synthetase Syndromes</a></h4>
+</li>
+<li>
+<h4 id="sjogren-syndrome"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease/Connective Tissue Disease-Associated ILD/Sjogren Syndrome.html">Sjogren Syndrome</a></h4>
+</li>
+<li>
+<h4 id="systemic-lupus-erythematosus"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease/Connective Tissue Disease-Associated ILD/Systemic Lupus Erythematosus.html">Systemic Lupus Erythematosus</a></h4>
+</li>
+<li>
+<h4 id="other-connective-tissue-diseases"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Interstitial Lung Disease Associated with Systemic Inflammatory Disease/Connective Tissue Disease-Associated ILD/Other Connective Tissue Diseases.html">Other Connective Tissue Diseases</a></h4>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="idiopathic-interstitial-pneumonias"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias.html">Idiopathic Interstitial Pneumonias</a></h2>
+<ul>
+<li>
+<h2 id="chronic-fibrosing-interstitial-pneumonias"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Chronic Fibrosing Interstitial Pneumonias.html">Chronic Fibrosing Interstitial Pneumonias</a></h2>
+<ul>
+<li>
+<h3 id="idiopathic-pulmonary-fibrosis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Chronic Fibrosing Interstitial Pneumonias/Idiopathic Pulmonary Fibrosis.html">Idiopathic Pulmonary Fibrosis</a></h3>
+</li>
+<li>
+<h3 id="idiopathic-nonspecific-interstitial-pneumonia"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Chronic Fibrosing Interstitial Pneumonias/Idiopathic Nonspecific Interstitial Pneumonia.html">Idiopathic Nonspecific Interstitial Pneumonia</a></h3>
+</li>
+<li>
+<h3 id="non-ipf-fibrotic-ild"><a href="/not_created.html" class="nonexistent-link">Non-IPF "Fibrotic ILD"</a></h3>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="smoking-related-interstitial-pneumonia"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Smoking Related Interstitial Pneumonia.html">Smoking Related Interstitial Pneumonia</a></h2>
+<ul>
+<li>
+<h3 id="respiratory-bronchiolitis-associated-ild"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Smoking Related Interstitial Pneumonia/Respiratory Bronchiolitis-Associated ILD.html">Respiratory Bronchiolitis-Associated ILD</a></h3>
+</li>
+<li>
+<h3 id="desquamative-interstitial-pneumonia"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Smoking Related Interstitial Pneumonia/Desquamative Interstitial Pneumonia.html">Desquamative Interstitial Pneumonia</a></h3>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="acute-subacute-interstitial-pneumonia"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Acute-Subacute Interstitial Pneumonia.html">Acute-Subacute Interstitial Pneumonia</a></h2>
+<ul>
+<li>
+<h3 id="acute-interstitial-pneumonia"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Acute-Subacute Interstitial Pneumonia/Acute Interstitial Pneumonia.html">Acute Interstitial Pneumonia</a></h3>
+</li>
+<li>
+<h3 id="cryptogenic-organizing-pneumonia"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Acute-Subacute Interstitial Pneumonia/Cryptogenic Organizing Pneumonia.html">Cryptogenic Organizing Pneumonia</a></h3>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="others">Others</h2>
+<ul>
+<li>
+<h3 id="acute-eosinophilic-pneumonia"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Eosinophilic Lung Diseases/Acute Eosinophilic Pneumonia.html">Acute Eosinophilic Pneumonia</a></h3>
+</li>
+<li>
+<h3 id="chronic-eosinophilic-pneumonia"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Eosinophilic Lung Diseases/Chronic Eosinophilic Pneumonia.html">Chronic Eosinophilic Pneumonia</a></h3>
+</li>
+<li>
+<h3 id="idiopathic-pleuropulmonary-fibroelastosis"><a href="/not_created.html" class="nonexistent-link">Idiopathic Pleuropulmonary Fibroelastosis</a></h3>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="granulomatous-interstitial-lung-disease"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Granulomatous Interstitial Lung Disease.html">Granulomatous Interstitial Lung Disease</a></h2>
+<ul>
+<li>
+<h2 id="sarcoidosis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Granulomatous Interstitial Lung Disease/Sarcoidosis.html">Sarcoidosis</a></h2>
+</li>
+<li>
+<h2 id="hypersensitivity-pneumonitis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Granulomatous Interstitial Lung Disease/Hypersensitivity Pneumonitis.html">Hypersensitivity Pneumonitis</a></h2>
+</li>
+<li>
+<h2 id="granulomatous-lymphocytic-ild-and-other"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Granulomatous Interstitial Lung Disease/Granulomatous Lymphocytic ILD and Other.html">Granulomatous Lymphocytic ILD and Other</a></h2>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="diffuse-cystic-lung-diseases-dclds"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Diffuse Cystic Lung Diseases.html">Diffuse Cystic Lung Diseases</a> (DCLDs)</h2>
+<ul>
+<li>
+<h3 id="major-dclds">Major DCLDs</h3>
+<ul>
+<li>
+<h4 id="pulmonary-langerhans-cell-histiocytosis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Diffuse Cystic Lung Diseases/Pulmonary Langerhans Cell Histiocytosis.html">Pulmonary Langerhans Cell Histiocytosis</a></h4>
+</li>
+<li>
+<h4 id="lymphangioleiomyomatosis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Diffuse Cystic Lung Diseases/Lymphangioleiomyomatosis.html">Lymphangioleiomyomatosis</a></h4>
+</li>
+<li>
+<h4 id="birt-hogg-dube-syndrome"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Diffuse Cystic Lung Diseases/Birt-Hogg-Dube Syndrome.html">Birt-Hogg-Dube Syndrome</a></h4>
+</li>
+<li>
+<h4 id="lymphoid-interstitial-pneumonia"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Diffuse Cystic Lung Diseases/Lymphoid Interstitial Pneumonia.html">Lymphoid Interstitial Pneumonia</a></h4>
+</li>
+<li>
+<h4 id="amyloidosis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Diffuse Cystic Lung Diseases/Amyloidosis.html">Amyloidosis</a></h4>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="minor-dclds">Minor DCLDs</h3>
+<ul>
+<li>
+<h4 id="pulmonary-light-chain-deposition-disease"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Diffuse Cystic Lung Diseases/Pulmonary Light Chain Deposition Disease.html">Pulmonary Light Chain Deposition Disease</a></h4>
+</li>
+<li>
+<h4 id="follicular-bronchiolitis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Diffuse Cystic Lung Diseases/Follicular Bronchiolitis.html">Follicular Bronchiolitis</a></h4>
+</li>
+<li>
+<h4 id="hereditary-syndromes-with-dclds"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Diffuse Cystic Lung Diseases/Hereditary Syndromes with DCLDs.html">Hereditary Syndromes with DCLDs</a></h4>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="iatrogenic-induced-dpld"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Iatrogenic Induced DPLD.html">Iatrogenic Induced DPLD</a></h2>
+<ul>
+<li>
+<h3 id="radiation-induced-ild"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Iatrogenic Induced DPLD/Radiation Induced ILD.html">Radiation Induced ILD</a></h3>
+</li>
+<li>
+<h3 id="drug-induced-ild"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Iatrogenic Induced DPLD/Drug-Induced ILD.html">Drug-Induced ILD</a></h3>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="inorganic-causes-of-dpld"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Inorganic Causes of DPLD.html">Inorganic Causes of DPLD</a></h2>
+<ul>
+<li>
+<h3 id="pneumoconioses"><a href="/Pulmonary Medicine/14. Occupational and Environmental Diseases/Pneumoconioses.html">Pneumoconioses</a></h3>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="rare-dpld"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Rare DPLD.html">Rare DPLD</a></h2>
+<ul>
+<li>
+<h3 id="pulmonary-alveolar-proteinosis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Rare DPLD/Pulmonary Alveolar Proteinosis.html">Pulmonary Alveolar Proteinosis</a></h3>
+</li>
+<li>
+<h3 id="pulmonary-alveolar-microlithiasis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Rare DPLD/Pulmonary Alveolar Microlithiasis.html">Pulmonary Alveolar Microlithiasis</a></h3>
+</li>
+<li>
+<h3 id="erdheim-chester-disease"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Rare DPLD/Erdheim-Chester Disease.html">Erdheim-Chester Disease</a></h3>
+</li>
+<li>
+<h3 id="diffuse-pulmonary-lymphangiomatosis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Rare DPLD/Diffuse Pulmonary Lymphangiomatosis.html">Diffuse Pulmonary Lymphangiomatosis</a></h3>
+</li>
+<li>
+<h3 id="constrictive-bronchiolitis"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Rare DPLD/Constrictive Bronchiolitis.html">Constrictive Bronchiolitis</a></h3>
+</li>
+<li>
+<h3 id="congenital-lung-disease-seen-in-adults"><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Rare DPLD/Congenital Lung Disease Seen In Adults.html">Congenital Lung Disease Seen In Adults</a></h3>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h2>Backlinks</h2>
+<ul>
+	<li><a class="backlink" href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma.html">02. Diseases of the Lung Parenchyma</a></li>
+</ul>
+<!-- <div class="graph">
+    <svg class="graph_svg" id="A55652104351812808236782688471158246218{level}"></svg>
+    <button class="graph_button" id="B55652104351812808236782688471158246218{level}" level="{level}" onclick="run('55652104351812808236782688471158246218'+this.level, 'Diffuse Parenchymal Lung Disease');">Show Graph</button>
+</div>
+<script src="/obs.html/static/graph.js" type="text/javascript"></script>
+
+ -->
+ <script src="/obs.html/static/graph.js" type="text/javascript"></script>
+
+<div class="graph">
+    <div id="A55652104351812808236782688471158246218{level}" class="graph_div"></div>
+    <button class="graph_button" id="B55652104351812808236782688471158246218{level}" level="{level}" onclick="run('55652104351812808236782688471158246218'+this.level, 'Diffuse Parenchymal Lung Disease');">Show Graph</button>
+</div>
+
+
+<script src="//unpkg.com/3d-force-graph"></script>
+<script>
+    function grapher(args) {
+        window.Graph = ForceGraph3D()
+            (args.graph_container)
+            .jsonUrl(args.data)
+            .width(args.width)
+            .height(args.height)
+            .nodeLabel('id')
+            .linkDirectionalParticles("value")
+            .linkDirectionalParticleSpeed(0.010)
+            .linkDirectionalParticleWidth(2.0)
+            .nodeColor(node => {
+                if (node.id == current_node_id){
+                    return '#ff0000'
+                }
+                let isConnected = false;
+                node.links.forEach(link => {
+                    if (link == current_node_id){
+                        isConnected = true;
+                    }
+                })
+                if (isConnected){
+                    return '#f7be49';
+                }
+                return '#ffffff'
+            })
+            .linkColor(link => {
+                if (link.source == current_node_id || link.target == current_node_id){
+                    return '#ff0000'
+                }
+                return '#dadada'
+            })
+            .linkOpacity(0.3)
+            .onNodeClick(node => {
+                args.node = node;
+                graph_left_click(args)()
+            })
+            .onNodeRightClick(node => {
+                args.node = node;
+                graph_right_click(args)()
+            });
+    }
+</script>
+
+
+                        <!-- end content -->
+                        </div>
+                        <div id="right_pane"></div>
+                </div>
+        </div>
+
+<script src="/obs.html/static/obsidian.js" type="text/javascript"></script>
+
+</body>
+</html>

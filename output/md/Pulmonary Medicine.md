@@ -6,7 +6,7 @@ obs.html:
 # Topics   
 |                                                     |               |   
 | --------------------------------------------------- | ------------- |   
-| [01. Obstructive Lung Disease](/not_created.md)                    | 17.5% of Exam |   
+| [01. Diseases of the Airways](./Pulmonary%20Medicine/01.%20Diseases%20of%20the%20Airways.md)                    | 17.5% of Exam |   
 | [02. Diseases of the Lung Parenchyma](./Pulmonary%20Medicine/02.%20Diseases%20of%20the%20Lung%20Parenchyma.md)            | 10% of Exam   |   
 | [03. Sleep Medicine, Neuromuscular, and Skeletal](./Pulmonary%20Medicine/03.%20Sleep%20Medicine%2C%20Neuromuscular%2C%20and%20Skeletal.md) | 10% of Exam   |   
 | [04. Epidemiology](./Pulmonary%20Medicine/04.%20Epidemiology.md)                                | 2% of Exam    |   

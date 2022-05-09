@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+        <head>
+                <!-- Page information -->
+                <meta charset="UTF-8" />
+                <meta name="node_id" content="14. Occupational and Environmental Diseases">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+
+                <!-- Set title -->
+                <title>Pulmonary Critical Care Notes</title>
+
+                <!-- Includes -->
+                <link rel="stylesheet" href="/obs.html/static/global_main.css" />
+                <link rel="stylesheet" href="/obs.html/static/main.css" />
+                
+<script src="/obs.html/static/obsidian_core_header.js"></script>
+<script src="/obs.html/static/encoding.js"></script>
+<link rel="stylesheet" href="/obs.html/static/callouts.css" />
+<link rel="stylesheet" href="/obs.html/static/graph.css" />
+<link rel="stylesheet" href="/obs.html/static/codehilite.css" />
+<link rel="stylesheet" href="/obs.html/static/mermaid.css" />
+<script src="/obs.html/static/mermaid.9.0.1.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script src="/obs.html/static/load_mathjax.js"></script>
+<link rel="stylesheet" href="/obs.html/static/search.css" />
+<script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.2/dist/flexsearch.bundle.js"></script>
+<script src="/obs.html/static/pako.js"></script>
+<script src="/obs.html/static/search.js"></script>
+<script src="/obs.html/static/dirtree.js"></script>
+
+
+                <!-- Onload tweaks -->
+                <script>
+                        const CURRENT_NODE = '14. Occupational and Environmental Diseases';
+                </script>
+        </head>
+
+<body onload="LoadPage();">
+
+        <div id="search-master-div">
+    <div id="search-slab" king_ramses="return the slaaab">
+            <div id="search-controls">
+                    <input id="search_string" placeholder="Type to search notes" type="text" />
+                    <div class="tooltip" style="display: none;">
+                        <input type="checkbox" id="hard_search" name="hard" />
+                        <span class="tooltiptext">Hard search (require exact match)</span>
+                    </div>
+                    <div id="search-results-box">
+                        <div id="search-results"></div>
+                    </div>
+                    <div id="search-instructions">
+                        <div class="prompt-instruction">
+                                <b>esc</b> to dismiss
+                        </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("search-master-div").addEventListener('click', e => {
+            if(e.target !== e.currentTarget){
+                    return
+            }
+            toggle('search-master-div', 'block');
+    })
+    document.getElementById("search_string").addEventListener("input", function(event) {
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    }); 
+    document.getElementById("hard_search").addEventListener("click", function(event) {
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    });
+
+    window.addEventListener('keydown', e => {
+        if((e.key=='Escape'||e.key=='Esc'||e.keyCode==27)){
+            document.getElementById('search-master-div').style.display = 'none';
+            return false;
+        }
+    }, true);
+
+    function click_inner_link(element){
+        element.getElementsByTagName('a')[0].click()
+    }
+</script>
+
+
+        <div class="flex_col">
+                <div id="header" class="header">
+                        <div id="header_flex" class="flex_row">
+                                <a href="/index.html" id="homelink" title="Clear screen and go to homepage">Pulmonary Critical Care Notes</a>
+                                <div class="navbar-button" onclick="toggle('navbar', 'flex')">
+                                        ≡
+                                </div>
+                                <div id="navbar" class="navbar">
+                                <a class="navbar-link" href="/Pulmonary Medicine/Pulmonary Medicine.html" title="Pulmonary">Pulmonary</a>
+<a class="navbar-link" href="/Critical Care Medicine/Critical Care Medicine.html" title="Critical Care">Critical Care</a>
+                                        <div class="icon-tray">
+                                                
+                                                <div style="width:1.6rem; height:1.6rem; float:right; margin-right:0.2rem">
+                                                        <a href="/obs.html/tags/index.html" title="Open tag view">
+                                                                <img src = "/obs.html/static/hashtag.svg" alt="RSS Feed link"/>
+                                                        </a>
+                                                </div>
+                                                        <div style="width: calc(1.6rem - 6px); height: calc(1.6rem - 6px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right;">
+            <a id="dirtree_link" class="system-link" href="/obs.html/dir_index.html" title="View directory tree">
+                    <img src = "/obs.html/static/dirtree.svg" style="width: 14px; padding: 3px;" alt="Directory tree link"/>
+            </a>
+        </div>
+                                                        <div class="graph_header_div">
+            <a id="graph_link" class="system-link" href="/obs.html/graph/index.html?node=14. Occupational and Environmental Diseases" title="Open fullpage Graph">
+                    <img class="graph_header_div_svg" src = "/obs.html/static/graph.svg" alt="Open fullpage Graph"/>
+            </a>
+        </div>
+                                                        <div onclick="openSearch()" style="width: calc(1.6rem - 12px); height: calc(1.6rem - 12px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right; padding: 3px; padding-bottom: 6px; padding-top: 0px;cursor: pointer;">
+                <img src = "/obs.html/static/search.svg" alt="Search notes"/>
+        </div>
+        <script>
+                function openSearch(){
+                        if (toggle('search-master-div', 'block')){
+                                let ss = document.getElementById('search_string');
+                                ss.value = '';
+                                ss.focus()
+                                ss.select()
+                        }
+                }
+        </script>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="flex_row">
+                        <div id="left_pane"></div>
+                        <div class="container">
+                                        <h1 id="tobacco-use-treatment-smoking-cessation">Tobacco Use Treatment &amp; Smoking Cessation</h1>
+<div class="toc">
+<ul>
+<li><a href="#tobacco-use-treatment-smoking-cessation" class="anchor-link">Tobacco Use Treatment &amp; Smoking Cessation</a></li>
+<li><a href="#work-related-asthma" class="anchor-link">Work-Related Asthma</a><ul>
+<li><a href="#occupational-asthma-oa" class="anchor-link">Occupational Asthma (OA)</a><ul>
+<li><a href="#general" class="anchor-link">General</a></li>
+<li><a href="#etiologies" class="anchor-link">Etiologies</a><ul>
+<li><a href="#immunologic-induced-asthma" class="anchor-link">Immunologic-Induced Asthma</a><ul>
+<li><a href="#natural-history" class="anchor-link">Natural History</a></li>
+<li><a href="#high-molecular-weight-antigens" class="anchor-link">High-Molecular Weight Antigens</a></li>
+<li><a href="#low-molecular-weight-antigens" class="anchor-link">Low-Molecular Weight Antigens</a></li>
+</ul>
+</li>
+<li><a href="#non-immunologic-induced-asthma-irritant-induced-asthma" class="anchor-link">Non-Immunologic-Induced Asthma (Irritant-Induced Asthma)</a><ul>
+<li><a href="#irritant-induced-asthma" class="anchor-link">Irritant-Induced Asthma</a></li>
+<li><a href="#reactive-airways-dysfunction-syndrome-rads" class="anchor-link">Reactive Airways Dysfunction Syndrome (RADS)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#diagnosis" class="anchor-link">Diagnosis</a><ul>
+<li><a href="#differential-diagnosis" class="anchor-link">Differential Diagnosis</a></li>
+</ul>
+</li>
+<li><a href="#management" class="anchor-link">Management</a></li>
+</ul>
+</li>
+<li><a href="#work-exacerbated-asthma" class="anchor-link" class="anchor-link">Work-Exacerbated Asthma</a></li>
+</ul>
+</li>
+<li><a href="#indoor-and-outdoor-air-pollution" class="anchor-link">Indoor and Outdoor Air Pollution</a></li>
+<li><a href="#barometric-or-thermal-related-disorders" class="anchor-link">Barometric- or Thermal-Related Disorders</a></li>
+<li><a href="#pneumoconioses" class="anchor-link">Pneumoconioses</a><ul>
+<li><a href="#asbestosis" class="anchor-link">Asbestosis</a></li>
+<li><a href="#berylliosis" class="anchor-link">Berylliosis</a></li>
+<li><a href="#coal-workers-pneumoconiosis" class="anchor-link">Coal-Workers' Pneumoconiosis</a></li>
+<li><a href="#hard-metal-pneumoconiosis" class="anchor-link">Hard Metal Pneumoconiosis</a></li>
+<li><a href="#silicosis" class="anchor-link">Silicosis</a></li>
+</ul>
+</li>
+<li><a href="#toxic-inhalations" class="anchor-link">Toxic Inhalations</a><ul>
+<li><a href="#e-cigarette-and-vaping-associated-lung-injury" class="anchor-link">E-cigarette and Vaping-Associated Lung Injury</a></li>
+<li><a href="#carbon-monoxide" class="anchor-link">Carbon Monoxide</a></li>
+<li><a href="#smoke-inhalation" class="anchor-link">Smoke Inhalation</a></li>
+<li><a href="#other-toxic-exposures" class="anchor-link">Other Toxic Exposures</a><ul>
+<li><a href="#cobalt" class="anchor-link">Cobalt</a></li>
+<li><a href="#dust" class="anchor-link">Dust</a></li>
+<li><a href="#endotoxin" class="anchor-link">Endotoxin</a></li>
+<li><a href="#metal-fume-fever" class="anchor-link">Metal Fume Fever</a></li>
+<li><a href="#organic-agents" class="anchor-link">Organic Agents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#environmental-cancer-risk" class="anchor-link">Environmental Cancer Risk</a></li>
+</ul>
+</div>
+<h1 id="work-related-asthma">Work-Related Asthma</h1>
+<p>^d9ebb1   </p>
+<ul>
+<li>Broad term that refers to asthma that is exacerbated or induced by inhalation exposures in the workplace   </li>
+<li>Two types   <ul>
+<li>Occupational Asthma -- asthma triggered de novo induced by sensitization to a specific substance (immunologic or nonimmunologic) found only at the workplace   </li>
+<li>Work-exacerbated Asthma -- Asthma triggered by various work-related factors in workers with pre-existing asthma   </li>
+</ul>
+</li>
+<li>Prevalence of 9-15% of all forms of asthma   <ul>
+<li>But prevalence varies based on specific agent of exposure   <ul>
+<li>Examples:   <ul>
+<li>1-5% of workers exposed to TDI develop asthma   </li>
+<li>20% of workers exposed to acid anhydrides develop asthma   </li>
+<li>40% of workers exposed to allergens in flour in baking industry develop asthma   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Also depends on source and concentration of exposure &amp; host susceptibility factors (e.g. HLA haplotypes and other genetic polymorphisms)   </li>
+</ul>
+</li>
+</ul>
+<h2 id="occupational-asthma-oa">Occupational Asthma (OA)</h2>
+<h3 id="general">General</h3>
+<ul>
+<li>Asthma due to causes and conditions attributable to a particular occupational environment and not to stimuli encountered outside the workplace (i.e. stimuli found only at the workplace)   </li>
+<li>Type types of OA   <ul>
+<li>Immunological (sensitizing) - Asthma with latency   </li>
+<li>Non-Immunological (irritant-induced) - Asthma without latency   </li>
+</ul>
+</li>
+<li>Needs to be distinguished from <a href="#work-exacerbated-asthma" class="anchor-link" class="anchor-link">Work-Exacerbated Asthma</a>   </li>
+<li>When to suspect OA?   <ul>
+<li>Any new adult-onset asthma (OA accounts for 10-25%)   </li>
+<li>Worsening asthma control in a previously well-controlled asthmatic   </li>
+<li>Symptoms worse at work; improve over weekend and holidays   </li>
+</ul>
+</li>
+<li>Latency period from exposure to onset of symptoms is highly variable   </li>
+</ul>
+<h3 id="etiologies">Etiologies</h3>
+<h4 id="immunologic-induced-asthma">Immunologic-Induced Asthma</h4>
+<ul>
+<li>Other Name: Sensitizer-Induced OA   </li>
+<li>Asthma with latency   </li>
+</ul>
+<h5 id="natural-history">Natural History</h5>
+<ul>
+<li><img alt="" src="/Pulmonary%20Medicine/14.%20Occupational%20and%20Environmental%20Diseases/attachments/Pasted%20image%2020220504094456.png" />   <ul>
+<li>Malo, Chan-Yeung. J Allergy Clin Immunol 2001; 108:317. <br />
+| High-Molecular Weight Antigens                                   | Low-Molecular Weight Antigens                                    | <br />
+| ---------------------------------------------------------------- | ---------------------------------------------------------------- | <br />
+| &gt;5000 Daltons                                                    | &lt;5000 Daltons                                                    | <br />
+| More Common                                                      | Less Common                                                      | <br />
+| Plant, animal proteins                                           | Industrial chemicals, metals (e.g. platinum, nickel, TMA)        | <br />
+| IgE mediated allergic response                                   | Non-IgE mediated                                                 | <br />
+| Skin prick testing or RAST testing available for many substances |                                                                  | <br />
+| Immediate asthmatic response most common                         | Delayed asthmatic response are more frequent                     | <br />
+| Atopy a risk factor                                              | Atopy not a risk factor                                          | <br />
+| Model of "extrinsic" asthma                                      | Bind to native protein carrier and LMW molecule acts as a hapten | <br />
+| More severe rhinitis                                             | Less severe rhinitis                                             | <br />
+| Wheezing, nasal and ocular itching at work                       |                                                                  | <br />
+| More rash                                                        | Less rash                                                                 |   </li>
+</ul>
+</li>
+</ul>
+<h5 id="high-molecular-weight-antigens">High-Molecular Weight Antigens</h5>
+<ul>
+<li>Flour and grain dust allergens in bakers   </li>
+<li>Animal protein antigens in lab workers (murine urine)   </li>
+<li>Crab processing   </li>
+<li>Psyllium: nurses, pharma   </li>
+<li>Antibiotics, enzymes: nurses, pharma   </li>
+<li>Natural rubber latex proteins in health care workers with gloves   </li>
+</ul>
+<h5 id="low-molecular-weight-antigens">Low-Molecular Weight Antigens</h5>
+<ul>
+<li>Metal salts (nickel, chromium, platinum)   </li>
+<li>Isocyanates (TDI, HDI)   <ul>
+<li>can cause severe sensitivity without history of atopy   </li>
+<li>auto-body shops, insulation, electronics   </li>
+</ul>
+</li>
+<li>Plicatic acid in Western Red cedar dust exposure   </li>
+<li>Acid anhydrides in epoxy manufacturing (e.g. trimellitic anhydride)   </li>
+<li>Colophony in solderers   </li>
+</ul>
+<h4 id="non-immunologic-induced-asthma-irritant-induced-asthma">Non-Immunologic-Induced Asthma (Irritant-Induced Asthma)</h4>
+<ul>
+<li>Asthma without latency   </li>
+<li>Symptoms are not reproduced by inhalation challenge like immunologic-induced asthma   </li>
+</ul>
+<h5 id="irritant-induced-asthma">Irritant-Induced Asthma</h5>
+<ul>
+<li>New onset asthma in adulthood   </li>
+<li>Induced by exposure to an irritant, nonimmunologic stimulus at a high level of intensity   </li>
+<li>Considered a subset of OA if exposure happens at workplace, but physiologically different from immunologic OA   </li>
+</ul>
+<h5 id="reactive-airways-dysfunction-syndrome-rads">Reactive Airways Dysfunction Syndrome (RADS)</h5>
+<ul>
+<li>Similar to Irritant-Induced Asthma   </li>
+<li>Except: acute, single, high-intensity exposure to a nonimmunologic substance triggers symptoms <strong>within minutes</strong>   </li>
+<li>Episode followed by bronchial hyperresponsiveness and ongoing asthma-like symptoms for a prolonged period of time   </li>
+<li>Clinical features   <ul>
+<li>burning sensation in the throat and nose followed by development of asthma like symptoms   </li>
+</ul>
+</li>
+</ul>
+<h3 id="diagnosis">Diagnosis</h3>
+<ul>
+<li>Skin tests and serology   <ul>
+<li>In the presence of appropriate history, symptoms, and documented evidence of changes in airway physiology due to exposure, positive skin testing supports the diagnosis of OA being caused by that specific antigen   </li>
+<li>blood testing for IgE antibodies to certain sensitizers can also be done   </li>
+</ul>
+</li>
+<li>Markers of airway inflammation   <ul>
+<li>Increases in sputum eosinophil count (&gt;1% increase) and eNO at the end of work period are suggestive of airway inflammation and are indirect evidence of OA   </li>
+<li>In a symptomatic patient, the presence of elevated eosinophil count in induced sputum (&gt;2%) in the absence of bronchial hyperresponsiveness is suggestive of nonasthmatic eosinophilic bronchitis   </li>
+</ul>
+</li>
+<li>Monitoring PEFR, FEV₁, airway hyperresponsiveness at and off work   <ul>
+<li>Serial PEFR measurements   <ul>
+<li>record 4 times a day for at least 2 weeks at work and for a similar period away from work   </li>
+<li>compare values to check for work-related decrease in PEFR   </li>
+</ul>
+</li>
+<li>Serial spirometry   <ul>
+<li>Perform on exposed and non-exposed days and compare the values   </li>
+<li>Change in FEV₁ is more reliable than changes in FVC   </li>
+<li>A single pre- and post-shift measurement of FEV₁ lacks sensitivity to examine relationship between asthma and work   </li>
+</ul>
+</li>
+<li>Nonspecific Bronchoprovocation Testing   <ul>
+<li>After exposure to the causative agent, increased nonspecific bronchial responsiveness is seen in patients with OA   </li>
+<li>if normal spirometry and normal initial nonspecific bronchoprovovcation testing, repeat the test after 2 weeks away from work and again after exposure to the workplace   </li>
+<li>The absence of bronchial hyperresponsiveness in a symptomatic patient, tested within 24 hours of exposure, rules out OA   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Specific inhalation challenge (the gold standard)   <ul>
+<li>Performed only at specialized centers   </li>
+<li>Indicated in patients with suspected but uncertain diagnosis of OA   </li>
+<li>Patients are exposed to specific occupational agents, following which bronchial hyperresponsiveness is assessed   </li>
+<li>False negative results are possible if the patient has become desensitized to the specific agent or if the wrong agent is used   </li>
+</ul>
+</li>
+</ul>
+<h4 id="differential-diagnosis">Differential Diagnosis</h4>
+<ul>
+<li>COPD   <ul>
+<li>can occur due to personal use of tobacco and/or exposure to tobacco smoke or other pollutants at work   </li>
+<li>PFTs show irreversible or minimally reversible airflow obstruction and reduced DLCO   </li>
+</ul>
+</li>
+<li>Work-related irritable larynx syndrome   <ul>
+<li>Sensory stimuli at workplace trigger hyperkinetic laryngeal symptoms   </li>
+<li>Includes vocal cord dysfunction, sensation of fullness/tension in throat and neck, dysphonia, and chronic cough   </li>
+</ul>
+</li>
+<li>Hyperventilation Syndrome   <ul>
+<li>Accompanied by other somatic symptoms   </li>
+<li>Symptoms can be reproduced completely or partially by voluntary hyperventilation   </li>
+</ul>
+</li>
+<li>Hypersensitivity Pneumonitis   <ul>
+<li>PFTs show obstructive, restrictive or mixed pattern with reduced DLCO   </li>
+<li>Imaging studies show reticular, nodular or GGO   </li>
+</ul>
+</li>
+</ul>
+<h3 id="management">Management</h3>
+<ul>
+<li>Suspect OA in all adult-onset asthma   </li>
+<li>Treat as for non-OA   </li>
+<li>Objectively confirm diagnosis   </li>
+<li>Early diagnosis and removal from exposure for best outcomes   </li>
+<li>Absolute avoidance for patients with Immunologic-Induced Asthma (Sensitizer Induced)   </li>
+<li>Consider subcutaneous immunotherapy in patients who are unable or unwilling to change work   <ul>
+<li>has no role in managing OA caused by LMW antigens, corrosives, or irritant substances   </li>
+</ul>
+</li>
+<li>RADS &amp; IrIA   <ul>
+<li>No formal trials have been performed to evaluate the role of glucocorticoid therapy in RADS.   </li>
+<li>For patients with moderate-to-severe symptoms and FEV₁ &lt; 70% predicted, systemic steroid therapy is used.   </li>
+<li>For patients with less severe symptoms and FEV₁ &gt; 70% predicted, inhaled steroid therapy and/or inhaled β-agonist therapy is used.   </li>
+</ul>
+</li>
+</ul>
+<h2 id="work-exacerbated-asthma">Work-Exacerbated Asthma</h2>
+<ul>
+<li>Definition: presence of pre-existing or concurrent asthma, subjective to worsening at the workplace   </li>
+<li>Management for irritant induced workplace exacerbated asthma   <ul>
+<li>Reduce exposure -- respiratory protective equipment, appropriate ventilation   </li>
+<li>Optimize treatment   </li>
+</ul>
+</li>
+</ul>
+<h1 id="indoor-and-outdoor-air-pollution">Indoor and Outdoor Air Pollution</h1>
+<h1 id="barometric-or-thermal-related-disorders">Barometric- or Thermal-Related Disorders</h1>
+<h1 id="pneumoconioses">Pneumoconioses</h1>
+<h2 id="asbestosis">Asbestosis</h2>
+<h2 id="berylliosis">Berylliosis</h2>
+<h2 id="coal-workers-pneumoconiosis">Coal-Workers' Pneumoconiosis</h2>
+<h2 id="hard-metal-pneumoconiosis">Hard Metal Pneumoconiosis</h2>
+<h2 id="silicosis">Silicosis</h2>
+<h1 id="toxic-inhalations">Toxic Inhalations</h1>
+<h2 id="e-cigarette-and-vaping-associated-lung-injury">E-cigarette and Vaping-Associated Lung Injury</h2>
+<h2 id="carbon-monoxide">Carbon Monoxide</h2>
+<h2 id="smoke-inhalation">Smoke Inhalation</h2>
+<h2 id="other-toxic-exposures">Other Toxic Exposures</h2>
+<h3 id="cobalt">Cobalt</h3>
+<h3 id="dust">Dust</h3>
+<h3 id="endotoxin">Endotoxin</h3>
+<h3 id="metal-fume-fever">Metal Fume Fever</h3>
+<h3 id="organic-agents">Organic Agents</h3>
+<h1 id="environmental-cancer-risk">Environmental Cancer Risk</h1><h2>Backlinks</h2>
+<ul>
+	<li><a class="backlink" href="/Pulmonary Medicine/01. Diseases of the Airways/Asthma.html">Asthma</a></li>
+	<li><a class="backlink" href="/Pulmonary Medicine.html">Pulmonary Medicine</a></li>
+</ul>
+<script src="/obs.html/static/graph.js" type="text/javascript"></script>
+
+<div class="graph">
+    <div id="A313557588146431834095037432275100738727{level}" class="graph_div"></div>
+    <button class="graph_button" id="B313557588146431834095037432275100738727{level}" level="{level}" onclick="run('313557588146431834095037432275100738727'+this.level, '14. Occupational and Environmental Diseases');">Show Graph</button>
+</div>
+
+
+<script src="//unpkg.com/3d-force-graph"></script>
+<script>
+    function grapher(args) {
+        window.Graph = ForceGraph3D()
+            (args.graph_container)
+            .jsonUrl(args.data)
+            .width(args.width)
+            .height(args.height)
+            .nodeLabel('id')
+            .linkDirectionalParticles("value")
+            .linkDirectionalParticleSpeed(0.010)
+            .linkDirectionalParticleWidth(2.0)
+            .nodeColor(node => {
+                if (node.id == current_node_id){
+                    return '#ff0000'
+                }
+                let isConnected = false;
+                node.links.forEach(link => {
+                    if (link == current_node_id){
+                        isConnected = true;
+                    }
+                })
+                if (isConnected){
+                    return '#f7be49';
+                }
+                return '#ffffff'
+            })
+            .linkColor(link => {
+                if (link.source == current_node_id || link.target == current_node_id){
+                    return '#ff0000'
+                }
+                return '#dadada'
+            })
+            .linkOpacity(0.3)
+            .onNodeClick(node => {
+                args.node = node;
+                graph_left_click(args)()
+            })
+            .onNodeRightClick(node => {
+                args.node = node;
+                graph_right_click(args)()
+            });
+    }
+</script>
+
+
+                        <!-- end content -->
+                        </div>
+                        <div id="right_pane"></div>
+                </div>
+        </div>
+
+<script src="/obs.html/static/obsidian_core_footer.js" type="text/javascript"></script>
+<script src="/obs.html/static/load_dirtree_footer.js" type="text/javascript"></script>
+
+
+</body>
+</html>

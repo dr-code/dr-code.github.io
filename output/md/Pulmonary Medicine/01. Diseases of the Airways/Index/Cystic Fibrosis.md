@@ -67,7 +67,7 @@
 - Primary cause of morbidity and mortality in patients with CF is bronchiectasis that leads to obstructive lung disease that ultimately progresses to respiratory failure, pulmonary hypertension and death   
 - It's present in 98% of patients with CF by the time they reach adulthood   
 - Death is due to respiratory failure/complications   
-- Initially may be just a recurrent cough → becomes persistent   
+- Initially may be just a recurrent [cough](/not_created.md) → becomes persistent   
 - Early on can also see airway hyperreactivity and wheezing but tends to disappear and bronchodilator response tends to disappear as they get older likely due to destruction of lung and cartilage   
 - Infection   
 	- Early on -- H influenza and S. aureus   

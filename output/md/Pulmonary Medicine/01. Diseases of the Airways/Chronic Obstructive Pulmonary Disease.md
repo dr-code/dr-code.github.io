@@ -10,8 +10,8 @@
 - Usually caused by significant exposure to noxious particles or gases   
 	- Developed countries — smoking; developing countries — biomass fuel   
 - Influenced by host factors including abnormal lung development   
-- Chronic bronchitis — clinical diagnosis — chronic cough and sputum production   
-	- epidemiological definition — chronic productive cough on most days during at least 3 months per year for 2 or more consecutive years   
+- Chronic bronchitis — clinical diagnosis — chronic [cough](/not_created.md) and sputum production   
+	- epidemiological definition — chronic productive [cough](/not_created.md) on most days during at least 3 months per year for 2 or more consecutive years   
 	- periods of worsening or exacerbation precipitated by a respiratory tract infection   
 	- in between exacerbations, residual clinical disease (unlike asthma where symptoms go away in between exacerbations) because chronic bronchitis is not a disease of airway hyperreactivity   
 	- If clinical features of chronic bronchitis with evidence of airway hyperreactivity → asthmatic bronchitis or asthma-COPD overlap syndrome   
@@ -89,7 +89,7 @@
 - Advanced age   
 - Severity of airflow limitation   
 - Chronic mucous hypersecretion   
-- Productive cough   
+- Productive [cough](/not_created.md)   
 - Duration of COPD   
 - Pulmonary Hypertension (Pulmonary Artery {PA}: Ascending Aorta {A} ratio >1)   
 - Blood eosinophil count >340 cells/μL   
@@ -194,7 +194,7 @@
 ## Mucus Hypersecretion & Ciliary Dysfunction   
 ### Mucus Hypersecretion   
    
-- Results in chronic productive cough   
+- Results in chronic productive [cough](/not_created.md)   
 	- Characteristic of chronic bronchitis but not necessarily a/w airflow obstruction   
 - Not all patients with COPD have symptomatic mucous hypersecretion   
 - Hypersecretion is due to    
@@ -269,15 +269,15 @@
 # Diagnosis   
 ## Consider COPD and Perform Spirometry if:   
    
-- [Dyspnea](../../Pulmonary%20Medicine/12.%20Pulmonary%20Symptoms/Signs%20%26%20Symptoms/Dyspnea.md) -- progressive over time, worse with exercise, persistent   
-- Chronic [Cough](../../Pulmonary%20Medicine/12.%20Pulmonary%20Symptoms/Signs%20%26%20Symptoms/Cough.md) -- may be intermittent and dry   
-- Recurrent [Wheezing](../../Pulmonary%20Medicine/12.%20Pulmonary%20Symptoms/Signs%20%26%20Symptoms/Wheezing.md)   
+- [Dyspnea](../../Pulmonary%20Medicine/12.%20Pulmonary%20Signs%20%26%20Symptoms/Dyspnea.md) -- progressive over time, worse with exercise, persistent   
+- Chronic [Cough](../../Pulmonary%20Medicine/12.%20Pulmonary%20Signs%20%26%20Symptoms/Cough.md) -- may be intermittent and dry   
+- Recurrent [Wheezing](../../Pulmonary%20Medicine/12.%20Pulmonary%20Signs%20%26%20Symptoms/Wheezing.md)   
 - Chronic sputum   
 - Recurrent respiratory infections   
 - History of risk factors -- smoke or other noxious, occupational, genetics   
 - Childhood factors -- prematurity, maternal smoking, low birth weight   
 - Family history of COPD   
-- Presence or absence of symptoms ([Wheezing](../../Pulmonary%20Medicine/12.%20Pulmonary%20Symptoms/Signs%20%26%20Symptoms/Wheezing.md), [Cough](../../Pulmonary%20Medicine/12.%20Pulmonary%20Symptoms/Signs%20%26%20Symptoms/Cough.md), sputum production or [Dyspnea](../../Pulmonary%20Medicine/12.%20Pulmonary%20Symptoms/Signs%20%26%20Symptoms/Dyspnea.md)) was not particularly discriminative in diagnosing COPD in the general population   
+- Presence or absence of symptoms ([Wheezing](../../Pulmonary%20Medicine/12.%20Pulmonary%20Signs%20%26%20Symptoms/Wheezing.md), [Cough](../../Pulmonary%20Medicine/12.%20Pulmonary%20Signs%20%26%20Symptoms/Cough.md), sputum production or [Dyspnea](../../Pulmonary%20Medicine/12.%20Pulmonary%20Signs%20%26%20Symptoms/Dyspnea.md)) was not particularly discriminative in diagnosing COPD in the general population   
 ## GOLD Grades   
    
 - Airflow limitation based on post-bronchodilator FEV₁   

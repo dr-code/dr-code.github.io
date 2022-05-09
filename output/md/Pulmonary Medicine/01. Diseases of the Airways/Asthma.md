@@ -241,7 +241,7 @@ category:
 - Symptoms   
 	- Wheeze   
 	- Shortness of breath (difficulty breathing, dyspnea)   
-	- Cough (chronic if >8 weeks, consider cough-variant asthma)   
+	- [Cough](../../Pulmonary%20Medicine/12.%20Pulmonary%20Signs%20%26%20Symptoms/Cough.md) (chronic if >8 weeks, consider [cough](/not_created.md)-variant asthma)   
 	- +/- chest tightness (sharp stabbing or knifelike pain is unusual for asthma)   
 - Recurrent pattern of symptoms   
 - More than one symptom   
@@ -255,7 +255,7 @@ category:
 - Occupational or environmental exposures   
 - Medications   
 	- Timing of last asthma dose   
-	- Use of ACE-I (angioedema or chronic cough)   
+	- Use of ACE-I (angioedema or chronic [cough](/not_created.md))   
 	- ASA/NSAIDs   
 	- β blockers (including eye drops)   
 		- cardioselective β blockers — cardioselective β blockers do not appear to produce clinically significant adverse respiratory effects in patients with mild-to-moderate reversible airway disease — COCHRANE REVIEW: Cochrane Database Syst Rev 2002;(4):CD002992   
@@ -390,7 +390,7 @@ category:
 - Diet — rich in omega 3 fatty acids may be helpful   
 - Breakthrough — indicates poorly controlled asthma → step up treatment after checking technique   
 ### Eosinophilic Th2-High Asthma   
-### Cough Variant Asthma & Other Special Types   
+### [Cough](../../Pulmonary%20Medicine/12.%20Pulmonary%20Signs%20%26%20Symptoms/Cough.md) Variant Asthma & Other Special Types   
 ## Asthma Mimics   
 ### Misdiagnosis of Asthma is Common   
    
@@ -452,7 +452,7 @@ category:
 ### Detecting the Onset of an Exacerbation   
 #### Symptoms   
    
-- Progressively worsening breathlessness, wheezing, cough, and chest tightness   
+- Progressively worsening breathlessness, wheezing, [cough](/not_created.md), and chest tightness   
 - Decreased exercise tolerance and fatigue   
 #### Peak Expiratory Flow Measurement   
    
@@ -498,7 +498,7 @@ category:
 	- Lung function does not correlate strongly with asthma symptoms in adults   
 	- Low FEV₁ is a strong independent predictor of risk of exacerbations even after adjustment for symptom frequency   
 		- Also a risk factor for lung function decline, independent of symptom levels   
-	- A normal or near normal FEV₁ in a patient with frequent respiratory symptoms prompts the consideration of alternative causes for the symptoms -- cardiac disease, cough due to post nasal drip, GERD   
+	- A normal or near normal FEV₁ in a patient with frequent respiratory symptoms prompts the consideration of alternative causes for the symptoms -- cardiac disease, [cough](/not_created.md) due to post nasal drip, GERD   
 	- Persistent bronchodilator responsiveness   
 		- Finding significant bronchodilator responsiveness (increase in FEV₁ >12% and >200 mL from baseline) in a patient taking controller treatment or who has taken a SABA within 4 hours, or a LABA within 12 hours (or 24 hours for a once-daily LABA), suggests uncontrolled asthma   
 	- Interpreting changes in lung function in clinical practice   

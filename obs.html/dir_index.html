@@ -79,11 +79,11 @@
         if((e.key=='Escape'||e.key=='Esc'||e.keyCode==27)){
             document.getElementById('search-master-div').style.display = 'none';
             return false;
-        }
+        } 
     }, true);
 
-    function click_inner_link(element){
-        element.getElementsByTagName('a')[0].click()
+    function click_list_link(element){
+        element.parentElement.getElementsByTagName('a')[0].click()
     }
 </script>
 
@@ -447,47 +447,54 @@
 	</div>
 	<button id="folder-30" class="dir-button" onclick="toggle_dir(this.id)">13. Pulmonary Pathology</button>
 	<div id="folder-container-30" class="dir-container">
-		<button id="folder-31" class="dir-button" onclick="toggle_dir(this.id)">Pathology of Acute Lung Injury</button>
+		<button id="folder-31" class="dir-button" onclick="toggle_dir(this.id)">Pathology of Parenchymal Diseases</button>
 		<div id="folder-container-31" class="dir-container">
+			<button id="folder-32" class="dir-button" onclick="toggle_dir(this.id)">Pathology of Acute Lung Injury</button>
+			<div id="folder-container-32" class="dir-container">
+				<ul class="dir-list">
+					<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Acute Lung Injury/Diffuse Alveolar Damage.html"  >Diffuse Alveolar Damage</a></li>
+					<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Acute Lung Injury/Organizing Pneumonia.html"  >Organizing Pneumonia</a></li>
+				</ul>
+			</div>
+			<button id="folder-33" class="dir-button" onclick="toggle_dir(this.id)">Pathology of Chronic Fibrosing Interstitial Pneumonias</button>
+			<div id="folder-container-33" class="dir-container">
+				<ul class="dir-list">
+					<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Chronic Fibrosing Interstitial Pneumonias/Fibrotic Hypersensitivity Pneumonitis.html"  >Fibrotic Hypersensitivity Pneumonitis</a></li>
+					<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Chronic Fibrosing Interstitial Pneumonias/Nonspecific Interstitial Pneumonia.html"  >Nonspecific Interstitial Pneumonia</a></li>
+					<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Chronic Fibrosing Interstitial Pneumonias/Usual Interstitial Pneumonia.html"  >Usual Interstitial Pneumonia</a></li>
+				</ul>
+			</div>
+			<button id="folder-34" class="dir-button" onclick="toggle_dir(this.id)">Pathology of Granulomatous Interstitial Lung Disease</button>
+			<div id="folder-container-34" class="dir-container">
+				<ul class="dir-list">
+					<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Granulomatous Interstitial Lung Disease/Pathology of Nonfibrotic Hypersensitivity Pneumonitis.html"  >Pathology of Nonfibrotic Hypersensitivity Pneumonitis</a></li>
+					<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Granulomatous Interstitial Lung Disease/Pathology of Sarcoidosis.html"  >Pathology of Sarcoidosis</a></li>
+				</ul>
+			</div>
+			<button id="folder-35" class="dir-button" onclick="toggle_dir(this.id)">Pathology of Smoking Related Interstitial Pneumonias</button>
+			<div id="folder-container-35" class="dir-container">
+				<ul class="dir-list">
+					<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Smoking Related Interstitial Pneumonias/Langerhans Cell Histiocytosis.html"  >Langerhans Cell Histiocytosis</a></li>
+					<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Smoking Related Interstitial Pneumonias/Respiratory Bronchiolitis.html"  >Respiratory Bronchiolitis</a></li>
+				</ul>
+			</div>
 			<ul class="dir-list">
-				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Acute Lung Injury/Diffuse Alveolar Damage.html"  >Diffuse Alveolar Damage</a></li>
-				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Acute Lung Injury/Organizing Pneumonia.html"  >Organizing Pneumonia</a></li>
-			</ul>
-		</div>
-		<button id="folder-32" class="dir-button" onclick="toggle_dir(this.id)">Pathology of Chronic Fibrosing Interstitial Pneumonias</button>
-		<div id="folder-container-32" class="dir-container">
-			<ul class="dir-list">
-				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Chronic Fibrosing Interstitial Pneumonias/Fibrotic Hypersensitivity Pneumonitis.html"  >Fibrotic Hypersensitivity Pneumonitis</a></li>
-				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Chronic Fibrosing Interstitial Pneumonias/Nonspecific Interstitial Pneumonia.html"  >Nonspecific Interstitial Pneumonia</a></li>
-				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Chronic Fibrosing Interstitial Pneumonias/Usual Interstitial Pneumonia.html"  >Usual Interstitial Pneumonia</a></li>
-			</ul>
-		</div>
-		<button id="folder-33" class="dir-button" onclick="toggle_dir(this.id)">Pathology of Granulomatous Interstitial Lung Disease</button>
-		<div id="folder-container-33" class="dir-container">
-			<ul class="dir-list">
-				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Granulomatous Interstitial Lung Disease/Pathology of Nonfibrotic Hypersensitivity Pneumonitis.html"  >Pathology of Nonfibrotic Hypersensitivity Pneumonitis</a></li>
-				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Granulomatous Interstitial Lung Disease/Pathology of Sarcoidosis.html"  >Pathology of Sarcoidosis</a></li>
-			</ul>
-		</div>
-		<button id="folder-34" class="dir-button" onclick="toggle_dir(this.id)">Pathology of Smoking Related Interstitial Pneumonias</button>
-		<div id="folder-container-34" class="dir-container">
-			<ul class="dir-list">
-				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Smoking Related Interstitial Pneumonias/Langerhans Cell Histiocytosis.html"  >Langerhans Cell Histiocytosis</a></li>
-				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Smoking Related Interstitial Pneumonias/Respiratory Bronchiolitis.html"  >Respiratory Bronchiolitis</a></li>
+				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Acute Lung Injury.html"  >Pathology of Acute Lung Injury</a></li>
+				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Chronic Fibrosing Interstitial Pneumonias.html"  >Pathology of Chronic Fibrosing Interstitial Pneumonias</a></li>
+				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Granulomatous Interstitial Lung Disease.html"  >Pathology of Granulomatous Interstitial Lung Disease</a></li>
+				<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases/Pathology of Smoking Related Interstitial Pneumonias.html"  >Pathology of Smoking Related Interstitial Pneumonias</a></li>
 			</ul>
 		</div>
 		<ul class="dir-list">
-			<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Acute Lung Injury.html"  >Pathology of Acute Lung Injury</a></li>
-			<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Chronic Fibrosing Interstitial Pneumonias.html"  >Pathology of Chronic Fibrosing Interstitial Pneumonias</a></li>
-			<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Granulomatous Interstitial Lung Disease.html"  >Pathology of Granulomatous Interstitial Lung Disease</a></li>
-			<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Idiopathic Interstitial Pneumonias.html"  >Pathology of Idiopathic Interstitial Pneumonias</a></li>
-			<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Smoking Related Interstitial Pneumonias.html"  >Pathology of Smoking Related Interstitial Pneumonias</a></li>
+			<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Airway Diseases.html"  >Pathology of Airway Diseases</a></li>
+			<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Parenchymal Diseases.html"  >Pathology of Parenchymal Diseases</a></li>
+			<li><a href="/Pulmonary Medicine/13. Pulmonary Pathology/Pathology of Vascular Diseases.html"  >Pathology of Vascular Diseases</a></li>
 		</ul>
 	</div>
-	<button id="folder-35" class="dir-button" onclick="toggle_dir(this.id)">14. Occupational and Environmental Diseases</button>
-	<div id="folder-container-35" class="dir-container">
-		<button id="folder-36" class="dir-button" onclick="toggle_dir(this.id)">attachments</button>
-		<div id="folder-container-36" class="dir-container">
+	<button id="folder-36" class="dir-button" onclick="toggle_dir(this.id)">14. Occupational and Environmental Diseases</button>
+	<div id="folder-container-36" class="dir-container">
+		<button id="folder-37" class="dir-button" onclick="toggle_dir(this.id)">attachments</button>
+		<div id="folder-container-37" class="dir-container">
 			<ul class="dir-list">
 				<li><a href="/Pulmonary Medicine/14. Occupational and Environmental Diseases/attachments/Pasted image 20220504094456.png"  class="external-link">Pasted image 20220504094456</a></li>
 			</ul>

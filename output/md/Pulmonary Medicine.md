@@ -3,7 +3,7 @@ obs.html:
   disable_dir_nav: true
 ---
    
-# Topics   
+# Content Category   
 |                                                     |               |   
 | --------------------------------------------------- | ------------- |   
 | [01. Diseases of the Airways](./Pulmonary%20Medicine/01.%20Diseases%20of%20the%20Airways.md)                     | 17.5% of Exam |   
@@ -15,7 +15,7 @@ obs.html:
 | [07. Pleural Disease](./Pulmonary%20Medicine/07.%20Pleural%20Disease.md)                             | 5% of Exam    |   
 | [08. Quality, Safety, and Complications](./Pulmonary%20Medicine/08.%20Quality%2C%20Safety%2C%20and%20Complications.md)          | 5% of Exam    |   
 | [09. Transplantations](./Pulmonary%20Medicine/09.%20Transplantations.md)                            | 2% of Exam    |   
-| [10. Vascular Diseases](./Pulmonary%20Medicine/10.%20Vascular%20Diseases.md)                           | 6% of Exam    |   
+| [10. Diseases of the Vasculature](./Pulmonary%20Medicine/10.%20Diseases%20of%20the%20Vasculature.md)                           | 6% of Exam    |   
 | [11. Respiratory Anatomy & Physiology](./Pulmonary%20Medicine/11.%20Respiratory%20Anatomy%20%26%20Physiology.md)            | 2% of Exam    |   
 | [12. Pulmonary Signs & Symptoms](./Pulmonary%20Medicine/12.%20Pulmonary%20Signs%20%26%20Symptoms.md)                          | 2% of Exam    |   
 | [13. Pulmonary Pathology](./Pulmonary%20Medicine/13.%20Pulmonary%20Pathology.md)                         |               |   

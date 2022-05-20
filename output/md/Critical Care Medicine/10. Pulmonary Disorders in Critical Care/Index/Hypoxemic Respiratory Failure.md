@@ -88,7 +88,11 @@
 						- Chest wall restrictions of posterior ribs → decreased compliance   
 						- Pooling of fluid and exudate in posterior lungs → decreased ventilation   
 	- Diffusion block   
-		-    
+		- Pulmonary Hypertension   
+		- Interstitial Diseases   
+		- These patients only become hypoxic when they exert themselves as this decreases the time the red blood cell spends in the capillary → decreased time for diffusion to occur   
+			- normally, exertion causes an increase in cardiac output and recruitment of pulmonary vascular units → decreasing pulmonary vascular resistance   
+			- These patients are unable to recruit pulmonary vascular units therefore the flow rates through the capillary bed increase, leading to a decrease in time for uptake of oxygen in the capillary unit   
 	- Alveolar Hypoventilation   
 		- Final common pathway for all causes of respiratory distress   
 	- Alveolar filling processes caused by pneumonia, ARDS, alveolar hemorrhage, CHF usually affect the lung in a heterogenous fashion therefore have both shunt and V/Q mismatch contributing to the hypoxemia   

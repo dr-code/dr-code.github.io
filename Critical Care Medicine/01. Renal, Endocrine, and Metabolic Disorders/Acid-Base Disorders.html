@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+        <head>
+                <!-- Page information -->
+                <meta charset="UTF-8" />
+                <meta name="node_id" content="Acid-Base Disorders">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+
+                <!-- Set title -->
+                <title>Pulmonary Critical Care Notes</title>
+
+                <!-- Includes -->
+                
+<script src="/obs.html/static/obsidian_core.js"></script>
+<script src="/obs.html/static/encoding.js"></script>
+<link rel="stylesheet" href="/obs.html/static/master.css" />
+<script src="/obs.html/static/mermaid.9.0.1.min.js"></script>
+<script src="/obs.html/static/tex-chtml.js"></script>
+<script src="/obs.html/static/load_mathjax.js"></script>
+<script src="/obs.html/static/flexsearch.bundle.js"></script>
+<script src="/obs.html/static/pako.js"></script>
+<script src="/obs.html/static/search.js"></script>
+<script src="/obs.html/static/dirtree.js"></script>
+
+
+                <!-- Onload tweaks -->
+                <script>
+                        const CURRENT_NODE = 'Acid-Base Disorders';
+                        const HTML_URL_PREFIX = '';
+                </script>
+        </head>
+
+<body class="theme-obs-light">
+        <div id="antiflash"></div>
+        <div id="search-master-div">
+    <div id="search-slab" king_ramses="return the slaaab">
+            <div id="search-controls">
+                    <input id="search_string" placeholder="Type to search notes" type="text" />
+                    <div class="tooltip" style="display: none;">
+                        <input type="checkbox" id="hard_search" name="hard" />
+                        <span class="tooltiptext">Hard search (require exact match)</span>
+                    </div>
+                    <div id="search-results-box">
+                        <div id="search-results"></div>
+                    </div>
+                    <div id="search-instructions">
+                        <div class="prompt-instruction">
+                                <b>esc</b> to dismiss
+                        </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("search-master-div").addEventListener('click', e => {
+            if(e.target !== e.currentTarget){
+                    return
+            }
+            toggle('search-master-div', 'block');
+    })
+    document.getElementById("search_string").addEventListener("input", function(event) {
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    }); 
+    document.getElementById("hard_search").addEventListener("click", function(event) {
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    });
+
+    window.addEventListener('keydown', e => {
+        if((e.key=='Escape'||e.key=='Esc'||e.keyCode==27)){
+            document.getElementById('search-master-div').style.display = 'none';
+            return false;
+        } 
+    }, true);
+
+    function click_list_link(element){
+        element.parentElement.getElementsByTagName('a')[0].click()
+    }
+</script>
+
+        <div id="page_holder" class="flex_col">
+                <div id="header" class="header">
+                        <div id="header_flex" class="flex_row">
+                                <a href="/index.html" id="homelink" title="Clear screen and go to homepage">Pulmonary Critical Care Notes</a>
+                                <div class="navbar-button" onclick="toggle_menu()">
+                                        ≡
+                                </div>
+                                <div id="navbar" class="navbar">
+                                <a class="navbar-link" href="/Pulmonary Medicine/Pulmonary Medicine.html" title="Pulmonary">Pulmonary</a>
+<a class="navbar-link" href="/Critical Care Medicine/Critical Care Medicine.html" title="Critical Care">Critical Care</a>
+                                        <div class="icon-tray">
+                                                
+                                                <div>
+    <a href="/obs.html/tags/index.html" title="Open tag view">
+            <img src = "/obs.html/static/hashtag.svg" alt="RSS Feed link" style="width: 24px; margin-left: -2px; margin-top: -2px;"/>
+    </a>
+</div>
+                                                        <div >
+            <a id="dirtree_link" class="system-link" href="/obs.html/dir_index.html" title="View directory tree">
+                    <img src = "/obs.html/static/dirtree.svg" style="width: 12px; padding: 4px;" alt="Directory tree link"/>
+            </a>
+        </div>
+                                                        <div class="graph_header_div">
+            <a id="graph_link" class="system-link" href="/obs.html/graph/index.html?node=Acid-Base Disorders" title="Open fullpage Graph">
+                    <img class="graph_header_div_svg" src = "/obs.html/static/graph.svg" alt="Open fullpage Graph" style="margin: 2px; width: 17px;"/>
+            </a>
+        </div>
+                                                        <div onclick="openSearch()">
+                <img src = "/obs.html/static/search.svg" alt="Search notes" title="Search notes" style="margin: 4px;"/>
+        </div>
+        <script>
+                function openSearch(){
+                        // toggle search popup and continue with extra code if it is enabled this time
+                        if (toggle('search-master-div', 'block')){
+                                // clear input and put focus on it so that we can start typing immediately
+                                let ss = document.getElementById('search_string');
+                                ss.value = '';
+                                ss.focus()
+                                ss.select()
+                        }
+                }
+        </script>
+                                                <div id="theme-button" class="theme-button" title="Change theme" onclick="toggle_theme_popup(this)">
+    T
+</div>
+<script>
+    function toggle_theme_popup(el){
+        // make theme button show that it's active by adding the .active class
+        cl_toggle(el.id, 'active');
+
+        // show the theme selector
+        toggle('theme-popup','block')
+
+        let h2 = document.getElementById('header2')
+        if (h2){
+            let pu = document.getElementById('header2').getElementsByClassName('popup')[0];
+            toggle_el(pu,'block');
+        }
+    }
+</script>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="popup" id="theme-popup">
+    <label for="cars">Theme </label>
+
+    <select name="theme" id="theme" onchange="set_theme(this.value)">
+      <option value="light">light</option>
+      <option value="obs-light" selected="selected">obsidian-light</option>
+      <option value="obs-dark">obsidian-dark</option>
+    </select> 
+</div>
+                </div>
+                <div class="flex_row">
+                        <div id="left_pane"></div>
+                        <div class="container">
+                                <h1 id="acid-base-regulation"><a href="/Pulmonary Medicine/11. Respiratory Anatomy &amp; Physiology/11.10 Acid-Base Regulation.html">Acid-Base Regulation</a></h1>
+<div class="toc">
+<ul>
+<li><a href="#acid-base-regulation" class="anchor-link">Acid-Base Regulation</a></li>
+<li><a href="#general" class="anchor-link">General</a></li>
+<li><a href="#approach" class="anchor-link">Approach</a></li>
+<li><a href="#metabolic-acidosis" class="anchor-link">Metabolic Acidosis</a></li>
+<li><a href="#metabolic-alkalosis" class="anchor-link">Metabolic Alkalosis</a></li>
+<li><a href="#respiratory-acidosis" class="anchor-link">Respiratory Acidosis</a></li>
+<li><a href="#respiratory-alkalosis" class="anchor-link">Respiratory Alkalosis</a></li>
+<li><a href="#mixed-acid-base-disorders" class="anchor-link">Mixed Acid-Base Disorders</a></li>
+</ul>
+</div>
+<h1 id="general">General</h1>
+<ul>
+<li>Normal pH of normal saline = 5.5   <ul>
+<li>Salting Out   </li>
+<li>Exposure of atmospheric CO₂ which diffuses into H₂O i.e. ionizes H₂O   </li>
+</ul>
+</li>
+<li>Administration of normal saline causes acidosis   <ul>
+<li>dilution of <a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/buffers.html">buffers</a> such as bicarbonate to form more carbonic acid   </li>
+<li>NaCl results in more hydrogen ions → pushes equation to the left toward carbonic acid   </li>
+</ul>
+</li>
+</ul>
+<h1 id="approach">Approach</h1>
+<ul>
+<li>Step 0: Required elements   <ul>
+<li><a href="/not_created.html" class="nonexistent-link">ABG</a> -- pH, PaCO₂, HCO3-   </li>
+<li>Electrolytes -- Na+, Cl-, CO₂ (total = bicarbonate + total dissolved CO₂)   </li>
+<li>Albumin   </li>
+<li>Clinical History   </li>
+</ul>
+</li>
+<li>Step 1: Establish internal consistency   <ul>
+<li>H+ = 24 x (PaCO₂/HCO3-); range +/- 2   </li>
+<li>For pH range 7.25-7.55   <ul>
+<li>Change in pH by 0.01 equals change in H+ of 1 nmol/L in the opposite direction   </li>
+<li>pH 7.4 = 40 nmol/L   </li>
+</ul>
+</li>
+<li>ABG nearly always consistent and if not internally consistent then needs to be repeated   </li>
+</ul>
+</li>
+<li>Step 2: Evaluate pH   <ul>
+<li>Whether there is <a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/acidemia.html">acidemia</a>, <a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/alkalemia.html">alkalemia</a> or normal   </li>
+</ul>
+</li>
+<li>Step 3: Determine the primary process   <ul>
+<li>Evaluate the PaCO₂, HCO3-   </li>
+<li>If pH change is from HCO3- → Metabolic   <ul>
+<li><a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Metabolic Acidosis.html">Metabolic Acidosis</a>   </li>
+<li><a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Metabolic Alkalosis.html">Metabolic Alkalosis</a>   </li>
+</ul>
+</li>
+<li>if pH change is from PaCO₂ → Respiratory   <ul>
+<li><a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Respiratory Acidosis.html">Respiratory Acidosis</a>   </li>
+<li><a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Respiratory Alkalosis.html">Respiratory Alkalosis</a>   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Step 4: Calculate <a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Anion Gap.html">Anion Gap</a>   </li>
+<li>Step 5: Adjust Anion Gap for Albumin   <ul>
+<li>Albumin = single largest contributor to the normal anion gap   </li>
+<li>When albumin is low -- decrease AG by 3 mmol/L for every 1 g/dL decrease in albumin from normal of 4 g/dL   </li>
+</ul>
+</li>
+<li>Step 6: Calculate <a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Delta-Delta Gap.html">Delta-Delta Gap</a>   </li>
+<li>Step 7: Evaluate <a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Osmolar Gap.html">Osmolar Gap</a>   </li>
+<li>Step 8: Compensation &amp; Finding Complex Acid-Base Disorders   <ul>
+<li>Rules of thumb   <ul>
+<li>Tends to normalize pH, never overcorrects   </li>
+<li>Requires normal kidney and lung function   </li>
+<li>Metabolic compensation takes 12-24 hours   </li>
+</ul>
+</li>
+<li>In simple disorders, PaCO₂ and HCO3- change in the same direction   </li>
+<li>A change in pH = 0.08 in the opposite direction for every 10 mmHg change in PaCO₂ from 40 mmHg   </li>
+<li>Compensation   <ul>
+<li>Metabolic acidosis -- expected PaCO₂ = (1.5 x HCO3-) + 8 +/- 2   </li>
+<li>Metabolic alkalosis -- expected PaCO₂ = (0.7 x HCO3-) + 20 +/- 1.5   </li>
+<li>Acute Respiratory Acidosis -- expected HCO3- = 1 <strong>decrease</strong> in HCO3- for every 10 increase in PaCO₂   </li>
+<li>Acute Respiratory Alkalosis -- expected HCO3- = 2 <strong>increase</strong> in HCO3- for every 10 decrease in PaCO₂   </li>
+<li>Chronic Respiratory Acidosis -- expected HCO3- = 4 <strong>decrease</strong> in HCO3- for every 10 increase in PaCO₂   </li>
+<li>Chronic Respiratory Alkalosis -- expected HCO3- = 5 <strong>increase</strong> in HCO3- for every 10 decrease in PaCO₂   </li>
+</ul>
+</li>
+<li>Tip-offs to complex acid-base disorders   <ul>
+<li>Normal pH but abnormal PaCO₂ and HCO3-   </li>
+<li>PaCO₂ and HCO3- move in opposite directions   </li>
+<li>pH change opposite from primary disorder   </li>
+</ul>
+</li>
+<li>Finding Mixed Disorders   <ul>
+<li>Discern the primary disorder   </li>
+<li>Evaluate compensation   </li>
+<li>Evaluate <a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Delta-Delta Gap.html">Delta-Delta Gap</a>   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="metabolic-acidosis"><a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Metabolic Acidosis.html">Metabolic Acidosis</a></h1>
+<h1 id="metabolic-alkalosis"><a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Metabolic Alkalosis.html">Metabolic Alkalosis</a></h1>
+<h1 id="respiratory-acidosis"><a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Respiratory Acidosis.html">Respiratory Acidosis</a></h1>
+<h1 id="respiratory-alkalosis"><a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Respiratory Alkalosis.html">Respiratory Alkalosis</a></h1>
+<h1 id="mixed-acid-base-disorders">Mixed Acid-Base Disorders</h1><h2>Backlinks</h2>
+<ul>
+	<li><a class="backlink" href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders.html">01. Renal, Endocrine, and Metabolic Disorders</a></li>
+</ul>
+<script src="/obs.html/static/graph.js" type="text/javascript"></script>
+
+<div class="graph">
+    <div id="A76415138188320736920363014724101935887{level}" class="graph_div"></div>
+    <button class="graph_button" id="B76415138188320736920363014724101935887{level}" level="{level}" onclick="run('76415138188320736920363014724101935887'+this.level, 'Acid-Base Disorders');">Show Graph</button>
+</div>
+
+
+<script src="/obs.html/static/3d-force-graph.js"></script>
+
+<script>
+    function grapher(args) {
+        window.Graph = ForceGraph3D()
+            (args.graph_container)
+            .jsonUrl(args.data)
+            .width(args.width)
+            .height(args.height)
+            .nodeLabel('id')
+            .linkDirectionalParticles("value")
+            .linkDirectionalParticleSpeed(0.010)
+            .linkDirectionalParticleWidth(2.0)
+            .nodeColor(node => {
+                if (node.id == current_node_id){
+                    return '#ff0000'
+                }
+                let isConnected = false;
+                node.links.forEach(link => {
+                    if (link == current_node_id){
+                        isConnected = true;
+                    }
+                })
+                if (isConnected){
+                    return '#f7be49';
+                }
+                return '#ffffff'
+            })
+            .linkColor(link => {
+                if (link.source == current_node_id || link.target == current_node_id){
+                    return '#ff0000'
+                }
+                return '#dadada'
+            })
+            .linkOpacity(0.3)
+            .onNodeClick(node => {
+                args.node = node;
+                graph_left_click(args)()
+            })
+            .onNodeRightClick(node => {
+                args.node = node;
+                graph_right_click(args)()
+            });
+    }
+</script>
+
+
+                                <!-- end content -->
+                        </div>
+                        <div id="right_pane"></div>
+                </div>
+        </div>
+
+<script src="/obs.html/static/load_dirtree_footer.js" type="text/javascript"></script>
+
+
+</body>
+</html>

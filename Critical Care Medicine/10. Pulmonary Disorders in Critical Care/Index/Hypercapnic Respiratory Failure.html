@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+        <head>
+                <!-- Page information -->
+                <meta charset="UTF-8" />
+                <meta name="node_id" content="Hypercapnic Respiratory Failure">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+
+                <!-- Set title -->
+                <title>Pulmonary Critical Care Notes</title>
+
+                <!-- Includes -->
+                
+<script src="/obs.html/static/obsidian_core.js"></script>
+<script src="/obs.html/static/encoding.js"></script>
+<link rel="stylesheet" href="/obs.html/static/master.css" />
+<script src="/obs.html/static/mermaid.9.0.1.min.js"></script>
+<script src="/obs.html/static/tex-chtml.js"></script>
+<script src="/obs.html/static/load_mathjax.js"></script>
+<script src="/obs.html/static/flexsearch.bundle.js"></script>
+<script src="/obs.html/static/pako.js"></script>
+<script src="/obs.html/static/search.js"></script>
+<script src="/obs.html/static/dirtree.js"></script>
+
+
+                <!-- Onload tweaks -->
+                <script>
+                        const CURRENT_NODE = 'Hypercapnic Respiratory Failure';
+                        const HTML_URL_PREFIX = '';
+                </script>
+        </head>
+
+<body class="theme-obs-light">
+        <div id="antiflash"></div>
+        <div id="search-master-div">
+    <div id="search-slab" king_ramses="return the slaaab">
+            <div id="search-controls">
+                    <input id="search_string" placeholder="Type to search notes" type="text" />
+                    <div class="tooltip" style="display: none;">
+                        <input type="checkbox" id="hard_search" name="hard" />
+                        <span class="tooltiptext">Hard search (require exact match)</span>
+                    </div>
+                    <div id="search-results-box">
+                        <div id="search-results"></div>
+                    </div>
+                    <div id="search-instructions">
+                        <div class="prompt-instruction">
+                                <b>esc</b> to dismiss
+                        </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("search-master-div").addEventListener('click', e => {
+            if(e.target !== e.currentTarget){
+                    return
+            }
+            toggle('search-master-div', 'block');
+    })
+    document.getElementById("search_string").addEventListener("input", function(event) {
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    }); 
+    document.getElementById("hard_search").addEventListener("click", function(event) {
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    });
+
+    window.addEventListener('keydown', e => {
+        if((e.key=='Escape'||e.key=='Esc'||e.keyCode==27)){
+            document.getElementById('search-master-div').style.display = 'none';
+            return false;
+        } 
+    }, true);
+
+    function click_list_link(element){
+        element.parentElement.getElementsByTagName('a')[0].click()
+    }
+</script>
+
+        <div id="page_holder" class="flex_col">
+                <div id="header" class="header">
+                        <div id="header_flex" class="flex_row">
+                                <a href="/index.html" id="homelink" title="Clear screen and go to homepage">Pulmonary Critical Care Notes</a>
+                                <div class="navbar-button" onclick="toggle_menu()">
+                                        ≡
+                                </div>
+                                <div id="navbar" class="navbar">
+                                <a class="navbar-link" href="/Pulmonary Medicine/Pulmonary Medicine.html" title="Pulmonary">Pulmonary</a>
+<a class="navbar-link" href="/Critical Care Medicine/Critical Care Medicine.html" title="Critical Care">Critical Care</a>
+                                        <div class="icon-tray">
+                                                
+                                                <div>
+    <a href="/obs.html/tags/index.html" title="Open tag view">
+            <img src = "/obs.html/static/hashtag.svg" alt="RSS Feed link" style="width: 24px; margin-left: -2px; margin-top: -2px;"/>
+    </a>
+</div>
+                                                        <div >
+            <a id="dirtree_link" class="system-link" href="/obs.html/dir_index.html" title="View directory tree">
+                    <img src = "/obs.html/static/dirtree.svg" style="width: 12px; padding: 4px;" alt="Directory tree link"/>
+            </a>
+        </div>
+                                                        <div class="graph_header_div">
+            <a id="graph_link" class="system-link" href="/obs.html/graph/index.html?node=Hypercapnic Respiratory Failure" title="Open fullpage Graph">
+                    <img class="graph_header_div_svg" src = "/obs.html/static/graph.svg" alt="Open fullpage Graph" style="margin: 2px; width: 17px;"/>
+            </a>
+        </div>
+                                                        <div onclick="openSearch()">
+                <img src = "/obs.html/static/search.svg" alt="Search notes" title="Search notes" style="margin: 4px;"/>
+        </div>
+        <script>
+                function openSearch(){
+                        // toggle search popup and continue with extra code if it is enabled this time
+                        if (toggle('search-master-div', 'block')){
+                                // clear input and put focus on it so that we can start typing immediately
+                                let ss = document.getElementById('search_string');
+                                ss.value = '';
+                                ss.focus()
+                                ss.select()
+                        }
+                }
+        </script>
+                                                <div id="theme-button" class="theme-button" title="Change theme" onclick="toggle_theme_popup(this)">
+    T
+</div>
+<script>
+    function toggle_theme_popup(el){
+        // make theme button show that it's active by adding the .active class
+        cl_toggle(el.id, 'active');
+
+        // show the theme selector
+        toggle('theme-popup','block')
+
+        let h2 = document.getElementById('header2')
+        if (h2){
+            let pu = document.getElementById('header2').getElementsByClassName('popup')[0];
+            toggle_el(pu,'block');
+        }
+    }
+</script>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="popup" id="theme-popup">
+    <label for="cars">Theme </label>
+
+    <select name="theme" id="theme" onchange="set_theme(this.value)">
+      <option value="light">light</option>
+      <option value="obs-light" selected="selected">obsidian-light</option>
+      <option value="obs-dark">obsidian-dark</option>
+    </select> 
+</div>
+                </div>
+                <div class="flex_row">
+                        <div id="left_pane"></div>
+                        <div class="container">
+                                <h1 id="physiology-of-gas-exchange">Physiology of Gas Exchange</h1>
+<div class="toc">
+<ul>
+<li><a href="#physiology-of-gas-exchange" class="anchor-link">Physiology of Gas Exchange</a></li>
+<li><a href="#overview-of-hypercapnia" class="anchor-link">Overview of Hypercapnia</a></li>
+<li><a href="#etiology-of-hypercapnic-respiratory-failure" class="anchor-link">Etiology of Hypercapnic Respiratory Failure</a><ul>
+<li><a href="#central-respiratory-drive" class="anchor-link">Central Respiratory Drive</a></li>
+<li><a href="#spinal-cord-nerves-neuromuscular-junction" class="anchor-link">Spinal Cord, Nerves, Neuromuscular Junction</a></li>
+<li><a href="#respiratory-muscles-chest-wall" class="anchor-link">Respiratory Muscles &amp; Chest Wall</a></li>
+<li><a href="#lung" class="anchor-link">Lung</a></li>
+</ul>
+</li>
+<li><a href="#capnography" class="anchor-link">Capnography</a></li>
+</ul>
+</div>
+<h1 id="overview-of-hypercapnia">Overview of Hypercapnia</h1>
+<ul>
+<li>Definition of Hypercapnia   <ul>
+<li>PaCO₂ is directly proportional to rate of CO₂ production (VCO₂)   </li>
+<li>PaCO₂ is inversely proportional to rate of CO₂ elimination by lung -- alveolar ventilation   </li>
+</ul>
+</li>
+<li>Hypercapnia 2/2 increased CO₂ production (VCO₂)   <ul>
+<li>Increased metabolic rate   <ul>
+<li>Increased activity   </li>
+<li>Sepsis   </li>
+<li>Thyrotoxicosis   </li>
+</ul>
+</li>
+<li>Metabolizing of carbohydrates   </li>
+</ul>
+</li>
+<li>Hypercapnia 2/2 decreased alveolar ventilation (<span class="arithmatex">\(V_A\)</span>)   <ul>
+<li>Decreased minute ventilation   </li>
+<li>Increased VD/VT (i.e. physiologic dead space) with stable minute ventilation   </li>
+<li>Rapid, shallow breathing   </li>
+</ul>
+</li>
+<li>Clinical Effects of Acute Hypercapnia   <ul>
+<li>Decreased level of consciouness   <ul>
+<li>PaCO₂ &gt;60-70 mmHg in normal individuals   </li>
+<li>PaCO₂ &gt;90-100 mmHg in patients with chronic hypercapnia   </li>
+</ul>
+</li>
+<li>Increased cerebral blood flow, ICP   </li>
+<li>Decreased myocardial contractility   </li>
+<li>Decreased diaphragmatic function   </li>
+<li>Shift oxyhemoglobin dissociation curve to the right   </li>
+<li>Signs &amp; Symptoms   <ul>
+<li><a href="/Pulmonary Medicine/12. Pulmonary Signs &amp; Symptoms/Dyspnea.html">Dyspnea</a>   </li>
+<li><a href="/not_created.html" class="nonexistent-link">Somnolence</a>   </li>
+<li><a href="/not_created.html" class="nonexistent-link">Headache</a>   </li>
+<li><a href="/not_created.html" class="nonexistent-link">Confusion</a>   </li>
+<li><a href="/not_created.html" class="nonexistent-link">Asterixis</a>   </li>
+<li><a href="/not_created.html" class="nonexistent-link">Coma</a>   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="etiology-of-hypercapnic-respiratory-failure">Etiology of Hypercapnic Respiratory Failure</h1>
+<ul>
+<li>Broken link in the chain of events   <ul>
+<li>Central respiratory center → spinal cord → motor neurons → neuromuscular junction → respiratory muscles → chest wall → lung   </li>
+</ul>
+</li>
+</ul>
+<h2 id="central-respiratory-drive">Central Respiratory Drive</h2>
+<ul>
+<li>Decreased respiratory drive   <ul>
+<li>Sedative   </li>
+<li>Opioid overdose   </li>
+<li>Encephalitis   </li>
+<li>Stroke   <ul>
+<li>Cheyne-Stokes Respiration   <ul>
+<li>Most common with heart failure, high altitude, and neurologic disease   </li>
+</ul>
+</li>
+<li>Biot Respiration   <ul>
+<li>Irregular clusters of breaths and apnea   </li>
+<li>Lesion of upper pons or lower medulla   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Obesity hypoventilation syndrome   </li>
+<li>Sleep apnea (central sleep apnea &amp; obstructive sleep apnea)   </li>
+<li>Congenital central alveolar hypoventilation   </li>
+<li>Hypothyroidism   <ul>
+<li>Myxedema coma → depressed hypercapnic ventilatory drive &amp; hypoxic ventilatory drive + respiratory muscle weakness &amp; compromise of the upper airway   </li>
+</ul>
+</li>
+<li><a href="/Critical Care Medicine/01. Renal, Endocrine, and Metabolic Disorders/Index/Metabolic Alkalosis.html">Metabolic Alkalosis</a>   </li>
+</ul>
+</li>
+</ul>
+<h2 id="spinal-cord-nerves-neuromuscular-junction">Spinal Cord, Nerves, Neuromuscular Junction</h2>
+<ul>
+<li>Disorders of Spinal Cord   <ul>
+<li>Direct Spinal Cord Injury   <ul>
+<li>Traumatic spinal cord injury -- 50% of motor vehicle accidents, neurologic progression over hours   </li>
+<li>Cervical spinal cord injury &amp; respiratory muscles   <ul>
+<li>Phrenic nerve to diaphragm: C3-C5   </li>
+<li>Scalene muscles: C4-C8   </li>
+<li>Sternocleidomastoid, trapezius: C1-C4; CN XI   </li>
+</ul>
+</li>
+<li>Complete injury above C3 = ventilatory failure   </li>
+<li>Injury at C3, C4, C5 -- often wean from ventilator   </li>
+</ul>
+</li>
+<li>Amyotrophic Lateral Sclerosis   <ul>
+<li>Respiratory muscle weakness &amp; progressive respiratory failure   </li>
+<li>Combination of upper motor neuron and lower motor neuron disease   <ul>
+<li>upper motor neuron -- degeneration -&gt; <a href="/not_created.html" class="nonexistent-link">weakness</a>, <a href="/not_created.html" class="nonexistent-link">hyperreflexia</a>, <a href="/not_created.html" class="nonexistent-link">spasticity</a>   </li>
+<li>lower motor neuron -- degeneration -&gt; <a href="/not_created.html" class="nonexistent-link">weakness</a>, <a href="/not_created.html" class="nonexistent-link">atrophy</a>, <a href="/not_created.html" class="nonexistent-link">fasciculation</a>   </li>
+<li>Involvement of bulbar nerves -- <a href="/not_created.html" class="nonexistent-link">Dysphagia</a>, <a href="/not_created.html" class="nonexistent-link">aspiration</a>, <a href="/not_created.html" class="nonexistent-link">laryngospasm</a>   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Tetanus   <ul>
+<li>Caused by toxin-producing anaerobe Clostridium tetani   </li>
+<li>Retrograde transport of exotoxin up axons to brainstem and spinal cord   </li>
+<li>Blocks inhibitory neurotransmitters   </li>
+<li>Results in: spastic paralysis especially laryngeal muscles and respiratory muscles   </li>
+<li>Treatment: tetanus immune globulin, muscle relaxants, supportive (debridement, antibiotics, mechnical ventilation)   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Disorders of Peripheral Nerves   <ul>
+<li><a href="/Critical Care Medicine/04. Neurologic Disorders/Guillian-Barre Syndrome.html">Guillian-Barre Syndrome</a>   </li>
+<li>Diphtheria   </li>
+<li>Porphyria   </li>
+<li>Tick paralysis   </li>
+<li>Ciguatera fish poisoning   </li>
+<li><a href="/Critical Care Medicine/04. Neurologic Disorders/Critical illness polyneuropathy.html">Critical illness polyneuropathy</a>   </li>
+</ul>
+</li>
+<li>Disorders of Neuromuscular Junction   <ul>
+<li><a href="/Critical Care Medicine/04. Neurologic Disorders/Myasthenia Gravis.html">Myasthenia Gravis</a>   </li>
+<li><a href="/not_created.html" class="nonexistent-link">Eaton-Lambert Syndrome</a>   </li>
+<li><a href="/not_created.html" class="nonexistent-link">Organophosphate Poisoning</a>   </li>
+<li><a href="/not_created.html" class="nonexistent-link">Botulism</a>   </li>
+<li>Tick paralysis   </li>
+<li>Snake venom -- including copperheads, moccasins, rattlesnakes   </li>
+<li>Drugs: aminoglycosides, fluoroquinolones, anti-arrhythmics, phenytoin, lithium   </li>
+<li>Hypermagnesemia   </li>
+<li>Hypocalcemia   </li>
+</ul>
+</li>
+</ul>
+<h2 id="respiratory-muscles-chest-wall">Respiratory Muscles &amp; Chest Wall</h2>
+<ul>
+<li>Respiratory Muscle Weakness   <ul>
+<li>Etiology   <ul>
+<li>Pre-existing   <ul>
+<li>Neuromuscular junction   </li>
+<li>Malnutrition   </li>
+<li>Hyperinflation   </li>
+<li>Endocrine   <ul>
+<li>Hyperthyroidism   </li>
+<li>Hypothyroidism   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>New-onset   <ul>
+<li>Metabolic   <ul>
+<li>Hypokalemia   </li>
+<li>Hypophosphatemia   </li>
+<li>Acidosis   </li>
+</ul>
+</li>
+<li>ICU-Acquired Weakness   </li>
+<li>Mechanical ventilation   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Clinical features   <ul>
+<li>Decreased vital capacity   </li>
+<li>Increased residual volume   <ul>
+<li>expiratory muscles → decreased expiratory reserve volume   </li>
+</ul>
+</li>
+<li>Decreased total lung capacity   <ul>
+<li>inspiratory muscles → decreased inspiratory capacity   </li>
+</ul>
+</li>
+<li>Further decrease in vital capacity when supine   </li>
+<li>Decrease in maximum expiratory peak flow and maximum inspiratory peak flow   </li>
+<li>Results in hypercapnia when strength is &lt;40% predicted   </li>
+<li>Desaturation, hypercapnia during REM sleep &amp; in supine position   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Disorders of the Chest Wall   <ul>
+<li>Results in decreased chest wall compliance &amp; reduced tidal volume (increased VD/VT)   </li>
+<li>Hypercapnia exacerbated by   <ul>
+<li>reduced ventilatory drive   </li>
+<li>muscle weakness   </li>
+</ul>
+</li>
+<li><a href="/not_created.html" class="nonexistent-link">Kyphoscoliosis</a>   <ul>
+<li>Most patients with angle &gt;90 degrees have hypercapnia   </li>
+</ul>
+</li>
+<li><a href="/Pulmonary Medicine/03. Sleep Medicine, Neuromuscular, and Skeletal/Obesity Hypoventilation Syndrome.html">Obesity Hypoventilation Syndrome</a>   <ul>
+<li>Management of hypercapnic respiratory failure in morbid obese patients   <ul>
+<li>Identify and manage precipitating causes   </li>
+<li>Non-invasive positive pressure ventilation   <ul>
+<li>improves ventilation → reduces work of breathing   </li>
+<li>recruits atelectatic lung → improves V/Q matching → better oxygenation   </li>
+<li>improves upper airway patency   </li>
+</ul>
+</li>
+<li>Head up (reverse Trendelenburg) position   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="lung">Lung</h2>
+<ul>
+<li>Hypercapnic respiratory failure in patients with airflow obstruction   </li>
+<li>Acute hypercapnic respiratory failure 2/2 COPD   <ul>
+<li>Advanced COPD patients have a difficult time overcoming new infections like pneumonia   </li>
+<li>Fever causes increased VCO₂ and/or increased VD (due to pneumonia) → increased minute ventilation (by increasing RR) → decreasing expiratory time and increasing air trapping → increased work of breathing, fatigue → acute respiratory failure   </li>
+<li>Goal: rest, relief of air trapping   <ul>
+<li>Non-invasive positive pressure ventilation   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Acute hypercapnic respiratory failure 2/2 status asthmaticus   <ul>
+<li>Development of dynamic hyperinflation   <ul>
+<li>Bronchospasm, airway inflammation, mucous plugging → airflow obstruction → prevents gas emptying   </li>
+<li>New breath initiated before previous breath empties → increasing functional residual capacity   </li>
+<li>Dynamic hyperinflation develops when the time needed to deflate the lung to normal FRC between breaths is insufficient   <ul>
+<li>i.e. auto-peep   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Effects of dynamic hyperinflation   <ul>
+<li>Moves diaphragm downward and at a mechanically disadvantageous position   </li>
+<li>Incomplete alveolar gas emptying → elevated alveolar volume &amp; alveolar pressure (intrinsic PEEP or auto-PEEP)   </li>
+<li>Auto-PEEP represents a threshold pressure that must be overcome before inspiratory flow can occur → increasing work of breathing   </li>
+</ul>
+</li>
+<li>Ventilator adjustments for airflow obstruction   <ul>
+<li>Deliver adequate oxygenation   </li>
+<li>Primary goal = increase expiratory time (i.e. time needed to exhale)   </li>
+<li>Sedate patient to slow the respiratory rate   </li>
+<li>Set lower RR -- most effective method   </li>
+<li>Set lower tidal volume → less volume to exhale   </li>
+<li><strong>Increase inspiratory flow rate to deliver air more rapidly thus more time for exhalation</strong>   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="capnography">Capnography</h1>
+<ul>
+<li>Monitoring exhaled CO₂   </li>
+<li>Phases in measurement of exhaled CO₂   <ul>
+<li>Phase 1: no exhaled CO₂ -- end inspiration to early exhalation of dead space gas from proceeding breath   </li>
+<li>Phase 2: rise in exhaled CO₂ during the mixing of dead space gas and emptying of alveoli with transition to   </li>
+<li>Phase 3: reflects the alveolar plateau as alveoli empty, reaching a maximum exhaled CO₂ immediately prior to   </li>
+<li>Phase 4: the rapid fall in CO₂ during inspiration   </li>
+<li><img alt="" src="/Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220518133812.png" />   </li>
+</ul>
+</li>
+<li>Angles   <ul>
+<li>The α angle represents the angle formed between Phase 2 and Phase 3; normally 110 degrees   <ul>
+<li>Variations in this angle is linked to variations in time constants within the different alveolar units and thus overall V/Q status   </li>
+<li>Other factors that affect this angle: cardiac output, airway resistance, and changes in FRC   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Clinical Utility of Capnography   <ul>
+<li>Confirmation of endotracheal tube placement   </li>
+<li>Continuous monitoring (loss of exhaled CO₂ = displaced ETT)   </li>
+<li>Perfusion during CPR -- effectiveness of resuscitation, ROSC   </li>
+<li>Detection of hypoventilation, bradypnea, apnea, and reverse I:E ventilation (shorter time during exhalation)   </li>
+<li>In <a href="/Pulmonary Medicine/01. Diseases of the Airways/Asthma.html">Asthma</a>/<a href="/Pulmonary Medicine/01. Diseases of the Airways/Chronic Obstructive Pulmonary Disease.html">Chronic Obstructive Pulmonary Disease</a> → uneven alveolar emptying and V/Q mismatch → "Shark-Fin" contour representing airflow obstruction   <ul>
+<li><img alt="" src="/Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220208114516.png" />   </li>
+</ul>
+</li>
+<li>Gap between arterial and end-tidal CO₂ is usually negligible in healthy nonintubated patients (usually around 2 to 5 mmHg) - P(a-ET)CO₂   <ul>
+<li>Cardiac and respiratory pathologies can increase this gap and this can be used to estimate alveolar dead space ventilation   </li>
+<li>In conditions such as acute pulmonary embolism, a precipitous drop of end-tidal CO₂ will happen and if the PaCO₂ remains constant, this leads to a significant increase in P(a-ET)CO₂   </li>
+<li>Normalization of this gap has been shown as a positive prognostic sign when seen after re-perfusion from tPA   </li>
+<li>Other causes of increased P(a-ET)CO₂   <ul>
+<li>Hypovolemia   </li>
+<li>Hemorrhage   </li>
+<li>Excessive PEEP   </li>
+<li>Early ARDS -- independent risk factor for death   </li>
+</ul>
+</li>
+<li>Negative P(a-ET)CO₂   <ul>
+<li>Uncommon → verify the validity of the values from capnopgraph and ABG   </li>
+<li>Etiologies:   <ul>
+<li>low frequency and high tidal volume ventilation   </li>
+<li>post CABG   </li>
+<li>post exercise   </li>
+<li>pregnant   </li>
+<li>pediatric patients</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h2>Backlinks</h2>
+<ul>
+	<li><a class="backlink" href="/Critical Care Medicine/10. Pulmonary Disorders in Critical Care/10.1. Respiratory Failure.html">10.1. Respiratory Failure</a></li>
+</ul>
+<script src="/obs.html/static/graph.js" type="text/javascript"></script>
+
+<div class="graph">
+    <div id="A282335880615570299831757602059809560708{level}" class="graph_div"></div>
+    <button class="graph_button" id="B282335880615570299831757602059809560708{level}" level="{level}" onclick="run('282335880615570299831757602059809560708'+this.level, 'Hypercapnic Respiratory Failure');">Show Graph</button>
+</div>
+
+
+<script src="/obs.html/static/3d-force-graph.js"></script>
+
+<script>
+    function grapher(args) {
+        window.Graph = ForceGraph3D()
+            (args.graph_container)
+            .jsonUrl(args.data)
+            .width(args.width)
+            .height(args.height)
+            .nodeLabel('id')
+            .linkDirectionalParticles("value")
+            .linkDirectionalParticleSpeed(0.010)
+            .linkDirectionalParticleWidth(2.0)
+            .nodeColor(node => {
+                if (node.id == current_node_id){
+                    return '#ff0000'
+                }
+                let isConnected = false;
+                node.links.forEach(link => {
+                    if (link == current_node_id){
+                        isConnected = true;
+                    }
+                })
+                if (isConnected){
+                    return '#f7be49';
+                }
+                return '#ffffff'
+            })
+            .linkColor(link => {
+                if (link.source == current_node_id || link.target == current_node_id){
+                    return '#ff0000'
+                }
+                return '#dadada'
+            })
+            .linkOpacity(0.3)
+            .onNodeClick(node => {
+                args.node = node;
+                graph_left_click(args)()
+            })
+            .onNodeRightClick(node => {
+                args.node = node;
+                graph_right_click(args)()
+            });
+    }
+</script>
+
+
+                                <!-- end content -->
+                        </div>
+                        <div id="right_pane"></div>
+                </div>
+        </div>
+
+<script src="/obs.html/static/load_dirtree_footer.js" type="text/javascript"></script>
+
+
+</body>
+</html>

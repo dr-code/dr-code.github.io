@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+        <head>
+                <!-- Page information -->
+                <meta charset="UTF-8" />
+                <meta name="node_id" content="Acute Respiratory Distress Syndrome">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+
+                <!-- Set title -->
+                <title>Pulmonary Critical Care Notes</title>
+
+                <!-- Includes -->
+                
+<script src="/obs.html/static/obsidian_core.js"></script>
+<script src="/obs.html/static/encoding.js"></script>
+<link rel="stylesheet" href="/obs.html/static/master.css" />
+<script src="/obs.html/static/mermaid.9.0.1.min.js"></script>
+<script src="/obs.html/static/tex-chtml.js"></script>
+<script src="/obs.html/static/load_mathjax.js"></script>
+<script src="/obs.html/static/flexsearch.bundle.js"></script>
+<script src="/obs.html/static/pako.js"></script>
+<script src="/obs.html/static/search.js"></script>
+<script src="/obs.html/static/dirtree.js"></script>
+
+
+                <!-- Onload tweaks -->
+                <script>
+                        const CURRENT_NODE = 'Acute Respiratory Distress Syndrome';
+                        const HTML_URL_PREFIX = '';
+                </script>
+        </head>
+
+<body class="theme-obs-light">
+        <div id="antiflash"></div>
+        <div id="search-master-div">
+    <div id="search-slab" king_ramses="return the slaaab">
+            <div id="search-controls">
+                    <input id="search_string" placeholder="Type to search notes" type="text" />
+                    <div class="tooltip" style="display: none;">
+                        <input type="checkbox" id="hard_search" name="hard" />
+                        <span class="tooltiptext">Hard search (require exact match)</span>
+                    </div>
+                    <div id="search-results-box">
+                        <div id="search-results"></div>
+                    </div>
+                    <div id="search-instructions">
+                        <div class="prompt-instruction">
+                                <b>esc</b> to dismiss
+                        </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("search-master-div").addEventListener('click', e => {
+            if(e.target !== e.currentTarget){
+                    return
+            }
+            toggle('search-master-div', 'block');
+    })
+    document.getElementById("search_string").addEventListener("input", function(event) {
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    }); 
+    document.getElementById("hard_search").addEventListener("click", function(event) {
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    });
+
+    window.addEventListener('keydown', e => {
+        if((e.key=='Escape'||e.key=='Esc'||e.keyCode==27)){
+            document.getElementById('search-master-div').style.display = 'none';
+            return false;
+        } 
+    }, true);
+
+    function click_list_link(element){
+        element.parentElement.getElementsByTagName('a')[0].click()
+    }
+</script>
+
+        <div id="page_holder" class="flex_col">
+                <div id="header" class="header">
+                        <div id="header_flex" class="flex_row">
+                                <a href="/index.html" id="homelink" title="Clear screen and go to homepage">Pulmonary Critical Care Notes</a>
+                                <div class="navbar-button" onclick="toggle_menu()">
+                                        ≡
+                                </div>
+                                <div id="navbar" class="navbar">
+                                <a class="navbar-link" href="/Pulmonary Medicine/Pulmonary Medicine.html" title="Pulmonary">Pulmonary</a>
+<a class="navbar-link" href="/Critical Care Medicine/Critical Care Medicine.html" title="Critical Care">Critical Care</a>
+                                        <div class="icon-tray">
+                                                
+                                                <div>
+    <a href="/obs.html/tags/index.html" title="Open tag view">
+            <img src = "/obs.html/static/hashtag.svg" alt="RSS Feed link" style="width: 24px; margin-left: -2px; margin-top: -2px;"/>
+    </a>
+</div>
+                                                        <div >
+            <a id="dirtree_link" class="system-link" href="/obs.html/dir_index.html" title="View directory tree">
+                    <img src = "/obs.html/static/dirtree.svg" style="width: 12px; padding: 4px;" alt="Directory tree link"/>
+            </a>
+        </div>
+                                                        <div class="graph_header_div">
+            <a id="graph_link" class="system-link" href="/obs.html/graph/index.html?node=Acute Respiratory Distress Syndrome" title="Open fullpage Graph">
+                    <img class="graph_header_div_svg" src = "/obs.html/static/graph.svg" alt="Open fullpage Graph" style="margin: 2px; width: 17px;"/>
+            </a>
+        </div>
+                                                        <div onclick="openSearch()">
+                <img src = "/obs.html/static/search.svg" alt="Search notes" title="Search notes" style="margin: 4px;"/>
+        </div>
+        <script>
+                function openSearch(){
+                        // toggle search popup and continue with extra code if it is enabled this time
+                        if (toggle('search-master-div', 'block')){
+                                // clear input and put focus on it so that we can start typing immediately
+                                let ss = document.getElementById('search_string');
+                                ss.value = '';
+                                ss.focus()
+                                ss.select()
+                        }
+                }
+        </script>
+                                                <div id="theme-button" class="theme-button" title="Change theme" onclick="toggle_theme_popup(this)">
+    T
+</div>
+<script>
+    function toggle_theme_popup(el){
+        // make theme button show that it's active by adding the .active class
+        cl_toggle(el.id, 'active');
+
+        // show the theme selector
+        toggle('theme-popup','block')
+
+        let h2 = document.getElementById('header2')
+        if (h2){
+            let pu = document.getElementById('header2').getElementsByClassName('popup')[0];
+            toggle_el(pu,'block');
+        }
+    }
+</script>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="popup" id="theme-popup">
+    <label for="cars">Theme </label>
+
+    <select name="theme" id="theme" onchange="set_theme(this.value)">
+      <option value="light">light</option>
+      <option value="obs-light" selected="selected">obsidian-light</option>
+      <option value="obs-dark">obsidian-dark</option>
+    </select> 
+</div>
+                </div>
+                <div class="flex_row">
+                        <div id="left_pane"></div>
+                        <div class="container">
+                                <h1 id="general">General</h1>
+<div class="toc">
+<ul>
+<li><a href="#general" class="anchor-link">General</a></li>
+<li><a href="#epidemiology" class="anchor-link">Epidemiology</a></li>
+<li><a href="#etiology-pathogenesis" class="anchor-link">Etiology &amp; Pathogenesis</a></li>
+<li><a href="#pathophysiology" class="anchor-link">Pathophysiology</a></li>
+<li><a href="#history-physical" class="anchor-link">History &amp; Physical</a></li>
+<li><a href="#diagnosis" class="anchor-link">Diagnosis</a></li>
+<li><a href="#management" class="anchor-link">Management</a></li>
+<li><a href="#complications-and-prognosis" class="anchor-link">Complications and Prognosis</a></li>
+</ul>
+</div>
+<ul>
+<li>Definition: acute diffuse inflammatory lung injury, leading to increased pulmonary vascular permeability, increased lung weight, and loss of aerated lung tissue with hypoxemia and bilateral radiographic opacities, associated with reduced lung compliance   </li>
+<li>Inflammatory response is usually neutrophil predominant   </li>
+</ul>
+<h1 id="epidemiology">Epidemiology</h1>
+<ul>
+<li>Accounts for 10% of all ICU admissions; 25% of mechanically ventilated patients   <ul>
+<li>40% of patients w/ ARDS died in the hospital   </li>
+</ul>
+</li>
+<li>Clinical Recognition of ARDS   <ul>
+<li>51.3% recognized mild ARDS   </li>
+<li>78.5% recognized severe ARDS   </li>
+<li>Lack of recognition a/w use of lung destructive ventilation (excessive tidal volume, low PEEP)   </li>
+</ul>
+</li>
+</ul>
+<h1 id="etiology-pathogenesis">Etiology &amp; Pathogenesis</h1>
+<ul>
+<li>Common causes   <ul>
+<li>Direct   <ul>
+<li>Pulmonary infection   </li>
+<li>Aspiration injury   </li>
+<li>Inhalation injury   </li>
+<li>Lung contusion   </li>
+<li>Re-expansion injury   </li>
+<li>Pulmonary embolism   </li>
+</ul>
+</li>
+<li>Indirect   <ul>
+<li>Sepsis   </li>
+<li>Shock   </li>
+<li>Non-pulmonary trauma   </li>
+<li>Transfusion-related lung injury (TRALI)   </li>
+<li>CABG   </li>
+<li>Anaphylaxis   </li>
+<li>Medication   </li>
+<li>Acute pancreatitis   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Pathogenesis   <ul>
+<li>Three Distinct Phases   </li>
+<li><em>Exudative (Inflammatory) Phase (Acute Phase)</em>   <ul>
+<li>Sloughing of both the bronchial and alveolar epithelial cells + formation of protein-rich hyaline membranes on the denuded basement membrane   </li>
+<li>Neutrophils adhere to injured capillary endothelium → marginate through the interstitium into the air space (filled with protein-rich edema fluid)   </li>
+<li>In the air space, alveolar macrophages → cytokines (IL-1, 6, 8, 10) &amp; TNF-α → stimulate chemotaxis and activate neutrophils   <ul>
+<li>IL-1 → stimulate the production of extracellular matrix by fibroblasts   </li>
+<li>Neutrophils → oxidants, proteases, leukotrienes, platelet-activating factor (PAF)   </li>
+</ul>
+</li>
+<li>Protein-rich edema fluid into alveolus → inactivation of surfactant   </li>
+<li><img alt="" src="/Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220518144149.png" />   <ul>
+<li>Ware &amp; Matthay N Engl J Med 2000; 342:1334-1349   </li>
+</ul>
+</li>
+<li>Also get abnormalities of the coagulation system leading to platelet-fibrin thrombi in small vessels and impaired fibrinolysis within the distal air spaces of the injured lung   </li>
+</ul>
+</li>
+<li>Resolution of ARDS consists of <em>Proliferative Phase</em> or <em>Fibrotic Phase</em>   <ul>
+<li><img alt="" src="/Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220518144326.png" />   <ul>
+<li>Ware &amp; Matthay N Engl J Med 2000; 342:1334-1349   </li>
+</ul>
+</li>
+<li>Proliferative Phase   <ul>
+<li>Resolution of alveolar edema   <ul>
+<li>Active transport of sodium &amp; chloride with ENaC at the apical membrane of the Type II cells (lumen side) where it then goes to the basolateral membrane and is pumped out by Na+/K+-ATPase   </li>
+<li>This allows water to move through aquaporins on Type I cells   </li>
+<li>Clearance of alveolar fluid can occur early and within a few hours of intubation.   <ul>
+<li>Maintenance of the ability to remove alveolar fluid → improved oxygenation, shorter mechanical ventilation duration, and improved survival   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Removal of alveolar protein &amp; inflammatory cells   <ul>
+<li>Insoluble protein removal is important because hyaline membranes are a framework for growth of fibrous tissue   <ul>
+<li>Removed by endocytosis and transcytosis by alveolar epithelial cells and phagocytosis by macrophages   </li>
+</ul>
+</li>
+<li>Soluble protein removal by diffusion between alveolar epithelial cells   </li>
+<li>Apoptosis of neutrophils → phagocytosis by macrophages   </li>
+</ul>
+</li>
+<li>Restoration of alveolar architecture   <ul>
+<li>Type II cell = progenitor for reepithelialization of the denuded alveolar epithelium   </li>
+<li>Type II cell → proliferation → cover the denuded basement membrane → differentiate into Type I cells → restoration of normal alveolar architecture   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Fibrotic Phase   <ul>
+<li>Fibrosing alveolitis   <ul>
+<li>Begins early in the course   </li>
+<li>Influence of IL-1   </li>
+<li>Elevated levels of procollagen III peptide which is a precursor of collagen synthesis   <ul>
+<li>associated with increased risk of death   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="pathophysiology">Pathophysiology</h1>
+<ul>
+<li>Inflammatory response with alveolar edema and protein-rich fluid causes decreased pulmonary compliance → impaired gas exchange → pulmonary hypertension → Increased RV afterload → RV Dysfunction   </li>
+<li>Mechanical ventilation + Fluid overload → further increase in RV dysfunction + worsening V/Q mismatch → loss of hypoxic vasoconstriction → refractory hypoxia   </li>
+</ul>
+<h1 id="history-physical">History &amp; Physical</h1>
+<ul>
+<li>Acute onset of <a href="/Pulmonary Medicine/12. Pulmonary Signs &amp; Symptoms/Dyspnea.html">Dyspnea</a>, <a href="/not_created.html" class="nonexistent-link">tachypnea</a>, and <a href="/not_created.html" class="nonexistent-link">hypoxemia</a>   </li>
+</ul>
+<h1 id="diagnosis">Diagnosis</h1>
+<ul>
+<li>Berlin Criteria   <ul>
+<li><img alt="" src="/Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220518151448.png" />   </li>
+</ul>
+</li>
+<li>Radiographic Features of ARDS   <ul>
+<li>Diffuse bilateral infiltrates   <ul>
+<li>Patchy, confluent   </li>
+<li>Alveolar, ground-glass   </li>
+</ul>
+</li>
+<li>In contrast to CHF, no prominence of cardiomegaly, pleural effusion, widened vascular pedicle   </li>
+<li>CT Chest -- dependent densities   </li>
+</ul>
+</li>
+<li>Differential Diagnosis   <ul>
+<li>Common causes of acute hypoxia   <ul>
+<li><a href="/Pulmonary Medicine/01. Diseases of the Airways/Asthma.html">Asthma</a>   </li>
+<li>Acute CHF   </li>
+<li><a href="/Pulmonary Medicine/01. Diseases of the Airways/Chronic Obstructive Pulmonary Disease.html">Chronic Obstructive Pulmonary Disease</a>   </li>
+<li><a href="/Pulmonary Medicine/02. Diseases of the Lung Parenchyma/Diffuse Parenchymal Lung Disease/Idiopathic Interstitial Pneumonias/Acute-Subacute Interstitial Pneumonia/Acute Interstitial Pneumonia.html">Acute Interstitial Pneumonia</a>   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="management">Management</h1>
+<ul>
+<li>Treat the underlying condition   </li>
+<li>Ventilatory Management of Oxygenation &amp; Ventilation   <ul>
+<li>Mechanical ventilation   <ul>
+<li>Avoid/minimize barotrauma and oxygen toxicity   </li>
+<li>Lung Protective Ventilation   <ul>
+<li>Lung injury is heterogeneous but with functional compartments   </li>
+<li><img alt="" src="/Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220518152148.png" />   <ul>
+<li>A = densely consolidated lung =&gt; poorly recruitable   </li>
+<li>B = normal aerated lung; highest compliance =&gt; risk of overdistension (volutrauma)   </li>
+<li>C = atelectatic but recruitable =&gt; potential for cyclic recruitment and collapse (atelectrauma)   </li>
+</ul>
+</li>
+<li>ARDSnet Trial   <ul>
+<li>Lower tidal volume ventilation resulted in improved mortality, ventilator-free days and prevention of barotrauma   </li>
+<li>Strong recommendation: use lower tidal volumes (&lt;6 cc/kg of IBW) and plateau pressure ≤ 30 cm H₂O   </li>
+</ul>
+</li>
+<li>PETA = People for the Ethical Treatment of Alveoli   <ul>
+<li>Average male assuming 6 cc/kg IBW should have a tidal volume of 380 to 490   </li>
+<li>Average female assuming 6 cc/kg IBW should have a tidal volume of 300 to 380   </li>
+</ul>
+</li>
+<li><img alt="" src="/Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220304122624.png" />   <ul>
+<li>Avoid excessive plateau pressure and <a href="/Critical Care Medicine/10. Pulmonary Disorders in Critical Care/Index/driving pressure.html">driving pressure</a>   </li>
+<li>In patients who are obese, they will have a larger pleural pressure (i.e. back pressure) so seeing higher plateau pressure may be okay in that population as their transalveolar pressure would be similar to a non-obese patient   <ul>
+<li>Obese patients had a lower mortality with higher PEEP and non-obese patients trend for higher mortality with high PEEP   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Pressure vs Volume Targeted Ventilation in ARDS   <ul>
+<li>No large, randomized control trials regarding pressure vs volume targeted ventilation in ARDS   </li>
+<li>Advantages of Pressure Control Ventilation   <ul>
+<li>Easily adjust inspiratory time   </li>
+<li>Better patient-ventilatory synchrony   </li>
+<li>Avoid regionally excessive transalveolar pressure   </li>
+</ul>
+</li>
+<li>Advantages of Volume Control Ventilation   <ul>
+<li>Avoid increases in tidal volume   </li>
+<li>Simple to implement   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Recruitment Maneuvers   <ul>
+<li>Variety of approaches   <ul>
+<li>40 cm H₂O pressure for 40 seconds   </li>
+</ul>
+</li>
+<li>Transient improvement in oxygenation   </li>
+<li>Recommended before increasing PEEP   </li>
+<li>Low-moderate evidence therefore conditional recommendation   </li>
+</ul>
+</li>
+<li>PEEP   <ul>
+<li>Important to find the sweet spot with PEEP   </li>
+<li>Too much increase can cause normally aerated lungs to overdistend → dead space ventilation   </li>
+<li>Recommendation:   <ul>
+<li>Moderate to Severe ARDS: Higher rather than lower PEEP   <ul>
+<li>Lower ICU death, lower hospital death, no difference in pneumothorax, higher number of ventilator-free days   </li>
+</ul>
+</li>
+<li>Mild ARDS: No statistically significant difference in ICU death, hospital death, pneumothorax or ventilator-free days in higher PEEP vs lower PEEP   <ul>
+<li>Consider impact of PEEP on oxygenation, ventilation, oxygen delivery, risk of barotrauma (pneumomediastinum), extra-pulmonary pressure   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Positive effects of a PEEP Trial (increasing PEEP)   <ul>
+<li>Better oxygenation   </li>
+<li>Better ventilation/compliance/recruitment   <ul>
+<li>In pressure control ventilation, as you increase PEEP, you should see   <ul>
+<li>decrease in or no change in PaCO₂ OR   </li>
+<li>increase in or no change in tidal volume   </li>
+</ul>
+</li>
+<li>In volume control ventilation, as you increase PEEP, you should see   <ul>
+<li>proportional increase in plateau pressure   <ul>
+<li>Increase in plateau pressure &gt; increase in PEEP =&gt; overdistension   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Indirect evidence that you do not have a worsening of your DO₂   <ul>
+<li>Worsening DO₂ if you see decrease in cardiac output, blood pressure and mixed venous O2 as you increase PEEP   </li>
+</ul>
+</li>
+<li>Stress index &lt; 1   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Strategies to determine the ideal settings include plotting compliance curves and using esophageal balloons to determine true transpulmonary pressure especially in the setting of poor chest wall compliance   </li>
+</ul>
+</li>
+<li>Lung Destructive Ventilation   <ul>
+<li>Ventilator-Induced Lung Injury   <ul>
+<li>Volutrauma   <ul>
+<li>Overdistension of alveoli → increased dead space ventilation   </li>
+</ul>
+</li>
+<li>Atelectrauma   <ul>
+<li>Shear stress of cyclic collapse-recruitment of alveoli   </li>
+</ul>
+</li>
+<li>Biotrauma   <ul>
+<li>Lung stretching causes systemic release of inflammatory cells and mediators   </li>
+</ul>
+</li>
+<li>Barotrauma   <ul>
+<li>Resulting in pneumothorax   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>High-Flow Nasal Oxygen   <ul>
+<li>Constant FiO₂ during peak inspiratory flow   </li>
+<li>Adjust FiO₂ and flow separately   </li>
+<li>Low level CPAP   </li>
+<li>Increased end-expiratory pressure compensation   </li>
+<li>Reduced work of breathing via intrinsic PEEP (1 cm H₂O/10 LPM flow) and pharyngeal dead space gas washout   </li>
+<li>Gases warmed and humidified   <ul>
+<li>improved comfort, drainage of respiratory secretions, reduced airway inflammation   </li>
+</ul>
+</li>
+<li>Data -- Ferreyro et al JAMA 2020   <ul>
+<li>Noninvasive oxygenation strategies were associated with lower all-cause mortality and lower likelihood of intubation   </li>
+<li>High-Flow Nasal Oxygen &gt; NIPPV   <ul>
+<li>More ventilator-free days, higher probability of survival and <strong>less likely to be intubated if P/F ratio ≤ 200</strong>   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Non-Ventilatory Management of Oxygenation &amp; Ventilation   <ul>
+<li>Fluid balance   <ul>
+<li>Wiedemann et al 2006 -- RCT comparing conservative and liberal strategies for fluid management using explicit protocols applied for 7 days in 1000 patients with ARDS   <ul>
+<li>No significant difference in mortality but <strong>more ventilator-free days, and ICU-free days in the conservative group</strong>; however more electrolyte abnormalities in the conservative group with no statistical difference in necessity of renal replacement therapy   </li>
+</ul>
+</li>
+<li>Essentially keep intake = output, i.e. net even   </li>
+<li>If patient is hypoproteinemic, consider albumin + diuretic   <ul>
+<li>Patients with ARDS and serum protein &lt; 5 mg/dL → give albumin + furosemide   <ul>
+<li>better oxygenation   </li>
+<li>more effective fluid removal   </li>
+<li>better hemodynamic tolerance   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Glucocorticoids   <ul>
+<li>Still controversial due to many small studies that are under-powered and with flawed designs   </li>
+<li>Meta-analysis shows lower hospital mortality, more ventilator-free days, but more hypoglycemia   <ul>
+<li>underlying data is skewed though   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Prone positioning   <ul>
+<li>Improves oxygenation in 70% of patients   </li>
+<li>Mechanisms   <ul>
+<li>Increased end-expiratory lung volume   </li>
+<li>Improved V/Q matching   <ul>
+<li>allowing posterior lung that have been atelectatic or consolidated to participate in gas exchange   </li>
+<li>in supine position, the anterior lung zones are the path of least resistance so air travels to that portion   </li>
+</ul>
+</li>
+<li>Regional changes in ventilation   </li>
+</ul>
+</li>
+<li>Improved oxygenation when the patient is put back in supine position, gradually   <ul>
+<li>When placed supine from prone, the PaO₂ drops but doesn't drop as much   </li>
+</ul>
+</li>
+<li>In severe ARDS, proning is associated with lower 28 day mortality or 90 day mortality, more extubations at 90 days, more ventilator-free days and no difference in complications; &gt;16 hours per day proning   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Severe COVID-19   <ul>
+<li>Self-proning   </li>
+<li>High-Flow Nasal Oxygen   </li>
+<li>Sufficient PEEP to avoid de-recruitment   </li>
+<li>Pharmacology   <ul>
+<li>Remdesivir, dexamethasone, anticoagulation   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Life-Threatening/Severe Hypoxemia   <ul>
+<li>Ventilatory   <ul>
+<li>Higher PEEP   </li>
+<li>Recruitment maneuvers   </li>
+<li>Higher mean airway pressure → longer inspiratory time; ? APRV   <ul>
+<li>Longer inspiratory time   <ul>
+<li>Easily accomplished with pressure targeted modes   </li>
+<li>Pressure controlled inverse ratio ventilation (PC-IRV)   <ul>
+<li>No spontaneous breaths   </li>
+</ul>
+</li>
+<li>BiLevel/APRV permits spontaneous breaths   </li>
+<li>Limited outcome data for APRV in ARDS   <ul>
+<li>Concerns: Auto-PEEP &amp; tidal volume creep   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>HFOV   <ul>
+<li>Proposed as a form of lung protective strategy   </li>
+<li>Active inspiratory and expiratory phases; tidal volumes &lt; dead space   </li>
+<li>HFOV for severe ARDS → higher mortality, more sedation, vasopressors in one study   <ul>
+<li>no difference in ICU hospital length of stay or ventilator-free days in another study   </li>
+</ul>
+</li>
+<li>Recommendation: Do not use for moderate or severe ARDS   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Non-Ventilatory   <ul>
+<li>Neuromuscular blockade   <ul>
+<li>Used for 48 hours in severe ARDS   </li>
+<li>Lower 28 day mortality, more ventilator-free days, fewer pneumothoraces   <ul>
+<li>However, a lot of crossover amongst the two groups in this study   </li>
+</ul>
+</li>
+<li>No difference in rate of ICU-acquired paresis or muscle strength scores   </li>
+<li>Intervention group had more serious cardiovascular adverse events   </li>
+</ul>
+</li>
+<li>Prone position   </li>
+<li>Inhaled pulmonary vasodilator   <ul>
+<li>Inhaled nitric oxide   <ul>
+<li>Endogenous pulmonary vasodilator   <ul>
+<li>increases blood flow to functional alveoli → improvement in oxygenation   </li>
+</ul>
+</li>
+<li>Rapidly inactivated by combining with hemoglobin and by oxidation   </li>
+<li>Inhalation of 2-40 ppm produces selective dilation of pulmonary vessels → offloads the RV   <ul>
+<li>Increased RV ejection fraction   </li>
+<li>Decreased RV end diastolic volume   </li>
+</ul>
+</li>
+<li>No outcome benefit in terms of survival, ICU-LOS, time of mechanical ventilation   </li>
+<li>Oxygenation benefit for up to 4 days   </li>
+<li>No methemoglobin or increase in systemic nitric oxide unless 80 ppm   </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ECMO   <ul>
+<li>VV-ECMO -- blood removed and pumped through oxygenator and returned to circulation; no cardiac support   <ul>
+<li>Large vascular canula, anticoagulation and infection risk   </li>
+<li>Data   <ul>
+<li>Peek et al Lancet 2009   <ul>
+<li>Large RCT in UK demonstrated lower mortality when transferred to an ECMO center   </li>
+<li>But only 76% randomized to ECMO actually got ECMO   </li>
+</ul>
+</li>
+<li>Nehra et al Arch Surg 2009   <ul>
+<li>Better outcomes in young patient, single organ failure, early initiation (MGH experience)   </li>
+</ul>
+</li>
+<li>Combes et al NEJM 2018   <ul>
+<li>Trended for higher survival at 60 days however not statistically significant   </li>
+<li>More bleeding and thrombocytopenia but less ischemic stroke   </li>
+<li>Longer hospital length of stay but less proning, recruitment and inhaled nitric oxide   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="complications-and-prognosis">Complications and Prognosis</h1>
+<ul>
+<li>Mortality according to Berlin stratification   <ul>
+<li>Mild ARDS -- 27%   </li>
+<li>Moderate ARDS -- 32%   </li>
+<li>Severe ARDS -- 45%</li>
+</ul>
+</li>
+</ul><h2>Backlinks</h2>
+<ul>
+	<li><a class="backlink" href="/Critical Care Medicine/10. Pulmonary Disorders in Critical Care/Index/Hypoxemic Respiratory Failure.html">Hypoxemic Respiratory Failure</a></li>
+	<li><a class="backlink" href="/Critical Care Medicine/10. Pulmonary Disorders in Critical Care/10.4. Parenchymal Diseases in Critical Care.html">10.4. Parenchymal Diseases in Critical Care</a></li>
+</ul>
+<script src="/obs.html/static/graph.js" type="text/javascript"></script>
+
+<div class="graph">
+    <div id="A293553093989347888813841505573099891253{level}" class="graph_div"></div>
+    <button class="graph_button" id="B293553093989347888813841505573099891253{level}" level="{level}" onclick="run('293553093989347888813841505573099891253'+this.level, 'Acute Respiratory Distress Syndrome');">Show Graph</button>
+</div>
+
+
+<script src="/obs.html/static/3d-force-graph.js"></script>
+
+<script>
+    function grapher(args) {
+        window.Graph = ForceGraph3D()
+            (args.graph_container)
+            .jsonUrl(args.data)
+            .width(args.width)
+            .height(args.height)
+            .nodeLabel('id')
+            .linkDirectionalParticles("value")
+            .linkDirectionalParticleSpeed(0.010)
+            .linkDirectionalParticleWidth(2.0)
+            .nodeColor(node => {
+                if (node.id == current_node_id){
+                    return '#ff0000'
+                }
+                let isConnected = false;
+                node.links.forEach(link => {
+                    if (link == current_node_id){
+                        isConnected = true;
+                    }
+                })
+                if (isConnected){
+                    return '#f7be49';
+                }
+                return '#ffffff'
+            })
+            .linkColor(link => {
+                if (link.source == current_node_id || link.target == current_node_id){
+                    return '#ff0000'
+                }
+                return '#dadada'
+            })
+            .linkOpacity(0.3)
+            .onNodeClick(node => {
+                args.node = node;
+                graph_left_click(args)()
+            })
+            .onNodeRightClick(node => {
+                args.node = node;
+                graph_right_click(args)()
+            });
+    }
+</script>
+
+
+                                <!-- end content -->
+                        </div>
+                        <div id="right_pane"></div>
+                </div>
+        </div>
+
+<script src="/obs.html/static/load_dirtree_footer.js" type="text/javascript"></script>
+
+
+</body>
+</html>

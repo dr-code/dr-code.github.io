@@ -1,0 +1,202 @@
+---
+{}
+---
+   
+# Physiology of Gas Exchange   
+# Overview of Hypercapnia   
+   
+- Definition of Hypercapnia   
+	- PaCO₂ is directly proportional to rate of CO₂ production (VCO₂)   
+	- PaCO₂ is inversely proportional to rate of CO₂ elimination by lung -- alveolar ventilation   
+- Hypercapnia 2/2 increased CO₂ production (VCO₂)   
+	- Increased metabolic rate   
+		- Increased activity   
+		- Sepsis   
+		- Thyrotoxicosis   
+	- Metabolizing of carbohydrates   
+- Hypercapnia 2/2 decreased alveolar ventilation ($V_A$)   
+	- Decreased minute ventilation   
+	- Increased VD/VT (i.e. physiologic dead space) with stable minute ventilation   
+	- Rapid, shallow breathing   
+- Clinical Effects of Acute Hypercapnia   
+	- Decreased level of consciouness   
+		- PaCO₂ >60-70 mmHg in normal individuals   
+		- PaCO₂ >90-100 mmHg in patients with chronic hypercapnia   
+	- Increased cerebral blood flow, ICP   
+	- Decreased myocardial contractility   
+	- Decreased diaphragmatic function   
+	- Shift oxyhemoglobin dissociation curve to the right   
+	- Signs & Symptoms   
+		- [Dyspnea](../../../Pulmonary%20Medicine/12.%20Pulmonary%20Signs%20%26%20Symptoms/Dyspnea.md)   
+		- [Somnolence](/not_created.md)   
+		- [Headache](/not_created.md)   
+		- [Confusion](/not_created.md)   
+		- [Asterixis](/not_created.md)   
+		- [Coma](/not_created.md)   
+# Etiology of Hypercapnic Respiratory Failure   
+   
+- Broken link in the chain of events   
+	- Central respiratory center → spinal cord → motor neurons → neuromuscular junction → respiratory muscles → chest wall → lung   
+## Central Respiratory Drive   
+   
+- Decreased respiratory drive   
+	- Sedative   
+	- Opioid overdose   
+	- Encephalitis   
+	- Stroke   
+		- Cheyne-Stokes Respiration   
+			- Most common with heart failure, high altitude, and neurologic disease   
+		- Biot Respiration   
+			- Irregular clusters of breaths and apnea   
+			- Lesion of upper pons or lower medulla   
+	- Obesity hypoventilation syndrome   
+	- Sleep apnea (central sleep apnea & obstructive sleep apnea)   
+	- Congenital central alveolar hypoventilation   
+	- Hypothyroidism   
+		- Myxedema coma → depressed hypercapnic ventilatory drive & hypoxic ventilatory drive + respiratory muscle weakness & compromise of the upper airway   
+	- [Metabolic Alkalosis](../../../Critical%20Care%20Medicine/01.%20Renal%2C%20Endocrine%2C%20and%20Metabolic%20Disorders/Index/Metabolic%20Alkalosis.md)   
+## Spinal Cord, Nerves, Neuromuscular Junction   
+   
+- Disorders of Spinal Cord   
+	- Direct Spinal Cord Injury   
+		- Traumatic spinal cord injury -- 50% of motor vehicle accidents, neurologic progression over hours   
+		- Cervical spinal cord injury & respiratory muscles   
+			- Phrenic nerve to diaphragm: C3-C5   
+			- Scalene muscles: C4-C8   
+			- Sternocleidomastoid, trapezius: C1-C4; CN XI   
+		- Complete injury above C3 = ventilatory failure   
+		- Injury at C3, C4, C5 -- often wean from ventilator   
+	- Amyotrophic Lateral Sclerosis   
+		- Respiratory muscle weakness & progressive respiratory failure   
+		- Combination of upper motor neuron and lower motor neuron disease   
+			- upper motor neuron -- degeneration -> [weakness](/not_created.md), [hyperreflexia](/not_created.md), [spasticity](/not_created.md)   
+			- lower motor neuron -- degeneration -> [weakness](/not_created.md), [atrophy](/not_created.md), [fasciculation](/not_created.md)   
+			- Involvement of bulbar nerves -- [Dysphagia](/not_created.md), [aspiration](/not_created.md), [laryngospasm](/not_created.md)   
+	- Tetanus   
+		- Caused by toxin-producing anaerobe Clostridium tetani   
+		- Retrograde transport of exotoxin up axons to brainstem and spinal cord   
+		- Blocks inhibitory neurotransmitters   
+		- Results in: spastic paralysis especially laryngeal muscles and respiratory muscles   
+		- Treatment: tetanus immune globulin, muscle relaxants, supportive (debridement, antibiotics, mechnical ventilation)   
+- Disorders of Peripheral Nerves   
+	- [Guillian-Barre Syndrome](../../../Critical%20Care%20Medicine/04.%20Neurologic%20Disorders/Guillian-Barre%20Syndrome.md)   
+	- Diphtheria   
+	- Porphyria   
+	- Tick paralysis   
+	- Ciguatera fish poisoning   
+	- [Critical illness polyneuropathy](../../../Critical%20Care%20Medicine/04.%20Neurologic%20Disorders/Critical%20illness%20polyneuropathy.md)   
+- Disorders of Neuromuscular Junction   
+	- [Myasthenia Gravis](../../../Critical%20Care%20Medicine/04.%20Neurologic%20Disorders/Myasthenia%20Gravis.md)   
+	- [Eaton-Lambert Syndrome](/not_created.md)   
+	- [Organophosphate Poisoning](/not_created.md)   
+	- [Botulism](/not_created.md)   
+	- Tick paralysis   
+	- Snake venom -- including copperheads, moccasins, rattlesnakes   
+	- Drugs: aminoglycosides, fluoroquinolones, anti-arrhythmics, phenytoin, lithium   
+	- Hypermagnesemia   
+	- Hypocalcemia   
+## Respiratory Muscles & Chest Wall   
+   
+- Respiratory Muscle Weakness   
+	- Etiology   
+		- Pre-existing   
+			- Neuromuscular junction   
+			- Malnutrition   
+			- Hyperinflation   
+			- Endocrine   
+				- Hyperthyroidism   
+				- Hypothyroidism   
+		- New-onset   
+			- Metabolic   
+				- Hypokalemia   
+				- Hypophosphatemia   
+				- Acidosis   
+			- ICU-Acquired Weakness   
+			- Mechanical ventilation   
+	- Clinical features   
+		- Decreased vital capacity   
+		- Increased residual volume   
+			- expiratory muscles → decreased expiratory reserve volume   
+		- Decreased total lung capacity   
+			- inspiratory muscles → decreased inspiratory capacity   
+		- Further decrease in vital capacity when supine   
+		- Decrease in maximum expiratory peak flow and maximum inspiratory peak flow   
+		- Results in hypercapnia when strength is <40% predicted   
+		- Desaturation, hypercapnia during REM sleep & in supine position   
+- Disorders of the Chest Wall   
+	- Results in decreased chest wall compliance & reduced tidal volume (increased VD/VT)   
+	- Hypercapnia exacerbated by   
+		- reduced ventilatory drive   
+		- muscle weakness   
+	- [Kyphoscoliosis](/not_created.md)   
+		- Most patients with angle >90 degrees have hypercapnia   
+	- [Obesity Hypoventilation Syndrome](../../../Pulmonary%20Medicine/03.%20Sleep%20Medicine%2C%20Neuromuscular%2C%20and%20Skeletal/Obesity%20Hypoventilation%20Syndrome.md)   
+		- Management of hypercapnic respiratory failure in morbid obese patients   
+			- Identify and manage precipitating causes   
+			- Non-invasive positive pressure ventilation   
+				- improves ventilation → reduces work of breathing   
+				- recruits atelectatic lung → improves V/Q matching → better oxygenation   
+				- improves upper airway patency   
+			- Head up (reverse Trendelenburg) position   
+## Lung   
+   
+- Hypercapnic respiratory failure in patients with airflow obstruction   
+- Acute hypercapnic respiratory failure 2/2 COPD   
+	- Advanced COPD patients have a difficult time overcoming new infections like pneumonia   
+	- Fever causes increased VCO₂ and/or increased VD (due to pneumonia) → increased minute ventilation (by increasing RR) → decreasing expiratory time and increasing air trapping → increased work of breathing, fatigue → acute respiratory failure   
+	- Goal: rest, relief of air trapping   
+		- Non-invasive positive pressure ventilation   
+- Acute hypercapnic respiratory failure 2/2 status asthmaticus   
+	- Development of dynamic hyperinflation   
+		- Bronchospasm, airway inflammation, mucous plugging → airflow obstruction → prevents gas emptying   
+		- New breath initiated before previous breath empties → increasing functional residual capacity   
+		- Dynamic hyperinflation develops when the time needed to deflate the lung to normal FRC between breaths is insufficient   
+			- i.e. auto-peep   
+	- Effects of dynamic hyperinflation   
+		- Moves diaphragm downward and at a mechanically disadvantageous position   
+		- Incomplete alveolar gas emptying → elevated alveolar volume & alveolar pressure (intrinsic PEEP or auto-PEEP)   
+		- Auto-PEEP represents a threshold pressure that must be overcome before inspiratory flow can occur → increasing work of breathing   
+	- Ventilator adjustments for airflow obstruction   
+		- Deliver adequate oxygenation   
+		- Primary goal = increase expiratory time (i.e. time needed to exhale)   
+		- Sedate patient to slow the respiratory rate   
+		- Set lower RR -- most effective method   
+		- Set lower tidal volume → less volume to exhale   
+		- **Increase inspiratory flow rate to deliver air more rapidly thus more time for exhalation**   
+# Capnography   
+   
+- Monitoring exhaled CO₂   
+- Phases in measurement of exhaled CO₂   
+	- Phase 1: no exhaled CO₂ -- end inspiration to early exhalation of dead space gas from proceeding breath   
+	- Phase 2: rise in exhaled CO₂ during the mixing of dead space gas and emptying of alveoli with transition to   
+	- Phase 3: reflects the alveolar plateau as alveoli empty, reaching a maximum exhaled CO₂ immediately prior to   
+	- Phase 4: the rapid fall in CO₂ during inspiration   
+	- ![](../../../Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220518133812.png)   
+- Angles   
+	- The α angle represents the angle formed between Phase 2 and Phase 3; normally 110 degrees   
+		- Variations in this angle is linked to variations in time constants within the different alveolar units and thus overall V/Q status   
+		- Other factors that affect this angle: cardiac output, airway resistance, and changes in FRC   
+- Clinical Utility of Capnography   
+	- Confirmation of endotracheal tube placement   
+	- Continuous monitoring (loss of exhaled CO₂ = displaced ETT)   
+	- Perfusion during CPR -- effectiveness of resuscitation, ROSC   
+	- Detection of hypoventilation, bradypnea, apnea, and reverse I:E ventilation (shorter time during exhalation)   
+	- In [Asthma](../../../Pulmonary%20Medicine/01.%20Diseases%20of%20the%20Airways/Asthma.md)/[Chronic Obstructive Pulmonary Disease](../../../Pulmonary%20Medicine/01.%20Diseases%20of%20the%20Airways/Chronic%20Obstructive%20Pulmonary%20Disease.md) → uneven alveolar emptying and V/Q mismatch → "Shark-Fin" contour representing airflow obstruction   
+		- ![](../../../Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220208114516.png)   
+	- Gap between arterial and end-tidal CO₂ is usually negligible in healthy nonintubated patients (usually around 2 to 5 mmHg) - P(a-ET)CO₂   
+		- Cardiac and respiratory pathologies can increase this gap and this can be used to estimate alveolar dead space ventilation   
+		- In conditions such as acute pulmonary embolism, a precipitous drop of end-tidal CO₂ will happen and if the PaCO₂ remains constant, this leads to a significant increase in P(a-ET)CO₂   
+		- Normalization of this gap has been shown as a positive prognostic sign when seen after re-perfusion from tPA   
+		- Other causes of increased P(a-ET)CO₂   
+			- Hypovolemia   
+			- Hemorrhage   
+			- Excessive PEEP   
+			- Early ARDS -- independent risk factor for death   
+		- Negative P(a-ET)CO₂   
+			- Uncommon → verify the validity of the values from capnopgraph and ABG   
+			- Etiologies:   
+				- low frequency and high tidal volume ventilation   
+				- post CABG   
+				- post exercise   
+				- pregnant   
+				- pediatric patients

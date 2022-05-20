@@ -1,0 +1,260 @@
+---
+{}
+---
+   
+# General   
+   
+- Definition: acute diffuse inflammatory lung injury, leading to increased pulmonary vascular permeability, increased lung weight, and loss of aerated lung tissue with hypoxemia and bilateral radiographic opacities, associated with reduced lung compliance   
+- Inflammatory response is usually neutrophil predominant   
+# Epidemiology   
+   
+- Accounts for 10% of all ICU admissions; 25% of mechanically ventilated patients   
+	- 40% of patients w/ ARDS died in the hospital   
+- Clinical Recognition of ARDS   
+	- 51.3% recognized mild ARDS   
+	- 78.5% recognized severe ARDS   
+	- Lack of recognition a/w use of lung destructive ventilation (excessive tidal volume, low PEEP)   
+# Etiology & Pathogenesis   
+   
+- Common causes   
+	- Direct   
+		- Pulmonary infection   
+		- Aspiration injury   
+		- Inhalation injury   
+		- Lung contusion   
+		- Re-expansion injury   
+		- Pulmonary embolism   
+	- Indirect   
+		- Sepsis   
+		- Shock   
+		- Non-pulmonary trauma   
+		- Transfusion-related lung injury (TRALI)   
+		- CABG   
+		- Anaphylaxis   
+		- Medication   
+		- Acute pancreatitis   
+- Pathogenesis   
+	- Three Distinct Phases   
+	- _Exudative (Inflammatory) Phase (Acute Phase)_   
+		- Sloughing of both the bronchial and alveolar epithelial cells + formation of protein-rich hyaline membranes on the denuded basement membrane   
+		- Neutrophils adhere to injured capillary endothelium → marginate through the interstitium into the air space (filled with protein-rich edema fluid)   
+		- In the air space, alveolar macrophages → cytokines (IL-1, 6, 8, 10) & TNF-α → stimulate chemotaxis and activate neutrophils   
+			- IL-1 → stimulate the production of extracellular matrix by fibroblasts   
+			- Neutrophils → oxidants, proteases, leukotrienes, platelet-activating factor (PAF)   
+		- Protein-rich edema fluid into alveolus → inactivation of surfactant   
+		- ![](../../../Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220518144149.png)   
+			- Ware & Matthay N Engl J Med 2000; 342:1334-1349   
+		- Also get abnormalities of the coagulation system leading to platelet-fibrin thrombi in small vessels and impaired fibrinolysis within the distal air spaces of the injured lung   
+	- Resolution of ARDS consists of _Proliferative Phase_ or _Fibrotic Phase_   
+		- ![](../../../Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220518144326.png)   
+			- Ware & Matthay N Engl J Med 2000; 342:1334-1349   
+		- Proliferative Phase   
+			- Resolution of alveolar edema   
+				- Active transport of sodium & chloride with ENaC at the apical membrane of the Type II cells (lumen side) where it then goes to the basolateral membrane and is pumped out by Na+/K+-ATPase   
+				- This allows water to move through aquaporins on Type I cells   
+				- Clearance of alveolar fluid can occur early and within a few hours of intubation.   
+					- Maintenance of the ability to remove alveolar fluid → improved oxygenation, shorter mechanical ventilation duration, and improved survival   
+			- Removal of alveolar protein & inflammatory cells   
+				- Insoluble protein removal is important because hyaline membranes are a framework for growth of fibrous tissue   
+					- Removed by endocytosis and transcytosis by alveolar epithelial cells and phagocytosis by macrophages   
+				- Soluble protein removal by diffusion between alveolar epithelial cells   
+				- Apoptosis of neutrophils → phagocytosis by macrophages   
+			- Restoration of alveolar architecture   
+				- Type II cell = progenitor for reepithelialization of the denuded alveolar epithelium   
+				- Type II cell → proliferation → cover the denuded basement membrane → differentiate into Type I cells → restoration of normal alveolar architecture   
+		- Fibrotic Phase   
+			- Fibrosing alveolitis   
+				- Begins early in the course   
+				- Influence of IL-1   
+				- Elevated levels of procollagen III peptide which is a precursor of collagen synthesis   
+					- associated with increased risk of death   
+# Pathophysiology   
+   
+- Inflammatory response with alveolar edema and protein-rich fluid causes decreased pulmonary compliance → impaired gas exchange → pulmonary hypertension → Increased RV afterload → RV Dysfunction   
+- Mechanical ventilation + Fluid overload → further increase in RV dysfunction + worsening V/Q mismatch → loss of hypoxic vasoconstriction → refractory hypoxia   
+# History & Physical   
+   
+- Acute onset of [Dyspnea](../../../Pulmonary%20Medicine/12.%20Pulmonary%20Signs%20%26%20Symptoms/Dyspnea.md), [tachypnea](/not_created.md), and [hypoxemia](/not_created.md)   
+# Diagnosis   
+   
+- Berlin Criteria   
+	- ![](../../../Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220518151448.png)   
+- Radiographic Features of ARDS   
+	- Diffuse bilateral infiltrates   
+		- Patchy, confluent   
+		- Alveolar, ground-glass   
+	- In contrast to CHF, no prominence of cardiomegaly, pleural effusion, widened vascular pedicle   
+	- CT Chest -- dependent densities   
+- Differential Diagnosis   
+	- Common causes of acute hypoxia   
+		- [Asthma](../../../Pulmonary%20Medicine/01.%20Diseases%20of%20the%20Airways/Asthma.md)   
+		- Acute CHF   
+		- [Chronic Obstructive Pulmonary Disease](../../../Pulmonary%20Medicine/01.%20Diseases%20of%20the%20Airways/Chronic%20Obstructive%20Pulmonary%20Disease.md)   
+		- [Acute Interstitial Pneumonia](../../../Pulmonary%20Medicine/02.%20Diseases%20of%20the%20Lung%20Parenchyma/02.1.%20Diffuse%20Parenchymal%20Lung%20Disease/Idiopathic%20Interstitial%20Pneumonias/Acute-Subacute%20Interstitial%20Pneumonia/Acute%20Interstitial%20Pneumonia.md)   
+# Management   
+   
+- Treat the underlying condition   
+- Ventilatory Management of Oxygenation & Ventilation   
+	- Mechanical ventilation   
+		- Avoid/minimize barotrauma and oxygen toxicity   
+		- Lung Protective Ventilation   
+			- Lung injury is heterogeneous but with functional compartments   
+			- ![](../../../Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220518152148.png)   
+				- A = densely consolidated lung => poorly recruitable   
+				- B = normal aerated lung; highest compliance => risk of overdistension (volutrauma)   
+				- C = atelectatic but recruitable => potential for cyclic recruitment and collapse (atelectrauma)   
+			- ARDSnet Trial   
+				- Lower tidal volume ventilation resulted in improved mortality, ventilator-free days and prevention of barotrauma   
+				- Strong recommendation: use lower tidal volumes (<6 cc/kg of IBW) and plateau pressure ≤ 30 cm H₂O   
+			- PETA = People for the Ethical Treatment of Alveoli   
+				- Average male assuming 6 cc/kg IBW should have a tidal volume of 380 to 490   
+				- Average female assuming 6 cc/kg IBW should have a tidal volume of 300 to 380   
+			- ![](../../../Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/attachments/Pasted%20image%2020220304122624.png)   
+				- Avoid excessive plateau pressure and [driving pressure](../../../Critical%20Care%20Medicine/10.%20Pulmonary%20Disorders%20in%20Critical%20Care/Index/driving%20pressure.md)   
+				- In patients who are obese, they will have a larger pleural pressure (i.e. back pressure) so seeing higher plateau pressure may be okay in that population as their transalveolar pressure would be similar to a non-obese patient   
+					- Obese patients had a lower mortality with higher PEEP and non-obese patients trend for higher mortality with high PEEP   
+			- Pressure vs Volume Targeted Ventilation in ARDS   
+				- No large, randomized control trials regarding pressure vs volume targeted ventilation in ARDS   
+				- Advantages of Pressure Control Ventilation   
+					- Easily adjust inspiratory time   
+					- Better patient-ventilatory synchrony   
+					- Avoid regionally excessive transalveolar pressure   
+				- Advantages of Volume Control Ventilation   
+					- Avoid increases in tidal volume   
+					- Simple to implement   
+			- Recruitment Maneuvers   
+				- Variety of approaches   
+					- 40 cm H₂O pressure for 40 seconds   
+				- Transient improvement in oxygenation   
+				- Recommended before increasing PEEP   
+				- Low-moderate evidence therefore conditional recommendation   
+			- PEEP   
+				- Important to find the sweet spot with PEEP   
+				- Too much increase can cause normally aerated lungs to overdistend → dead space ventilation   
+				- Recommendation:   
+					- Moderate to Severe ARDS: Higher rather than lower PEEP   
+						- Lower ICU death, lower hospital death, no difference in pneumothorax, higher number of ventilator-free days   
+					- Mild ARDS: No statistically significant difference in ICU death, hospital death, pneumothorax or ventilator-free days in higher PEEP vs lower PEEP   
+						- Consider impact of PEEP on oxygenation, ventilation, oxygen delivery, risk of barotrauma (pneumomediastinum), extra-pulmonary pressure   
+				- Positive effects of a PEEP Trial (increasing PEEP)   
+					- Better oxygenation   
+					- Better ventilation/compliance/recruitment   
+						- In pressure control ventilation, as you increase PEEP, you should see   
+							- decrease in or no change in PaCO₂ OR   
+							- increase in or no change in tidal volume   
+						- In volume control ventilation, as you increase PEEP, you should see   
+							- proportional increase in plateau pressure   
+								- Increase in plateau pressure > increase in PEEP => overdistension   
+					- Indirect evidence that you do not have a worsening of your DO₂   
+						- Worsening DO₂ if you see decrease in cardiac output, blood pressure and mixed venous O2 as you increase PEEP   
+					- Stress index < 1   
+			- Strategies to determine the ideal settings include plotting compliance curves and using esophageal balloons to determine true transpulmonary pressure especially in the setting of poor chest wall compliance   
+		- Lung Destructive Ventilation   
+			- Ventilator-Induced Lung Injury   
+				- Volutrauma   
+					- Overdistension of alveoli → increased dead space ventilation   
+				- Atelectrauma   
+					- Shear stress of cyclic collapse-recruitment of alveoli   
+				- Biotrauma   
+					- Lung stretching causes systemic release of inflammatory cells and mediators   
+				- Barotrauma   
+					- Resulting in pneumothorax   
+	- High-Flow Nasal Oxygen   
+		- Constant FiO₂ during peak inspiratory flow   
+		- Adjust FiO₂ and flow separately   
+		- Low level CPAP   
+		- Increased end-expiratory pressure compensation   
+		- Reduced work of breathing via intrinsic PEEP (1 cm H₂O/10 LPM flow) and pharyngeal dead space gas washout   
+		- Gases warmed and humidified   
+			- improved comfort, drainage of respiratory secretions, reduced airway inflammation   
+		- Data -- Ferreyro et al JAMA 2020   
+			- Noninvasive oxygenation strategies were associated with lower all-cause mortality and lower likelihood of intubation   
+			- High-Flow Nasal Oxygen > NIPPV   
+				- More ventilator-free days, higher probability of survival and **less likely to be intubated if P/F ratio ≤ 200**   
+- Non-Ventilatory Management of Oxygenation & Ventilation   
+	- Fluid balance   
+		- Wiedemann et al 2006 -- RCT comparing conservative and liberal strategies for fluid management using explicit protocols applied for 7 days in 1000 patients with ARDS   
+			- No significant difference in mortality but **more ventilator-free days, and ICU-free days in the conservative group**; however more electrolyte abnormalities in the conservative group with no statistical difference in necessity of renal replacement therapy   
+		- Essentially keep intake = output, i.e. net even   
+		- If patient is hypoproteinemic, consider albumin + diuretic   
+			- Patients with ARDS and serum protein < 5 mg/dL → give albumin + furosemide   
+				- better oxygenation   
+				- more effective fluid removal   
+				- better hemodynamic tolerance   
+	- Glucocorticoids   
+		- Still controversial due to many small studies that are under-powered and with flawed designs   
+		- Meta-analysis shows lower hospital mortality, more ventilator-free days, but more hypoglycemia   
+			- underlying data is skewed though   
+	- Prone positioning   
+		- Improves oxygenation in 70% of patients   
+		- Mechanisms   
+			- Increased end-expiratory lung volume   
+			- Improved V/Q matching   
+				- allowing posterior lung that have been atelectatic or consolidated to participate in gas exchange   
+				- in supine position, the anterior lung zones are the path of least resistance so air travels to that portion   
+			- Regional changes in ventilation   
+		- Improved oxygenation when the patient is put back in supine position, gradually   
+			- When placed supine from prone, the PaO₂ drops but doesn't drop as much   
+		- In severe ARDS, proning is associated with lower 28 day mortality or 90 day mortality, more extubations at 90 days, more ventilator-free days and no difference in complications; >16 hours per day proning   
+- Severe COVID-19   
+	- Self-proning   
+	- High-Flow Nasal Oxygen   
+	- Sufficient PEEP to avoid de-recruitment   
+	- Pharmacology   
+		- Remdesivir, dexamethasone, anticoagulation   
+- Life-Threatening/Severe Hypoxemia   
+	- Ventilatory   
+		- Higher PEEP   
+		- Recruitment maneuvers   
+		- Higher mean airway pressure → longer inspiratory time; ? APRV   
+			- Longer inspiratory time   
+				- Easily accomplished with pressure targeted modes   
+				- Pressure controlled inverse ratio ventilation (PC-IRV)   
+					- No spontaneous breaths   
+				- BiLevel/APRV permits spontaneous breaths   
+				- Limited outcome data for APRV in ARDS   
+					- Concerns: Auto-PEEP & tidal volume creep   
+		- HFOV   
+			- Proposed as a form of lung protective strategy   
+			- Active inspiratory and expiratory phases; tidal volumes < dead space   
+			- HFOV for severe ARDS → higher mortality, more sedation, vasopressors in one study   
+				- no difference in ICU hospital length of stay or ventilator-free days in another study   
+			- Recommendation: Do not use for moderate or severe ARDS   
+	- Non-Ventilatory   
+		- Neuromuscular blockade   
+			- Used for 48 hours in severe ARDS   
+			- Lower 28 day mortality, more ventilator-free days, fewer pneumothoraces   
+				- However, a lot of crossover amongst the two groups in this study   
+			- No difference in rate of ICU-acquired paresis or muscle strength scores   
+			- Intervention group had more serious cardiovascular adverse events   
+		- Prone position   
+		- Inhaled pulmonary vasodilator   
+			- Inhaled nitric oxide   
+				- Endogenous pulmonary vasodilator   
+					- increases blood flow to functional alveoli → improvement in oxygenation   
+				- Rapidly inactivated by combining with hemoglobin and by oxidation   
+				- Inhalation of 2-40 ppm produces selective dilation of pulmonary vessels → offloads the RV   
+					- Increased RV ejection fraction   
+					- Decreased RV end diastolic volume   
+				- No outcome benefit in terms of survival, ICU-LOS, time of mechanical ventilation   
+				- Oxygenation benefit for up to 4 days   
+				- No methemoglobin or increase in systemic nitric oxide unless 80 ppm   
+		- ECMO   
+			- VV-ECMO -- blood removed and pumped through oxygenator and returned to circulation; no cardiac support   
+				- Large vascular canula, anticoagulation and infection risk   
+				- Data   
+					- Peek et al Lancet 2009   
+						- Large RCT in UK demonstrated lower mortality when transferred to an ECMO center   
+						- But only 76% randomized to ECMO actually got ECMO   
+					- Nehra et al Arch Surg 2009   
+						- Better outcomes in young patient, single organ failure, early initiation (MGH experience)   
+					- Combes et al NEJM 2018   
+						- Trended for higher survival at 60 days however not statistically significant   
+						- More bleeding and thrombocytopenia but less ischemic stroke   
+						- Longer hospital length of stay but less proning, recruitment and inhaled nitric oxide   
+# Complications and Prognosis   
+   
+- Mortality according to Berlin stratification   
+	- Mild ARDS -- 27%   
+	- Moderate ARDS -- 32%   
+	- Severe ARDS -- 45%
